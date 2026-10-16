@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Stream Transcription</title>
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="popup">
+  <header class="bar">
+    <img class="logo" src="icons/icon48.png" alt="">
+    <span class="title">Stream Transcription</span>
+    <span class="pill" id="statusPill" data-state="idle"><span class="dot"></span><span id="statusText" data-i18n="status_idle"></span></span>
+    <button class="icon-btn" id="openSettings" data-i18n-title="settings" data-i18n-aria="settings">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6a.5.5 0 0 0 .1-.6l-2-3.5a.5.5 0 0 0-.6-.2l-2.5 1a7.4 7.4 0 0 0-1.7-1l-.4-2.6a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0-.5.4l-.4 2.7a7.4 7.4 0 0 0-1.7 1l-2.5-1a.5.5 0 0 0-.6.2l-2 3.5a.5.5 0 0 0 .1.6L4.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6a.5.5 0 0 0-.1.6l2 3.5c.1.2.4.3.6.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.7c0 .2.3.4.5.4h4c.2 0 .5-.2.5-.4l.4-2.7c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5a.5.5 0 0 0-.1-.6L19.4 13zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
+    </button>
+  </header>
+
+  <!-- First run / server not reachable -->
+  <section class="card setup" id="setupCard" hidden>
+    <h2 data-i18n="server_setup_title"></h2>
+    <p class="muted" data-i18n="server_setup_hint"></p>
+    <label class="field">
+      <span data-i18n="server_address"></span>
+      <div class="row">
+        <input type="text" id="setupUrl" spellcheck="false" autocomplete="off" data-i18n-placeholder="server_placeholder">
+        <button class="btn" id="setupConnect" data-i18n="connect"></button>
+      </div>
+    </label>
+    <p class="msg" id="setupMsg" role="status"></p>
+    <a class="link" id="serverHelp" href="#" data-i18n="server_help"></a>
+  </section>
+
+  <main id="mainUi">
+    <button class="big-btn" id="toggleBtn">
+      <span class="big-icon" aria-hidden="true"></span>
+      <span id="toggleLabel" data-i18n="start"></span>
+    </button>
+    <p class="msg center" id="mainMsg" role="status"></p>
+
+    <div class="fields" id="fields">
+      <label class="field">
+        <span class="field-head"><span data-i18n="model"></span><a class="link small" id="manageModels" href="#" data-i18n="manage_models"></a></span>
+        <select id="model"></select>
+        <input type="text" id="modelFree" list="stockModels" spellcheck="false" hidden>
+        <datalist id="stockModels"></datalist>
+      </label>
+
+      <div class="two">
+        <label class="field">
+          <span data-i18n="spoken_lang"></span>
+          <select id="sourceLang"></select>
+          <span class="hint" id="detectedLang"></span>
+        </label>
+        <label class="field">
+          <span data-i18n="subs_lang"></span>
+          <select id="targetLang"></select>
+        </label>
+      </div>
+
+      <div class="two">
+        <div class="field">
+          <span data-i18n="lines"></span>
+          <div class="seg" id="lines" role="radiogroup">
+            <button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button>
+          </div>
+        </div>
+        <label class="field">
+          <span data-i18n="text_size"></span>
+          <input type="range" id="fontSize" min="14" max="40" step="1">
+        </label>
+      </div>
+
+      <label class="check"><input type="checkbox" id="saveSrt"><span data-i18n="save_srt"></span></label>
+
+      <details class="adv">
+        <summary data-i18n="advanced"></summary>
+        <label class="check"><input type="checkbox" id="useVad"><span data-i18n="use_vad"></span></label>
+        <div class="two adv-row">
+          <label class="field">
+            <span data-i18n="precision"></span>
+            <select id="precision">
+              <option value="auto" data-i18n="precision_auto"></option>
+              <option value="int8" data-i18n="precision_int8"></option>
+            </select>
+          </label>
+          <label class="field">
+            <span data-i18n="translator_device"></span>
+            <select id="translatorDevice">
+              <option value="auto" data-i18n="device_gpu"></option>
+              <option value="cpu" data-i18n="device_cpu"></option>
+            </select>
+          </label>
+        </div>
+      </details>
+      <p class="hint locked-hint" data-i18n="options_locked"></p>
+    </div>
+  </main>
+
+  <footer class="foot" id="foot">
+    <span class="srv-dot" id="srvDot"></span>
+    <span class="muted" id="srvText"></span>
+    <a class="link small" id="srvChange" href="#" data-i18n="server_change"></a>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

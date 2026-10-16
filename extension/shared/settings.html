@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stream Transcription</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <header class="top">
+    <img src="icons/icon48.png" alt="" width="34" height="34">
+    <h1 data-i18n="settings_title"></h1>
+  </header>
+
+  <main class="wrap">
+    <nav class="toc">
+      <a href="#server" data-i18n="section_server"></a>
+      <a href="#models" data-i18n="section_models"></a>
+      <a href="#subtitles" data-i18n="section_subtitles"></a>
+      <a href="#performance" data-i18n="section_performance"></a>
+      <a href="#interface" data-i18n="section_interface"></a>
+      <a href="#about" data-i18n="section_about"></a>
+    </nav>
+
+    <!-- Server -->
+    <section class="panel" id="server">
+      <h2 data-i18n="section_server"></h2>
+      <label class="field">
+        <span data-i18n="server_address"></span>
+        <div class="row">
+          <input type="text" id="serverUrl" spellcheck="false" autocomplete="off" data-i18n-placeholder="server_placeholder">
+          <button class="btn" id="serverSave" data-i18n="connect"></button>
+        </div>
+      </label>
+      <p class="msg" id="serverMsg" role="status"></p>
+      <details class="help">
+        <summary data-i18n="server_help"></summary>
+        <div class="help-body">
+          <p data-i18n="server_help_1"></p>
+          <p data-i18n="server_help_2"></p>
+          <p data-i18n="server_help_3"></p>
+          <p><a class="link" href="https://github.com/javimentallab/stream-transcription#server" target="_blank" rel="noopener" data-i18n="server_help_guide"></a></p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Models -->
+    <section class="panel" id="models">
+      <h2 data-i18n="section_models"></h2>
+
+      <div id="modelsManaged">
+        <h3 data-i18n="installed_models"></h3>
+        <ul class="models" id="modelList"></ul>
+        <p class="muted" id="noModels" data-i18n="no_models" hidden></p>
+        <p class="hint" data-i18n="vram_hint"></p>
+
+        <div id="addBlock">
+          <h3 data-i18n="add_model"></h3>
+          <p class="muted" data-i18n="add_model_hint"></p>
+          <div class="row">
+            <input type="text" id="addSource" spellcheck="false" autocomplete="off" data-i18n-placeholder="add_model_placeholder">
+            <button class="btn" id="addBtn" data-i18n="download"></button>
+          </div>
+          <p class="msg" id="addMsg" role="status"></p>
+          <div class="chips">
+            <span class="hint" data-i18n="suggestions"></span>
+            <span id="suggestions"></span>
+            <a class="link small" href="https://huggingface.co/models?other=whisper&sort=downloads" target="_blank" rel="noopener" data-i18n="browse_hf"></a>
+          </div>
+          <ul class="jobs" id="jobList"></ul>
+          <p class="hint" id="keepOpen" data-i18n="keep_open" hidden></p>
+        </div>
+      </div>
+
+      <div id="modelsPlain" hidden>
+        <p class="muted" data-i18n="plain_server_hint"></p>
+        <label class="field narrow">
+          <span data-i18n="model_name"></span>
+          <div class="row">
+            <input type="text" id="plainModel" list="stockModels" spellcheck="false">
+            <button class="btn" id="plainSave" data-i18n="save"></button>
+          </div>
+        </label>
+        <datalist id="stockModels"></datalist>
+      </div>
+
+      <p class="msg" id="modelsMsg" role="status"></p>
+    </section>
+
+    <!-- Subtitles -->
+    <section class="panel" id="subtitles">
+      <h2 data-i18n="section_subtitles"></h2>
+      <div class="preview" id="preview"><span data-i18n="subtitle_preview"></span></div>
+      <div class="two narrow">
+        <div class="field">
+          <span data-i18n="lines"></span>
+          <div class="seg" id="lines">
+            <button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button>
+          </div>
+        </div>
+        <label class="field">
+          <span data-i18n="text_size"></span>
+          <input type="range" id="fontSize" min="14" max="40" step="1">
+        </label>
+      </div>
+      <label class="check"><input type="checkbox" id="saveSrt"><span data-i18n="save_srt"></span></label>
+      <label class="check"><input type="checkbox" id="useVad"><span data-i18n="use_vad"></span></label>
+      <div class="row">
+        <button class="btn ghost" id="resetPos" data-i18n="reset_position"></button>
+        <span class="msg ok" id="resetMsg"></span>
+      </div>
+    </section>
+
+    <!-- Performance -->
+    <section class="panel" id="performance">
+      <h2 data-i18n="section_performance"></h2>
+      <p class="muted" data-i18n="performance_hint"></p>
+      <label class="field narrow">
+        <span data-i18n="precision"></span>
+        <select id="precision">
+          <option value="auto" data-i18n="precision_auto"></option>
+          <option value="int8" data-i18n="precision_int8"></option>
+        </select>
+        <span class="hint" data-i18n="precision_hint"></span>
+      </label>
+      <label class="field narrow">
+        <span data-i18n="translator_device"></span>
+        <select id="translatorDevice">
+          <option value="auto" data-i18n="device_gpu"></option>
+          <option value="cpu" data-i18n="device_cpu"></option>
+        </select>
+        <span class="hint" data-i18n="translator_device_hint"></span>
+      </label>
+    </section>
+
+    <!-- Interface -->
+    <section class="panel" id="interface">
+      <h2 data-i18n="section_interface"></h2>
+      <label class="field narrow">
+        <span data-i18n="interface_lang"></span>
+        <select id="uiLang">
+          <option value="auto" data-i18n="lang_auto"></option>
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </label>
+    </section>
+
+    <!-- About -->
+    <section class="panel" id="about">
+      <h2 data-i18n="section_about"></h2>
+      <p id="version" class="muted"></p>
+      <p data-i18n="about_text"></p>
+      <p class="muted" data-i18n="about_based"></p>
+      <p><a class="link" href="https://github.com/javimentallab/stream-transcription" target="_blank" rel="noopener" data-i18n="source_code"></a></p>
+    </section>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="i18n.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>

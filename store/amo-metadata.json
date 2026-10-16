@@ -1,0 +1,32 @@
+{
+ "default_locale": "en-US",
+ "summary": {
+  "en-US": "Live subtitles for any tab: Twitch, YouTube, calls… transcribed and translated by your own Whisper server. Download any Whisper model from Hugging Face right from the extension.",
+  "es-ES": "Subtítulos en directo para cualquier pestaña: Twitch, YouTube, llamadas… transcritos y traducidos por tu propio servidor Whisper. Descarga cualquier modelo Whisper de Hugging Face desde la extensión."
+ },
+ "description": {
+  "en-US": "Watch a Twitch stream, a YouTube video or a call in a language you don't speak, and read it in yours, in real time.\n\nStream Transcription puts live subtitles on top of any tab. The audio is transcribed (and translated, if you want) by YOUR OWN Whisper server — a free WhisperLive server on your computer or your network. Nothing goes to the cloud.\n\nWHAT IT DOES\n• Subtitles over any page: Twitch, YouTube, Kick, any video. They follow you to fullscreen, you can drag them anywhere, and choose 1–4 lines and the text size.\n• Translation: Whisper's own translation to English, or ~100 languages with the server's translator.\n• Any Whisper model, from the extension: paste a Hugging Face name or link (large-v3, turbo, a model fine-tuned for your language, a direct .zip…) and your server downloads it. Normal \"transformers\" models are converted automatically. Then just pick it from a list — no paths, no terminal.\n• Made for real graphics cards: an \"int8\" option halves the model's memory with the same text, the translator can run on the CPU, and if a model doesn't fit you get a clear VRAM warning instead of subtitles that silently freeze.\n• Save the subtitles as an .srt file.\n• English and Spanish interface.\n\nYOU NEED A SERVER\nThis extension is the client. It needs a WhisperLive server (free, open source). The easiest way is the Stream Transcription server with Docker — step-by-step guide at https://github.com/javimentallab/stream-transcription#server. A plain WhisperLive server also works, with fewer features.\n\nPRIVACY\nThe tab's audio is sent only to the server address you type. No account, no analytics, no tracking, nothing sent to the developer. Open source (MIT).",
+  "es-ES": "Mira un directo de Twitch, un vídeo de YouTube o una llamada en un idioma que no hablas y léelo en el tuyo, en tiempo real.\n\nStream Transcription pone subtítulos en directo encima de cualquier pestaña. El audio lo transcribe (y lo traduce, si quieres) TU PROPIO servidor Whisper: un servidor WhisperLive gratuito en tu ordenador o en tu red. Nada va a la nube.\n\nQUÉ HACE\n• Subtítulos encima de cualquier web: Twitch, YouTube, Kick, cualquier vídeo. Siguen en pantalla completa, se pueden arrastrar, y eliges de 1 a 4 líneas y el tamaño del texto.\n• Traducción: la del propio Whisper al inglés, o a unos 100 idiomas con el traductor del servidor.\n• Cualquier modelo Whisper, desde la extensión: pega el nombre o el enlace de un modelo de Hugging Face (large-v3, turbo, uno ajustado para tu idioma, un .zip directo…) y tu servidor lo descarga. Los modelos normales (\"transformers\") se convierten solos. Luego lo eliges de una lista: sin rutas ni terminal.\n• Pensada para gráficas de verdad: la opción «int8» gasta la mitad de memoria con el mismo texto, el traductor puede ir en el procesador, y si un modelo no cabe sale un aviso claro de VRAM en vez de unos subtítulos que se congelan sin decir nada.\n• Guarda los subtítulos en un .srt.\n• Interfaz en español e inglés.\n\nNECESITAS UN SERVIDOR\nEsta extensión es el cliente. Necesita un servidor WhisperLive (libre y gratuito). Lo más fácil es el servidor de Stream Transcription con Docker; guía paso a paso en https://github.com/javimentallab/stream-transcription/blob/main/README.es.md#servidor. Un WhisperLive normal también vale, con menos funciones.\n\nPRIVACIDAD\nEl audio de la pestaña solo se envía a la dirección de servidor que escribas. Sin cuenta, sin estadísticas, sin rastreo, nada se envía al desarrollador. Código abierto (MIT)."
+ },
+ "homepage": {
+  "en-US": "https://github.com/javimentallab/stream-transcription",
+  "es-ES": "https://github.com/javimentallab/stream-transcription/blob/main/README.es.md"
+ },
+ "support_url": {
+  "en-US": "https://github.com/javimentallab/stream-transcription/issues"
+ },
+ "categories": {
+  "firefox": [
+   "language-support",
+   "photos-music-videos"
+  ]
+ },
+ "version": {
+  "license": "MIT",
+  "approval_notes": "No build step, minifier or bundler: the package is the plain source from https://github.com/javimentallab/stream-transcription (extension/shared + extension/firefox, merged by tools/build.py).\n\nThe extension is a client for a self-hosted WhisperLive speech-to-text server (https://github.com/collabora/WhisperLive). On 'Start subtitles' the content script takes the page's <video>/<audio> through createMediaElementSource, downsamples it to 16 kHz in an AudioWorklet and streams it over a WebSocket to the server address the user typed; the subtitles that come back are drawn in a shadow-DOM overlay. That is the only network traffic (declared as websiteContent). <all_urls> is needed because the subtitles can be shown on any site with video.\n\nTo test without a server you can still open the popup and the settings page; to test end to end, run the server in /server of the repo (docker compose up -d --build, needs an NVIDIA GPU) and enter localhost:9090.",
+  "release_notes": {
+   "en-US": "First release.",
+   "es-ES": "Primera versión."
+  }
+ }
+}

@@ -1,0 +1,23 @@
+services:
+  stream-transcription:
+    build: .
+    container_name: stream-transcription
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./models:/root/.cache
+    environment:
+      # First model to download and use by default (any faster-whisper repo)
+      - ST_DEFAULT_MODEL=Systran/faster-whisper-small
+      # Set to 0 to stop the extension from downloading / deleting models
+      - ST_ALLOW_MANAGEMENT=1
+      # Only needed for gated or private Hugging Face models
+      # - HF_TOKEN=hf_...
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

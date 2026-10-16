@@ -1,0 +1,80 @@
+body { background: var(--bg-2); }
+
+.top {
+  display: flex; align-items: center; gap: 12px; padding: 18px 28px;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+}
+.top h1 { font-size: 20px; }
+
+.wrap {
+  max-width: 860px; margin: 0 auto; padding: 24px 20px 60px;
+  display: grid; grid-template-columns: 170px 1fr; gap: 24px; align-items: start;
+}
+.toc { position: sticky; top: 20px; display: flex; flex-direction: column; gap: 2px; }
+.toc a { color: var(--muted); text-decoration: none; padding: 7px 10px; border-radius: 8px; font-weight: 600; }
+.toc a:hover { background: var(--bg); color: var(--text); }
+.toc a.on { background: var(--accent-soft); color: var(--accent); }
+
+.panel {
+  grid-column: 2; background: var(--bg); border: 1px solid var(--line); border-radius: 14px;
+  padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 20px;
+}
+.panel h2 { font-size: 17px; }
+.panel h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 6px 0 8px; }
+.narrow { max-width: 420px; }
+#addBlock { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+
+.models, .jobs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.model {
+  display: flex; align-items: center; gap: 12px; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+}
+.model.selected { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.model .info { flex: 1; min-width: 0; }
+.model .name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.model .meta { font-size: 12px; color: var(--muted); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-top: 2px; }
+.model .actions { display: flex; gap: 6px; }
+
+.job { padding: 10px 12px; border: 1px dashed var(--line); border-radius: var(--radius); display: flex; flex-direction: column; gap: 6px; }
+.job .top-line { display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+.job .name { font-weight: 600; overflow-wrap: anywhere; }
+.bar-track { height: 6px; background: var(--bg-2); border-radius: 99px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--accent); width: 0; transition: width .4s; }
+.bar-fill.indeterminate { width: 35%; animation: slide 1.2s infinite ease-in-out; }
+@keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
+.job.error { border-color: var(--bad); border-style: solid; }
+.job.ready { border-color: var(--ok); border-style: solid; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chip {
+  appearance: none; border: 1px solid var(--line); background: var(--bg-2); color: var(--text);
+  border-radius: 99px; padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer;
+}
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+#suggestions { display: contents; }
+
+.preview {
+  background: linear-gradient(135deg, #3a3550, #1f2b3a); border-radius: var(--radius);
+  min-height: 120px; display: flex; align-items: flex-end; justify-content: center; padding: 18px;
+}
+.preview span {
+  color: #fff; font-weight: 600; background: rgba(0, 0, 0, .74); padding: .08em .45em; border-radius: .25em;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.help summary { cursor: pointer; color: var(--accent); }
+.help-body { margin-top: 10px; color: var(--muted); display: flex; flex-direction: column; gap: 8px; }
+.help-body code {
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 6px; padding: 1px 5px;
+  font-size: 12px; color: var(--text);
+}
+.help-body pre {
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px;
+  overflow-x: auto; font-size: 12px; color: var(--text); margin: 0;
+}
+
+@media (max-width: 680px) {
+  .wrap { grid-template-columns: 1fr; }
+  .toc { position: static; flex-direction: row; flex-wrap: wrap; }
+  .panel { grid-column: 1; }
+}

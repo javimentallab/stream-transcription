@@ -1,0 +1,7 @@
+dist/
+node_modules/
+*.bak
+__pycache__/
+server/models/
+.amo-upload-uuid
+web-ext-artifacts/

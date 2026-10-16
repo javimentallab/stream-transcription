@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "Live subtitles for any tab, transcribed and translated by your own Whisper server."
+  },
+  "start": {
+    "message": "Start subtitles"
+  },
+  "stop": {
+    "message": "Stop subtitles"
+  },
+  "status_idle": {
+    "message": "Ready"
+  },
+  "status_connecting": {
+    "message": "Connecting…"
+  },
+  "status_loading": {
+    "message": "Loading model…"
+  },
+  "status_listening": {
+    "message": "Listening…"
+  },
+  "status_live": {
+    "message": "Live"
+  },
+  "status_stalled": {
+    "message": "Audio stopped"
+  },
+  "status_error": {
+    "message": "Error"
+  },
+  "status_noresponse": {
+    "message": "No response"
+  },
+  "model": {
+    "message": "Model"
+  },
+  "model_server_default": {
+    "message": "Server default"
+  },
+  "model_default_tag": {
+    "message": "{0} · default"
+  },
+  "manage_models": {
+    "message": "Manage models"
+  },
+  "spoken_lang": {
+    "message": "Spoken language"
+  },
+  "auto_detect": {
+    "message": "Auto-detect"
+  },
+  "detected": {
+    "message": "Detected: {0}"
+  },
+  "subs_lang": {
+    "message": "Subtitles in"
+  },
+  "original_lang": {
+    "message": "No translation"
+  },
+  "lines": {
+    "message": "Lines"
+  },
+  "text_size": {
+    "message": "Text size"
+  },
+  "save_srt": {
+    "message": "Save subtitles (.srt) when stopping"
+  },
+  "advanced": {
+    "message": "Advanced"
+  },
+  "use_vad": {
+    "message": "Skip silences (voice detection)"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "first_load_hint": {
+    "message": "The first time a model loads it can take up to a minute."
+  },
+  "options_locked": {
+    "message": "Stop the subtitles to change these options."
+  },
+  "server_setup_title": {
+    "message": "Connect your server"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription needs a WhisperLive server running on your computer or on your network."
+  },
+  "server_address": {
+    "message": "Server address"
+  },
+  "server_placeholder": {
+    "message": "e.g. localhost:9090 or 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "Connect"
+  },
+  "server_ok_models": {
+    "message": "Connected · {0} models"
+  },
+  "server_ok_one_model": {
+    "message": "Connected · 1 model"
+  },
+  "server_plain": {
+    "message": "Connected · standard WhisperLive (no model management)"
+  },
+  "server_checking": {
+    "message": "Checking…"
+  },
+  "server_unreachable": {
+    "message": "Can't reach the server. Is it running? Check the address and the firewall."
+  },
+  "server_timeout": {
+    "message": "The server didn't answer in time."
+  },
+  "server_bad_url": {
+    "message": "That address isn't valid."
+  },
+  "server_change": {
+    "message": "Change"
+  },
+  "server_help": {
+    "message": "How do I set up a server?"
+  },
+  "server_help_1": {
+    "message": "You need a WhisperLive server (free and open source) running on a computer, ideally one with an NVIDIA graphics card. Small models also run on the processor alone."
+  },
+  "server_help_2": {
+    "message": "Then type its address here: the computer's IP and the port, e.g. 192.168.1.10:9090. If it runs on this same computer, localhost:9090."
+  },
+  "server_help_3": {
+    "message": "To download and manage models from this page, add the Stream Transcription add-on to the server."
+  },
+  "server_help_guide": {
+    "message": "Step-by-step guide"
+  },
+  "error_capture": {
+    "message": "This tab can't be captured (browser pages, extension stores and PDFs are off limits)."
+  },
+  "error_no_media": {
+    "message": "There's no video or audio on this page."
+  },
+  "error_server_full": {
+    "message": "The server is busy. Estimated wait: {0} min."
+  },
+  "error_disconnected": {
+    "message": "The server closed the connection."
+  },
+  "error_model_load": {
+    "message": "⚠ Not enough graphics memory (VRAM) on the server for this model. Pick a smaller model, or turn on “Save memory (int8)” in Advanced."
+  },
+  "warn_no_response": {
+    "message": "⚠ Subtitles have stopped although there is sound. The model probably doesn't fit in the server's graphics memory (VRAM): pick a smaller model or turn on “Save memory (int8)” in Advanced."
+  },
+  "warn_slow_load": {
+    "message": "⚠ The model is taking too long to load. It may not fit in the server's graphics memory (VRAM): pick a smaller model or turn on “Save memory (int8)” in Advanced."
+  },
+  "error_reload": {
+    "message": "Reload the page (F5) and start again."
+  },
+  "error_no_server": {
+    "message": "Set up the server first."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · Settings"
+  },
+  "section_server": {
+    "message": "Server"
+  },
+  "section_models": {
+    "message": "Models"
+  },
+  "section_subtitles": {
+    "message": "Subtitles"
+  },
+  "section_interface": {
+    "message": "Interface"
+  },
+  "section_about": {
+    "message": "About"
+  },
+  "installed_models": {
+    "message": "Installed on the server"
+  },
+  "no_models": {
+    "message": "No models installed yet."
+  },
+  "badge_default": {
+    "message": "Default"
+  },
+  "badge_loaded": {
+    "message": "In memory"
+  },
+  "badge_selected": {
+    "message": "Selected"
+  },
+  "use_model": {
+    "message": "Use"
+  },
+  "delete_model": {
+    "message": "Delete"
+  },
+  "confirm_delete": {
+    "message": "Delete {0} from the server? It frees {1}."
+  },
+  "add_model": {
+    "message": "Add a model"
+  },
+  "add_model_hint": {
+    "message": "Paste the name or the link of a model on Hugging Face. Any Whisper model works: faster-whisper (CTranslate2) models are used as they are, and normal ones (transformers) are converted automatically. A direct link to a .zip or .tar.gz with a model also works."
+  },
+  "add_model_placeholder": {
+    "message": "e.g. Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "Download"
+  },
+  "suggestions": {
+    "message": "Suggestions:"
+  },
+  "browse_hf": {
+    "message": "Browse Whisper models on Hugging Face"
+  },
+  "vram_hint": {
+    "message": "Bigger models are more accurate but need more GPU memory: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB."
+  },
+  "keep_open": {
+    "message": "Keep this page open until the download finishes."
+  },
+  "job_downloading": {
+    "message": "Downloading… {0} of {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "Downloading… {0}"
+  },
+  "job_converting": {
+    "message": "Converting to faster-whisper format…"
+  },
+  "job_extracting": {
+    "message": "Extracting…"
+  },
+  "job_ready": {
+    "message": "Installed"
+  },
+  "job_error": {
+    "message": "Failed: {0}"
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "plain_server_hint": {
+    "message": "This is a standard WhisperLive server: type a model size (tiny, base, small, medium, large-v3, large-v3-turbo) and the server downloads it the first time. To download any model from here, install the Stream Transcription add-on on the server."
+  },
+  "model_name": {
+    "message": "Model name"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "reset_position": {
+    "message": "Reset subtitle position"
+  },
+  "position_reset_done": {
+    "message": "Done: they'll go back to the bottom."
+  },
+  "section_performance": {
+    "message": "Performance"
+  },
+  "performance_hint": {
+    "message": "If the server's graphics card runs out of memory (subtitles that never arrive, or a memory warning), these two options free a lot of it. They only work with the Stream Transcription server."
+  },
+  "precision": {
+    "message": "Model precision"
+  },
+  "precision_auto": {
+    "message": "Automatic"
+  },
+  "precision_int8": {
+    "message": "Save memory (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 uses about half the graphics memory and, in practice, writes the same text."
+  },
+  "translator_device": {
+    "message": "Translator runs on"
+  },
+  "device_gpu": {
+    "message": "Graphics card"
+  },
+  "device_cpu": {
+    "message": "Processor (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "On the processor it frees graphics memory, but translated subtitles arrive a little later."
+  },
+  "interface_lang": {
+    "message": "Interface language"
+  },
+  "lang_auto": {
+    "message": "Same as the browser"
+  },
+  "about_text": {
+    "message": "Free software (MIT license). The audio only goes to the server you set up here; nothing is sent anywhere else."
+  },
+  "about_based": {
+    "message": "Based on WhisperLive by Collabora."
+  },
+  "source_code": {
+    "message": "Source code"
+  },
+  "subtitle_preview": {
+    "message": "This is how your subtitles will look."
+  },
+  "err_invalid_source": {
+    "message": "That isn't a Hugging Face model name or a link."
+  },
+  "err_unsupported_url": {
+    "message": "Only Hugging Face links or direct links to .zip / .tar.gz files."
+  },
+  "err_repo_not_found": {
+    "message": "That model doesn't exist on Hugging Face (check the name)."
+  },
+  "err_gated_repo": {
+    "message": "That model asks you to accept its terms on Hugging Face; the server needs an HF_TOKEN."
+  },
+  "err_not_whisper": {
+    "message": "That isn't a Whisper model."
+  },
+  "err_no_weights": {
+    "message": "That repository has no model weights."
+  },
+  "err_network_error": {
+    "message": "Network error. Try again: it resumes where it stopped."
+  },
+  "err_download_failed": {
+    "message": "The download failed."
+  },
+  "err_convert_failed": {
+    "message": "The model couldn't be converted."
+  },
+  "err_bad_archive": {
+    "message": "The archive is damaged or unsafe."
+  },
+  "err_already_downloading": {
+    "message": "It's already downloading."
+  },
+  "err_already_installed": {
+    "message": "It's already installed."
+  },
+  "err_management_disabled": {
+    "message": "Model management is turned off on this server."
+  },
+  "err_is_default": {
+    "message": "That's the server's default model; it can't be deleted from here."
+  },
+  "err_in_use": {
+    "message": "A running transcription is using it."
+  },
+  "err_not_found": {
+    "message": "That model is no longer on the server."
+  },
+  "err_server_error": {
+    "message": "Server error."
+  },
+  "err_unreachable": {
+    "message": "Can't reach the server."
+  },
+  "err_timeout": {
+    "message": "The server didn't answer in time."
+  },
+  "err_unknown": {
+    "message": "Unexpected error ({0})."
+  }
+}
