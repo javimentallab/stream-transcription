@@ -57,8 +57,9 @@ docker compose up -d --build
 ```
 
 El primer arranque descarga el modelo por defecto (`Systran/faster-whisper-small`, ~0,5 GB).
-El servidor escucha en el puerto **9090** y guarda los modelos en `server/models/`. Opciones
-en `docker-compose.yml`:
+El servidor escucha en el puerto **9090**, funciona con un usuario sin privilegios y guarda
+los modelos en el volumen de Docker `models` (la antigua carpeta `server/models/` ya no se usa
+y se puede borrar; los modelos se vuelven a descargar). Opciones en `docker-compose.yml`:
 
 | Variable | Por defecto | Qué hace |
 |---|---|---|

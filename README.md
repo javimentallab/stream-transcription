@@ -61,7 +61,9 @@ docker compose up -d --build
 ```
 
 The first start downloads the default model (`Systran/faster-whisper-small`, ~0.5 GB). The
-server listens on port **9090**; models are kept in `server/models/`. Options in
+server listens on port **9090** and runs as an unprivileged user; models are kept in the
+`models` Docker volume (an old `server/models/` folder is no longer used and can be deleted;
+the models are downloaded again). Options in
 `docker-compose.yml`:
 
 | Variable | Default | What it does |

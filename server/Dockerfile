@@ -17,7 +17,19 @@ COPY whisper_live/ /app/whisper_live/
 COPY start.sh /app/start.sh
 RUN chmod +x /app/start.sh
 
+# Runs as an unprivileged user. uid 1000 so a bind-mounted folder owned by the usual
+# desktop user also works; the named volume in docker-compose.yml takes this ownership.
+RUN useradd --uid 1000 --create-home st \
+ && mkdir -p /home/st/.cache \
+ && chown st:st /home/st/.cache
+USER st
+
 # Models (Hugging Face cache + converted ones) live here: mount a volume to keep them.
-VOLUME /root/.cache
+VOLUME /home/st/.cache
 EXPOSE 9090
+# The first start downloads the default model before listening, hence the long start period.
+# A real WebSocket handshake (a bare TCP connect makes the server log a traceback); every
+# probe still logs a connect/disconnect, so it runs every 5 minutes once started.
+HEALTHCHECK --interval=5m --start-interval=30s --timeout=5s --start-period=10m --retries=3 \
+  CMD python -c "from websockets.sync.client import connect; connect('ws://127.0.0.1:9090', open_timeout=3).close()"
 CMD ["/app/start.sh"]

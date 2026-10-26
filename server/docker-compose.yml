@@ -6,7 +6,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./models:/root/.cache
+      - models:/home/st/.cache
     environment:
       # First model to download and use by default (any faster-whisper repo)
       - ST_DEFAULT_MODEL=Systran/faster-whisper-small
@@ -21,3 +21,6 @@ services:
             - driver: nvidia
               count: all
               capabilities: [gpu]
+
+volumes:
+  models:
