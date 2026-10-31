@@ -108,6 +108,7 @@ browser's folder. Texts for both languages live side by side in `tools/i18n-mess
 
 ## Credits and license
 
-MIT. Built on [WhisperLive](https://github.com/collabora/WhisperLive) by Collabora (MIT) and
+MIT ([LICENSE](LICENSE)). Built on [WhisperLive](https://github.com/collabora/WhisperLive) by Collabora (MIT, see
+[NOTICE](NOTICE)) and
 [faster-whisper](https://github.com/SYSTRAN/faster-whisper). Translation uses
 [SMALL100](https://huggingface.co/alirezamsh/small100).

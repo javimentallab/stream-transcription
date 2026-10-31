@@ -104,6 +104,7 @@ carpeta de cada navegador. Los textos de los dos idiomas están juntos en
 
 ## Créditos y licencia
 
-MIT. Hecho sobre [WhisperLive](https://github.com/collabora/WhisperLive), de Collabora (MIT), y
+MIT ([LICENSE](LICENSE)). Hecho sobre [WhisperLive](https://github.com/collabora/WhisperLive), de Collabora (MIT, ver
+[NOTICE](NOTICE)), y
 [faster-whisper](https://github.com/SYSTRAN/faster-whisper). La traducción usa
 [SMALL100](https://huggingface.co/alirezamsh/small100).
