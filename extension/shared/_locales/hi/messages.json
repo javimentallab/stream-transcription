@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "किसी भी टैब के लिए लाइव सबटाइटल, जिन्हें आपका अपना Whisper सर्वर लिखता और अनुवाद करता है।"
+  },
+  "start": {
+    "message": "सबटाइटल चालू करें"
+  },
+  "stop": {
+    "message": "सबटाइटल बंद करें"
+  },
+  "status_idle": {
+    "message": "तैयार"
+  },
+  "status_connecting": {
+    "message": "कनेक्ट हो रहा है…"
+  },
+  "status_loading": {
+    "message": "मॉडल लोड हो रहा है…"
+  },
+  "status_listening": {
+    "message": "सुन रहा है…"
+  },
+  "status_live": {
+    "message": "लाइव"
+  },
+  "status_stalled": {
+    "message": "ऑडियो रुक गया"
+  },
+  "status_error": {
+    "message": "त्रुटि"
+  },
+  "status_noresponse": {
+    "message": "कोई जवाब नहीं"
+  },
+  "model": {
+    "message": "मॉडल"
+  },
+  "model_server_default": {
+    "message": "सर्वर का डिफ़ॉल्ट"
+  },
+  "model_default_tag": {
+    "message": "{0} · डिफ़ॉल्ट"
+  },
+  "manage_models": {
+    "message": "मॉडल प्रबंधित करें"
+  },
+  "spoken_lang": {
+    "message": "ऑडियो की भाषा"
+  },
+  "auto_detect": {
+    "message": "अपने-आप पहचानें"
+  },
+  "detected": {
+    "message": "पहचानी गई: {0}"
+  },
+  "subs_lang": {
+    "message": "सबटाइटल की भाषा"
+  },
+  "original_lang": {
+    "message": "अनुवाद नहीं"
+  },
+  "lines": {
+    "message": "पंक्तियाँ"
+  },
+  "text_size": {
+    "message": "टेक्स्ट का आकार"
+  },
+  "save_srt": {
+    "message": "बंद करते समय सबटाइटल (.srt) सेव करें"
+  },
+  "advanced": {
+    "message": "उन्नत"
+  },
+  "use_vad": {
+    "message": "ख़ामोशी छोड़ें (आवाज़ की पहचान)"
+  },
+  "settings": {
+    "message": "सेटिंग"
+  },
+  "first_load_hint": {
+    "message": "पहली बार मॉडल लोड होने में एक मिनट तक लग सकता है।"
+  },
+  "options_locked": {
+    "message": "ये विकल्प बदलने के लिए सबटाइटल बंद करें।"
+  },
+  "server_setup_title": {
+    "message": "अपना सर्वर कनेक्ट करें"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription को आपके कंप्यूटर या नेटवर्क पर चलता WhisperLive सर्वर चाहिए।"
+  },
+  "server_address": {
+    "message": "सर्वर का पता"
+  },
+  "server_placeholder": {
+    "message": "जैसे localhost:9090 या 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "कनेक्ट करें"
+  },
+  "server_ok_models": {
+    "message": "कनेक्ट हो गया · {0} मॉडल"
+  },
+  "server_ok_one_model": {
+    "message": "कनेक्ट हो गया · 1 मॉडल"
+  },
+  "server_plain": {
+    "message": "कनेक्ट हो गया · सामान्य WhisperLive (मॉडल प्रबंधन नहीं)"
+  },
+  "server_checking": {
+    "message": "जाँच हो रही है…"
+  },
+  "server_unreachable": {
+    "message": "सर्वर से कनेक्ट नहीं हो पा रहा। क्या वह चालू है? पता और फ़ायरवॉल जाँचें।"
+  },
+  "server_timeout": {
+    "message": "सर्वर ने समय पर जवाब नहीं दिया।"
+  },
+  "server_bad_url": {
+    "message": "यह पता सही नहीं है।"
+  },
+  "server_change": {
+    "message": "बदलें"
+  },
+  "server_help": {
+    "message": "सर्वर कैसे सेट करें?"
+  },
+  "server_help_1": {
+    "message": "आपको किसी कंप्यूटर पर WhisperLive सर्वर (मुफ़्त और ओपन सोर्स) चलाना होगा, अच्छा हो कि NVIDIA ग्राफ़िक्स कार्ड हो। छोटे मॉडल सिर्फ़ प्रोसेसर पर भी चलते हैं।"
+  },
+  "server_help_2": {
+    "message": "फिर उसका पता यहाँ लिखें: कंप्यूटर का IP और पोर्ट, जैसे 192.168.1.10:9090। अगर इसी कंप्यूटर पर है, तो localhost:9090।"
+  },
+  "server_help_3": {
+    "message": "इस पेज से मॉडल डाउनलोड और प्रबंधित करने के लिए सर्वर में Stream Transcription ऐड-ऑन जोड़ें।"
+  },
+  "server_help_guide": {
+    "message": "क़दम-दर-क़दम गाइड"
+  },
+  "error_capture": {
+    "message": "यह टैब कैप्चर नहीं हो सकता (ब्राउज़र के पेज, एक्सटेंशन स्टोर और PDF की अनुमति नहीं)।"
+  },
+  "error_no_media": {
+    "message": "इस पेज पर न वीडियो है न ऑडियो।"
+  },
+  "error_server_full": {
+    "message": "सर्वर व्यस्त है। अनुमानित इंतज़ार: {0} मिनट।"
+  },
+  "error_disconnected": {
+    "message": "सर्वर ने कनेक्शन बंद कर दिया।"
+  },
+  "error_model_load": {
+    "message": "⚠ इस मॉडल के लिए सर्वर पर ग्राफ़िक्स मेमोरी (VRAM) काफ़ी नहीं है। छोटा मॉडल चुनें या उन्नत में “मेमोरी बचाएँ (int8)” चालू करें।"
+  },
+  "warn_no_response": {
+    "message": "⚠ आवाज़ होते हुए भी सबटाइटल आने बंद हो गए। शायद मॉडल सर्वर की ग्राफ़िक्स मेमोरी (VRAM) में नहीं समा रहा: छोटा मॉडल चुनें या उन्नत में “मेमोरी बचाएँ (int8)” चालू करें।"
+  },
+  "warn_slow_load": {
+    "message": "⚠ मॉडल लोड होने में बहुत देर लग रही है। शायद वह सर्वर की ग्राफ़िक्स मेमोरी (VRAM) में नहीं समाता: छोटा मॉडल चुनें या उन्नत में “मेमोरी बचाएँ (int8)” चालू करें।"
+  },
+  "error_reload": {
+    "message": "पेज फिर से लोड करें (F5) और दोबारा शुरू करें।"
+  },
+  "error_no_server": {
+    "message": "पहले सर्वर सेट करें।"
+  },
+  "settings_title": {
+    "message": "Stream Transcription · सेटिंग"
+  },
+  "section_server": {
+    "message": "सर्वर"
+  },
+  "section_models": {
+    "message": "मॉडल"
+  },
+  "section_subtitles": {
+    "message": "सबटाइटल"
+  },
+  "section_interface": {
+    "message": "इंटरफ़ेस"
+  },
+  "section_about": {
+    "message": "परिचय"
+  },
+  "installed_models": {
+    "message": "सर्वर पर इंस्टॉल"
+  },
+  "no_models": {
+    "message": "अभी कोई मॉडल इंस्टॉल नहीं है।"
+  },
+  "badge_default": {
+    "message": "डिफ़ॉल्ट"
+  },
+  "badge_loaded": {
+    "message": "मेमोरी में"
+  },
+  "badge_selected": {
+    "message": "चुना गया"
+  },
+  "use_model": {
+    "message": "इस्तेमाल करें"
+  },
+  "delete_model": {
+    "message": "मिटाएँ"
+  },
+  "confirm_delete": {
+    "message": "सर्वर से {0} मिटाएँ? इससे {1} खाली होगा।"
+  },
+  "add_model": {
+    "message": "मॉडल जोड़ें"
+  },
+  "add_model_hint": {
+    "message": "Hugging Face के किसी मॉडल का नाम या लिंक चिपकाएँ। कोई भी Whisper मॉडल चलेगा: faster-whisper (CTranslate2) मॉडल सीधे इस्तेमाल होते हैं और सामान्य (transformers) मॉडल अपने-आप बदल दिए जाते हैं। किसी मॉडल वाली .zip या .tar.gz का सीधा लिंक भी चलेगा।"
+  },
+  "add_model_placeholder": {
+    "message": "जैसे Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "डाउनलोड करें"
+  },
+  "suggestions": {
+    "message": "सुझाव:"
+  },
+  "browse_hf": {
+    "message": "Hugging Face पर Whisper मॉडल देखें"
+  },
+  "vram_hint": {
+    "message": "बड़े मॉडल ज़्यादा सटीक हैं पर ज़्यादा ग्राफ़िक्स मेमोरी लेते हैं: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB।"
+  },
+  "keep_open": {
+    "message": "डाउनलोड पूरा होने तक यह पेज खुला रखें।"
+  },
+  "job_downloading": {
+    "message": "डाउनलोड हो रहा है… {0} में से {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "डाउनलोड हो रहा है… {0}"
+  },
+  "job_converting": {
+    "message": "faster-whisper फ़ॉर्मैट में बदला जा रहा है…"
+  },
+  "job_extracting": {
+    "message": "खोला जा रहा है…"
+  },
+  "job_ready": {
+    "message": "इंस्टॉल हो गया"
+  },
+  "job_error": {
+    "message": "विफल: {0}"
+  },
+  "retry": {
+    "message": "फिर कोशिश करें"
+  },
+  "plain_server_hint": {
+    "message": "यह सामान्य WhisperLive सर्वर है: मॉडल का आकार लिखें (tiny, base, small, medium, large-v3, large-v3-turbo) और सर्वर पहली बार उसे डाउनलोड कर लेगा। यहाँ से कोई भी मॉडल डाउनलोड करने के लिए सर्वर पर Stream Transcription ऐड-ऑन इंस्टॉल करें।"
+  },
+  "model_name": {
+    "message": "मॉडल का नाम"
+  },
+  "save": {
+    "message": "सेव करें"
+  },
+  "saved": {
+    "message": "सेव हो गया"
+  },
+  "reset_position": {
+    "message": "सबटाइटल की जगह रीसेट करें"
+  },
+  "position_reset_done": {
+    "message": "हो गया: वे फिर नीचे आ जाएँगे।"
+  },
+  "section_performance": {
+    "message": "प्रदर्शन"
+  },
+  "performance_hint": {
+    "message": "अगर सर्वर के ग्राफ़िक्स कार्ड की मेमोरी कम पड़ जाए (सबटाइटल न आएँ या मेमोरी की चेतावनी दिखे), तो ये दो विकल्प काफ़ी मेमोरी खाली करते हैं। ये सिर्फ़ Stream Transcription सर्वर के साथ काम करते हैं।"
+  },
+  "precision": {
+    "message": "मॉडल की सटीकता"
+  },
+  "precision_auto": {
+    "message": "अपने-आप"
+  },
+  "precision_int8": {
+    "message": "मेमोरी बचाएँ (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 लगभग आधी ग्राफ़िक्स मेमोरी लेता है और असल में वही टेक्स्ट लिखता है।"
+  },
+  "translator_device": {
+    "message": "अनुवादक कहाँ चलता है"
+  },
+  "device_gpu": {
+    "message": "ग्राफ़िक्स कार्ड"
+  },
+  "device_cpu": {
+    "message": "प्रोसेसर (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "प्रोसेसर पर चलाने से ग्राफ़िक्स मेमोरी खाली होती है, पर अनुवादित सबटाइटल थोड़ा देर से आते हैं।"
+  },
+  "interface_lang": {
+    "message": "इंटरफ़ेस की भाषा"
+  },
+  "lang_auto": {
+    "message": "ब्राउज़र जैसी"
+  },
+  "about_text": {
+    "message": "मुक्त सॉफ़्टवेयर (MIT लाइसेंस)। ऑडियो सिर्फ़ उसी सर्वर पर जाता है जो आप यहाँ सेट करते हैं; और कहीं कुछ नहीं भेजा जाता।"
+  },
+  "about_based": {
+    "message": "Collabora के WhisperLive पर आधारित।"
+  },
+  "source_code": {
+    "message": "सोर्स कोड"
+  },
+  "subtitle_preview": {
+    "message": "आपके सबटाइटल ऐसे दिखेंगे।"
+  },
+  "err_invalid_source": {
+    "message": "यह न तो Hugging Face का मॉडल नाम है न लिंक।"
+  },
+  "err_unsupported_url": {
+    "message": "सिर्फ़ Hugging Face के लिंक या .zip / .tar.gz फ़ाइलों के सीधे लिंक।"
+  },
+  "err_repo_not_found": {
+    "message": "Hugging Face पर यह मॉडल नहीं है (नाम जाँचें)।"
+  },
+  "err_gated_repo": {
+    "message": "इस मॉडल के लिए Hugging Face पर शर्तें माननी होती हैं; सर्वर को HF_TOKEN चाहिए।"
+  },
+  "err_not_whisper": {
+    "message": "यह Whisper मॉडल नहीं है।"
+  },
+  "err_no_weights": {
+    "message": "इस रिपॉज़िटरी में मॉडल के वेट नहीं हैं।"
+  },
+  "err_network_error": {
+    "message": "नेटवर्क त्रुटि। फिर कोशिश करें: जहाँ रुका था वहीं से चलेगा।"
+  },
+  "err_download_failed": {
+    "message": "डाउनलोड विफल रहा।"
+  },
+  "err_convert_failed": {
+    "message": "मॉडल बदला नहीं जा सका।"
+  },
+  "err_bad_archive": {
+    "message": "संग्रह फ़ाइल ख़राब है या सुरक्षित नहीं है।"
+  },
+  "err_already_downloading": {
+    "message": "यह पहले से डाउनलोड हो रहा है।"
+  },
+  "err_already_installed": {
+    "message": "यह पहले से इंस्टॉल है।"
+  },
+  "err_management_disabled": {
+    "message": "इस सर्वर पर मॉडल प्रबंधन बंद है।"
+  },
+  "err_is_default": {
+    "message": "यह सर्वर का डिफ़ॉल्ट मॉडल है; इसे यहाँ से मिटाया नहीं जा सकता।"
+  },
+  "err_in_use": {
+    "message": "चल रहा ट्रांसक्रिप्शन इसे इस्तेमाल कर रहा है।"
+  },
+  "err_not_found": {
+    "message": "यह मॉडल अब सर्वर पर नहीं है।"
+  },
+  "err_server_error": {
+    "message": "सर्वर त्रुटि।"
+  },
+  "err_unreachable": {
+    "message": "सर्वर से कनेक्ट नहीं हो पा रहा।"
+  },
+  "err_timeout": {
+    "message": "सर्वर ने समय पर जवाब नहीं दिया।"
+  },
+  "err_unknown": {
+    "message": "अनपेक्षित त्रुटि ({0})।"
+  }
+}

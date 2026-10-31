@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Writes extension/shared/_locales/{en,es}/messages.json from the table below.
+"""Writes extension/shared/_locales/<lang>/messages.json from the table below (en, es) and tools/i18n-more.py.
 
 Keeping both languages side by side makes a missing translation impossible.
 Placeholders are {0}, {1}... (replaced by shared/i18n.js, not by chrome.i18n).
 Run:  python tools/i18n-messages.py
 """
 import json
+import re
 import os
 
 M = {
@@ -216,16 +217,40 @@ M = {
 }
 
 
+def tables():
+    """English and Spanish from M; the other languages from tools/i18n-more.py ("key|text" lines),
+    checked against English: same keys, same {n} placeholders."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    out = {"en": {k: v[0] for k, v in M.items()}, "es": {k: v[1] for k, v in M.items()}}
+    more = {}
+    with open(os.path.join(here, "i18n-more.py"), encoding="utf-8") as fh:
+        exec(fh.read(), more)
+    for lang, block in more["LANGS"].items():
+        t = {}
+        for line in block.split("\n"):
+            if line.strip():
+                k, v = line.split("|", 1)
+                t[k] = v
+        missing, extra = set(M) - set(t), set(t) - set(M)
+        assert not missing and not extra, (lang, sorted(missing), sorted(extra))
+        for k in M:
+            assert set(re.findall(r"\{\d\}", t[k])) == set(re.findall(r"\{\d\}", M[k][0])), (lang, k)
+        assert len(t["extDescription"]) <= 132, (lang, "extDescription")  # Chrome's limit
+        out[lang] = t
+    return out
+
+
 def main():
     root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "extension", "shared", "_locales")
-    for i, lang in enumerate(("en", "es")):
-        out = {k: {"message": v[i]} for k, v in M.items()}
+    all_tables = tables()
+    for lang, table in all_tables.items():
+        out = {k: {"message": v} for k, v in table.items()}
         d = os.path.join(root, lang)
         os.makedirs(d, exist_ok=True)
         with open(os.path.join(d, "messages.json"), "w", encoding="utf-8") as fh:
             json.dump(out, fh, ensure_ascii=False, indent=2)
             fh.write("\n")
-    print(f"{len(M)} messages x 2 languages")
+    print(f"{len(M)} messages x {len(all_tables)} languages")
 
 
 if __name__ == "__main__":

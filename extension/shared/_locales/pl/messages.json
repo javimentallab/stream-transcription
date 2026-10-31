@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "Napisy na żywo w dowolnej karcie, transkrybowane i tłumaczone przez twój własny serwer Whisper."
+  },
+  "start": {
+    "message": "Włącz napisy"
+  },
+  "stop": {
+    "message": "Wyłącz napisy"
+  },
+  "status_idle": {
+    "message": "Gotowe"
+  },
+  "status_connecting": {
+    "message": "Łączenie…"
+  },
+  "status_loading": {
+    "message": "Wczytywanie modelu…"
+  },
+  "status_listening": {
+    "message": "Nasłuchiwanie…"
+  },
+  "status_live": {
+    "message": "Na żywo"
+  },
+  "status_stalled": {
+    "message": "Dźwięk zatrzymany"
+  },
+  "status_error": {
+    "message": "Błąd"
+  },
+  "status_noresponse": {
+    "message": "Brak odpowiedzi"
+  },
+  "model": {
+    "message": "Model"
+  },
+  "model_server_default": {
+    "message": "Domyślny serwera"
+  },
+  "model_default_tag": {
+    "message": "{0} · domyślny"
+  },
+  "manage_models": {
+    "message": "Zarządzaj modelami"
+  },
+  "spoken_lang": {
+    "message": "Język dźwięku"
+  },
+  "auto_detect": {
+    "message": "Automatycznie"
+  },
+  "detected": {
+    "message": "Wykryto: {0}"
+  },
+  "subs_lang": {
+    "message": "Napisy w języku"
+  },
+  "original_lang": {
+    "message": "Bez tłumaczenia"
+  },
+  "lines": {
+    "message": "Wiersze"
+  },
+  "text_size": {
+    "message": "Rozmiar tekstu"
+  },
+  "save_srt": {
+    "message": "Zapisz napisy (.srt) po zatrzymaniu"
+  },
+  "advanced": {
+    "message": "Zaawansowane"
+  },
+  "use_vad": {
+    "message": "Pomijaj ciszę (wykrywanie mowy)"
+  },
+  "settings": {
+    "message": "Ustawienia"
+  },
+  "first_load_hint": {
+    "message": "Za pierwszym razem wczytanie modelu może potrwać do minuty."
+  },
+  "options_locked": {
+    "message": "Wyłącz napisy, aby zmienić te opcje."
+  },
+  "server_setup_title": {
+    "message": "Połącz swój serwer"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription potrzebuje serwera WhisperLive na twoim komputerze lub w twojej sieci."
+  },
+  "server_address": {
+    "message": "Adres serwera"
+  },
+  "server_placeholder": {
+    "message": "np. localhost:9090 lub 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "Połącz"
+  },
+  "server_ok_models": {
+    "message": "Połączono · modele: {0}"
+  },
+  "server_ok_one_model": {
+    "message": "Połączono · 1 model"
+  },
+  "server_plain": {
+    "message": "Połączono · standardowy WhisperLive (bez zarządzania modelami)"
+  },
+  "server_checking": {
+    "message": "Sprawdzanie…"
+  },
+  "server_unreachable": {
+    "message": "Nie można połączyć się z serwerem. Czy jest włączony? Sprawdź adres i zaporę."
+  },
+  "server_timeout": {
+    "message": "Serwer nie odpowiedział na czas."
+  },
+  "server_bad_url": {
+    "message": "Ten adres jest nieprawidłowy."
+  },
+  "server_change": {
+    "message": "Zmień"
+  },
+  "server_help": {
+    "message": "Jak skonfigurować serwer?"
+  },
+  "server_help_1": {
+    "message": "Potrzebujesz serwera WhisperLive (wolnego i darmowego) na komputerze, najlepiej z kartą graficzną NVIDIA. Małe modele działają też na samym procesorze."
+  },
+  "server_help_2": {
+    "message": "Potem wpisz tu jego adres: IP komputera i port, np. 192.168.1.10:9090. Jeśli działa na tym komputerze — localhost:9090."
+  },
+  "server_help_3": {
+    "message": "Aby pobierać modele i zarządzać nimi z tej strony, dodaj do serwera dodatek Stream Transcription."
+  },
+  "server_help_guide": {
+    "message": "Przewodnik krok po kroku"
+  },
+  "error_capture": {
+    "message": "Tej karty nie można przechwycić (strony przeglądarki, sklepy z rozszerzeniami i pliki PDF są wykluczone)."
+  },
+  "error_no_media": {
+    "message": "Na tej stronie nie ma wideo ani dźwięku."
+  },
+  "error_server_full": {
+    "message": "Serwer jest zajęty. Szacowany czas oczekiwania: {0} min."
+  },
+  "error_disconnected": {
+    "message": "Serwer zamknął połączenie."
+  },
+  "error_model_load": {
+    "message": "⚠ Serwer ma za mało pamięci graficznej (VRAM) na ten model. Wybierz mniejszy model lub włącz „Oszczędzaj pamięć (int8)” w Zaawansowanych."
+  },
+  "warn_no_response": {
+    "message": "⚠ Napisy przestały przychodzić, choć jest dźwięk. Model pewnie nie mieści się w pamięci graficznej (VRAM) serwera: wybierz mniejszy model lub włącz „Oszczędzaj pamięć (int8)” w Zaawansowanych."
+  },
+  "warn_slow_load": {
+    "message": "⚠ Model wczytuje się za długo. Może nie mieścić się w pamięci graficznej (VRAM) serwera: wybierz mniejszy model lub włącz „Oszczędzaj pamięć (int8)” w Zaawansowanych."
+  },
+  "error_reload": {
+    "message": "Odśwież stronę (F5) i zacznij od nowa."
+  },
+  "error_no_server": {
+    "message": "Najpierw skonfiguruj serwer."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · Ustawienia"
+  },
+  "section_server": {
+    "message": "Serwer"
+  },
+  "section_models": {
+    "message": "Modele"
+  },
+  "section_subtitles": {
+    "message": "Napisy"
+  },
+  "section_interface": {
+    "message": "Interfejs"
+  },
+  "section_about": {
+    "message": "Informacje"
+  },
+  "installed_models": {
+    "message": "Zainstalowane na serwerze"
+  },
+  "no_models": {
+    "message": "Nie ma jeszcze zainstalowanych modeli."
+  },
+  "badge_default": {
+    "message": "Domyślny"
+  },
+  "badge_loaded": {
+    "message": "W pamięci"
+  },
+  "badge_selected": {
+    "message": "Wybrany"
+  },
+  "use_model": {
+    "message": "Użyj"
+  },
+  "delete_model": {
+    "message": "Usuń"
+  },
+  "confirm_delete": {
+    "message": "Usunąć {0} z serwera? Zwolni to {1}."
+  },
+  "add_model": {
+    "message": "Dodaj model"
+  },
+  "add_model_hint": {
+    "message": "Wklej nazwę lub link modelu z Hugging Face. Pasuje każdy model Whisper: modele faster-whisper (CTranslate2) są używane bez zmian, a zwykłe (transformers) konwertowane automatycznie. Działa też bezpośredni link do pliku .zip lub .tar.gz z modelem."
+  },
+  "add_model_placeholder": {
+    "message": "np. Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "Pobierz"
+  },
+  "suggestions": {
+    "message": "Propozycje:"
+  },
+  "browse_hf": {
+    "message": "Zobacz modele Whisper na Hugging Face"
+  },
+  "vram_hint": {
+    "message": "Większe modele są dokładniejsze, ale potrzebują więcej pamięci karty graficznej: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB."
+  },
+  "keep_open": {
+    "message": "Nie zamykaj tej strony, dopóki pobieranie się nie skończy."
+  },
+  "job_downloading": {
+    "message": "Pobieranie… {0} z {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "Pobieranie… {0}"
+  },
+  "job_converting": {
+    "message": "Konwersja do formatu faster-whisper…"
+  },
+  "job_extracting": {
+    "message": "Rozpakowywanie…"
+  },
+  "job_ready": {
+    "message": "Zainstalowano"
+  },
+  "job_error": {
+    "message": "Niepowodzenie: {0}"
+  },
+  "retry": {
+    "message": "Spróbuj ponownie"
+  },
+  "plain_server_hint": {
+    "message": "To standardowy serwer WhisperLive: wpisz rozmiar modelu (tiny, base, small, medium, large-v3, large-v3-turbo), a serwer pobierze go za pierwszym razem. Aby pobierać stąd dowolne modele, zainstaluj na serwerze dodatek Stream Transcription."
+  },
+  "model_name": {
+    "message": "Nazwa modelu"
+  },
+  "save": {
+    "message": "Zapisz"
+  },
+  "saved": {
+    "message": "Zapisano"
+  },
+  "reset_position": {
+    "message": "Przywróć położenie napisów"
+  },
+  "position_reset_done": {
+    "message": "Gotowe: wrócą na dół."
+  },
+  "section_performance": {
+    "message": "Wydajność"
+  },
+  "performance_hint": {
+    "message": "Jeśli karcie graficznej serwera brakuje pamięci (napisy nie przychodzą albo pojawia się ostrzeżenie o pamięci), te dwie opcje sporo jej zwalniają. Działają tylko z serwerem Stream Transcription."
+  },
+  "precision": {
+    "message": "Precyzja modelu"
+  },
+  "precision_auto": {
+    "message": "Automatyczna"
+  },
+  "precision_int8": {
+    "message": "Oszczędzaj pamięć (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 zużywa mniej więcej połowę pamięci graficznej i w praktyce pisze ten sam tekst."
+  },
+  "translator_device": {
+    "message": "Tłumacz działa na"
+  },
+  "device_gpu": {
+    "message": "Karcie graficznej"
+  },
+  "device_cpu": {
+    "message": "Procesorze (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "Na procesorze zwalnia pamięć graficzną, ale przetłumaczone napisy przychodzą nieco później."
+  },
+  "interface_lang": {
+    "message": "Język interfejsu"
+  },
+  "lang_auto": {
+    "message": "Jak w przeglądarce"
+  },
+  "about_text": {
+    "message": "Wolne oprogramowanie (licencja MIT). Dźwięk trafia tylko do serwera, który tu skonfigurujesz; nic nie jest wysyłane nigdzie indziej."
+  },
+  "about_based": {
+    "message": "Oparte na WhisperLive od Collabora."
+  },
+  "source_code": {
+    "message": "Kod źródłowy"
+  },
+  "subtitle_preview": {
+    "message": "Tak będą wyglądać twoje napisy."
+  },
+  "err_invalid_source": {
+    "message": "To nie jest nazwa modelu z Hugging Face ani link."
+  },
+  "err_unsupported_url": {
+    "message": "Tylko linki do Hugging Face lub bezpośrednie linki do plików .zip / .tar.gz."
+  },
+  "err_repo_not_found": {
+    "message": "Taki model nie istnieje na Hugging Face (sprawdź nazwę)."
+  },
+  "err_gated_repo": {
+    "message": "Ten model wymaga zaakceptowania warunków na Hugging Face; serwer potrzebuje HF_TOKEN."
+  },
+  "err_not_whisper": {
+    "message": "To nie jest model Whisper."
+  },
+  "err_no_weights": {
+    "message": "To repozytorium nie zawiera wag modelu."
+  },
+  "err_network_error": {
+    "message": "Błąd sieci. Spróbuj ponownie: zacznie od miejsca, w którym przerwał."
+  },
+  "err_download_failed": {
+    "message": "Pobieranie nie powiodło się."
+  },
+  "err_convert_failed": {
+    "message": "Nie udało się przekonwertować modelu."
+  },
+  "err_bad_archive": {
+    "message": "Archiwum jest uszkodzone lub niebezpieczne."
+  },
+  "err_already_downloading": {
+    "message": "Już się pobiera."
+  },
+  "err_already_installed": {
+    "message": "Już jest zainstalowany."
+  },
+  "err_management_disabled": {
+    "message": "Zarządzanie modelami jest wyłączone na tym serwerze."
+  },
+  "err_is_default": {
+    "message": "To domyślny model serwera; nie można go stąd usunąć."
+  },
+  "err_in_use": {
+    "message": "Używa go trwająca transkrypcja."
+  },
+  "err_not_found": {
+    "message": "Tego modelu nie ma już na serwerze."
+  },
+  "err_server_error": {
+    "message": "Błąd serwera."
+  },
+  "err_unreachable": {
+    "message": "Nie można połączyć się z serwerem."
+  },
+  "err_timeout": {
+    "message": "Serwer nie odpowiedział na czas."
+  },
+  "err_unknown": {
+    "message": "Nieoczekiwany błąd ({0})."
+  }
+}

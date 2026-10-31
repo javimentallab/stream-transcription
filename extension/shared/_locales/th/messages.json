@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "คำบรรยายสดสำหรับทุกแท็บ ถอดความและแปลโดยเซิร์ฟเวอร์ Whisper ของคุณเอง"
+  },
+  "start": {
+    "message": "เปิดคำบรรยาย"
+  },
+  "stop": {
+    "message": "ปิดคำบรรยาย"
+  },
+  "status_idle": {
+    "message": "พร้อม"
+  },
+  "status_connecting": {
+    "message": "กำลังเชื่อมต่อ…"
+  },
+  "status_loading": {
+    "message": "กำลังโหลดโมเดล…"
+  },
+  "status_listening": {
+    "message": "กำลังฟัง…"
+  },
+  "status_live": {
+    "message": "สด"
+  },
+  "status_stalled": {
+    "message": "เสียงหยุดแล้ว"
+  },
+  "status_error": {
+    "message": "ข้อผิดพลาด"
+  },
+  "status_noresponse": {
+    "message": "ไม่มีการตอบกลับ"
+  },
+  "model": {
+    "message": "โมเดล"
+  },
+  "model_server_default": {
+    "message": "ค่าเริ่มต้นของเซิร์ฟเวอร์"
+  },
+  "model_default_tag": {
+    "message": "{0} · ค่าเริ่มต้น"
+  },
+  "manage_models": {
+    "message": "จัดการโมเดล"
+  },
+  "spoken_lang": {
+    "message": "ภาษาของเสียง"
+  },
+  "auto_detect": {
+    "message": "ตรวจหาอัตโนมัติ"
+  },
+  "detected": {
+    "message": "ตรวจพบ: {0}"
+  },
+  "subs_lang": {
+    "message": "คำบรรยายเป็นภาษา"
+  },
+  "original_lang": {
+    "message": "ไม่แปล"
+  },
+  "lines": {
+    "message": "จำนวนบรรทัด"
+  },
+  "text_size": {
+    "message": "ขนาดตัวอักษร"
+  },
+  "save_srt": {
+    "message": "บันทึกคำบรรยาย (.srt) เมื่อหยุด"
+  },
+  "advanced": {
+    "message": "ขั้นสูง"
+  },
+  "use_vad": {
+    "message": "ข้ามช่วงเงียบ (ตรวจจับเสียงพูด)"
+  },
+  "settings": {
+    "message": "การตั้งค่า"
+  },
+  "first_load_hint": {
+    "message": "การโหลดโมเดลครั้งแรกอาจใช้เวลาถึงหนึ่งนาที"
+  },
+  "options_locked": {
+    "message": "ปิดคำบรรยายก่อนจึงจะเปลี่ยนตัวเลือกเหล่านี้ได้"
+  },
+  "server_setup_title": {
+    "message": "เชื่อมต่อเซิร์ฟเวอร์ของคุณ"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription ต้องใช้เซิร์ฟเวอร์ WhisperLive ที่ทำงานบนคอมพิวเตอร์หรือในเครือข่ายของคุณ"
+  },
+  "server_address": {
+    "message": "ที่อยู่เซิร์ฟเวอร์"
+  },
+  "server_placeholder": {
+    "message": "เช่น localhost:9090 หรือ 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "เชื่อมต่อ"
+  },
+  "server_ok_models": {
+    "message": "เชื่อมต่อแล้ว · {0} โมเดล"
+  },
+  "server_ok_one_model": {
+    "message": "เชื่อมต่อแล้ว · 1 โมเดล"
+  },
+  "server_plain": {
+    "message": "เชื่อมต่อแล้ว · WhisperLive มาตรฐาน (ไม่มีการจัดการโมเดล)"
+  },
+  "server_checking": {
+    "message": "กำลังตรวจสอบ…"
+  },
+  "server_unreachable": {
+    "message": "ติดต่อเซิร์ฟเวอร์ไม่ได้ เปิดอยู่หรือไม่ ตรวจสอบที่อยู่และไฟร์วอลล์"
+  },
+  "server_timeout": {
+    "message": "เซิร์ฟเวอร์ไม่ตอบกลับทันเวลา"
+  },
+  "server_bad_url": {
+    "message": "ที่อยู่นี้ไม่ถูกต้อง"
+  },
+  "server_change": {
+    "message": "เปลี่ยน"
+  },
+  "server_help": {
+    "message": "จะตั้งเซิร์ฟเวอร์อย่างไร"
+  },
+  "server_help_1": {
+    "message": "คุณต้องมีเซิร์ฟเวอร์ WhisperLive (ฟรีและโอเพนซอร์ส) บนคอมพิวเตอร์ ถ้ามีการ์ดจอ NVIDIA จะดีที่สุด โมเดลเล็กใช้แค่ซีพียูก็ได้"
+  },
+  "server_help_2": {
+    "message": "จากนั้นพิมพ์ที่อยู่ของมันที่นี่: IP ของคอมพิวเตอร์และพอร์ต เช่น 192.168.1.10:9090 ถ้าอยู่บนคอมพิวเตอร์เครื่องนี้ ให้ใช้ localhost:9090"
+  },
+  "server_help_3": {
+    "message": "หากต้องการดาวน์โหลดและจัดการโมเดลจากหน้านี้ ให้ติดตั้งส่วนเสริม Stream Transcription บนเซิร์ฟเวอร์"
+  },
+  "server_help_guide": {
+    "message": "คู่มือทีละขั้นตอน"
+  },
+  "error_capture": {
+    "message": "จับภาพแท็บนี้ไม่ได้ (หน้าของเบราว์เซอร์ ร้านส่วนขยาย และ PDF ใช้ไม่ได้)"
+  },
+  "error_no_media": {
+    "message": "หน้านี้ไม่มีวิดีโอหรือเสียง"
+  },
+  "error_server_full": {
+    "message": "เซิร์ฟเวอร์ไม่ว่าง เวลารอโดยประมาณ: {0} นาที"
+  },
+  "error_disconnected": {
+    "message": "เซิร์ฟเวอร์ปิดการเชื่อมต่อแล้ว"
+  },
+  "error_model_load": {
+    "message": "⚠ หน่วยความจำกราฟิก (VRAM) ของเซิร์ฟเวอร์ไม่พอสำหรับโมเดลนี้ เลือกโมเดลที่เล็กลง หรือเปิด “ประหยัดหน่วยความจำ (int8)” ในขั้นสูง"
+  },
+  "warn_no_response": {
+    "message": "⚠ คำบรรยายหยุดมาทั้งที่มีเสียง โมเดลอาจใส่ไม่พอในหน่วยความจำกราฟิก (VRAM) ของเซิร์ฟเวอร์ เลือกโมเดลที่เล็กลง หรือเปิด “ประหยัดหน่วยความจำ (int8)” ในขั้นสูง"
+  },
+  "warn_slow_load": {
+    "message": "⚠ โมเดลโหลดนานเกินไป อาจใส่ไม่พอในหน่วยความจำกราฟิก (VRAM) ของเซิร์ฟเวอร์ เลือกโมเดลที่เล็กลง หรือเปิด “ประหยัดหน่วยความจำ (int8)” ในขั้นสูง"
+  },
+  "error_reload": {
+    "message": "โหลดหน้าใหม่ (F5) แล้วเริ่มอีกครั้ง"
+  },
+  "error_no_server": {
+    "message": "ตั้งค่าเซิร์ฟเวอร์ก่อน"
+  },
+  "settings_title": {
+    "message": "Stream Transcription · การตั้งค่า"
+  },
+  "section_server": {
+    "message": "เซิร์ฟเวอร์"
+  },
+  "section_models": {
+    "message": "โมเดล"
+  },
+  "section_subtitles": {
+    "message": "คำบรรยาย"
+  },
+  "section_interface": {
+    "message": "หน้าตาโปรแกรม"
+  },
+  "section_about": {
+    "message": "เกี่ยวกับ"
+  },
+  "installed_models": {
+    "message": "ติดตั้งบนเซิร์ฟเวอร์แล้ว"
+  },
+  "no_models": {
+    "message": "ยังไม่มีโมเดลที่ติดตั้ง"
+  },
+  "badge_default": {
+    "message": "ค่าเริ่มต้น"
+  },
+  "badge_loaded": {
+    "message": "อยู่ในหน่วยความจำ"
+  },
+  "badge_selected": {
+    "message": "เลือกแล้ว"
+  },
+  "use_model": {
+    "message": "ใช้"
+  },
+  "delete_model": {
+    "message": "ลบ"
+  },
+  "confirm_delete": {
+    "message": "ลบ {0} ออกจากเซิร์ฟเวอร์ไหม จะได้พื้นที่คืน {1}"
+  },
+  "add_model": {
+    "message": "เพิ่มโมเดล"
+  },
+  "add_model_hint": {
+    "message": "วางชื่อหรือลิงก์ของโมเดลจาก Hugging Face ใช้โมเดล Whisper ใดก็ได้ โมเดล faster-whisper (CTranslate2) ใช้ได้ทันที ส่วนโมเดลทั่วไป (transformers) จะถูกแปลงให้เอง ลิงก์ตรงไปยัง .zip หรือ .tar.gz ที่มีโมเดลก็ใช้ได้"
+  },
+  "add_model_placeholder": {
+    "message": "เช่น Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "ดาวน์โหลด"
+  },
+  "suggestions": {
+    "message": "แนะนำ:"
+  },
+  "browse_hf": {
+    "message": "ดูโมเดล Whisper บน Hugging Face"
+  },
+  "vram_hint": {
+    "message": "โมเดลใหญ่แม่นยำกว่าแต่ใช้หน่วยความจำการ์ดจอมากกว่า: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB"
+  },
+  "keep_open": {
+    "message": "เปิดหน้านี้ค้างไว้จนกว่าจะดาวน์โหลดเสร็จ"
+  },
+  "job_downloading": {
+    "message": "กำลังดาวน์โหลด… {0} จาก {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "กำลังดาวน์โหลด… {0}"
+  },
+  "job_converting": {
+    "message": "กำลังแปลงเป็นรูปแบบ faster-whisper…"
+  },
+  "job_extracting": {
+    "message": "กำลังแตกไฟล์…"
+  },
+  "job_ready": {
+    "message": "ติดตั้งแล้ว"
+  },
+  "job_error": {
+    "message": "ล้มเหลว: {0}"
+  },
+  "retry": {
+    "message": "ลองอีกครั้ง"
+  },
+  "plain_server_hint": {
+    "message": "นี่คือเซิร์ฟเวอร์ WhisperLive มาตรฐาน: พิมพ์ขนาดโมเดล (tiny, base, small, medium, large-v3, large-v3-turbo) แล้วเซิร์ฟเวอร์จะดาวน์โหลดในครั้งแรก หากต้องการดาวน์โหลดโมเดลใดก็ได้จากที่นี่ ให้ติดตั้งส่วนเสริม Stream Transcription บนเซิร์ฟเวอร์"
+  },
+  "model_name": {
+    "message": "ชื่อโมเดล"
+  },
+  "save": {
+    "message": "บันทึก"
+  },
+  "saved": {
+    "message": "บันทึกแล้ว"
+  },
+  "reset_position": {
+    "message": "รีเซ็ตตำแหน่งคำบรรยาย"
+  },
+  "position_reset_done": {
+    "message": "เรียบร้อย: จะกลับไปอยู่ด้านล่าง"
+  },
+  "section_performance": {
+    "message": "ประสิทธิภาพ"
+  },
+  "performance_hint": {
+    "message": "หากการ์ดจอของเซิร์ฟเวอร์หน่วยความจำไม่พอ (คำบรรยายไม่มาหรือมีคำเตือนเรื่องหน่วยความจำ) สองตัวเลือกนี้ช่วยคืนพื้นที่ได้มาก ใช้ได้กับเซิร์ฟเวอร์ Stream Transcription เท่านั้น"
+  },
+  "precision": {
+    "message": "ความแม่นยำของโมเดล"
+  },
+  "precision_auto": {
+    "message": "อัตโนมัติ"
+  },
+  "precision_int8": {
+    "message": "ประหยัดหน่วยความจำ (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 ใช้หน่วยความจำกราฟิกราวครึ่งหนึ่ง และในทางปฏิบัติเขียนข้อความเหมือนเดิม"
+  },
+  "translator_device": {
+    "message": "ตัวแปลทำงานบน"
+  },
+  "device_gpu": {
+    "message": "การ์ดจอ"
+  },
+  "device_cpu": {
+    "message": "ซีพียู (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "บนซีพียูจะคืนหน่วยความจำกราฟิก แต่คำบรรยายที่แปลแล้วจะมาช้าขึ้นเล็กน้อย"
+  },
+  "interface_lang": {
+    "message": "ภาษาของหน้าตาโปรแกรม"
+  },
+  "lang_auto": {
+    "message": "ตามเบราว์เซอร์"
+  },
+  "about_text": {
+    "message": "ซอฟต์แวร์เสรี (สัญญาอนุญาต MIT) เสียงจะส่งไปยังเซิร์ฟเวอร์ที่คุณตั้งไว้ที่นี่เท่านั้น ไม่มีการส่งไปที่อื่น"
+  },
+  "about_based": {
+    "message": "พัฒนาจาก WhisperLive ของ Collabora"
+  },
+  "source_code": {
+    "message": "ซอร์สโค้ด"
+  },
+  "subtitle_preview": {
+    "message": "คำบรรยายของคุณจะมีหน้าตาแบบนี้"
+  },
+  "err_invalid_source": {
+    "message": "นี่ไม่ใช่ชื่อโมเดลของ Hugging Face และไม่ใช่ลิงก์"
+  },
+  "err_unsupported_url": {
+    "message": "ใช้ได้เฉพาะลิงก์ Hugging Face หรือลิงก์ตรงไปยังไฟล์ .zip / .tar.gz"
+  },
+  "err_repo_not_found": {
+    "message": "ไม่มีโมเดลนี้บน Hugging Face (ตรวจชื่ออีกครั้ง)"
+  },
+  "err_gated_repo": {
+    "message": "โมเดลนี้ต้องยอมรับเงื่อนไขบน Hugging Face เซิร์ฟเวอร์ต้องมี HF_TOKEN"
+  },
+  "err_not_whisper": {
+    "message": "นี่ไม่ใช่โมเดล Whisper"
+  },
+  "err_no_weights": {
+    "message": "ที่เก็บนี้ไม่มีค่าน้ำหนักของโมเดล"
+  },
+  "err_network_error": {
+    "message": "เครือข่ายผิดพลาด ลองอีกครั้ง: จะทำต่อจากจุดที่หยุด"
+  },
+  "err_download_failed": {
+    "message": "ดาวน์โหลดไม่สำเร็จ"
+  },
+  "err_convert_failed": {
+    "message": "แปลงโมเดลไม่ได้"
+  },
+  "err_bad_archive": {
+    "message": "ไฟล์บีบอัดเสียหายหรือไม่ปลอดภัย"
+  },
+  "err_already_downloading": {
+    "message": "กำลังดาวน์โหลดอยู่แล้ว"
+  },
+  "err_already_installed": {
+    "message": "ติดตั้งแล้ว"
+  },
+  "err_management_disabled": {
+    "message": "เซิร์ฟเวอร์นี้ปิดการจัดการโมเดลไว้"
+  },
+  "err_is_default": {
+    "message": "นี่คือโมเดลค่าเริ่มต้นของเซิร์ฟเวอร์ ลบจากที่นี่ไม่ได้"
+  },
+  "err_in_use": {
+    "message": "มีการถอดความที่กำลังทำงานใช้อยู่"
+  },
+  "err_not_found": {
+    "message": "โมเดลนี้ไม่อยู่บนเซิร์ฟเวอร์แล้ว"
+  },
+  "err_server_error": {
+    "message": "เซิร์ฟเวอร์ผิดพลาด"
+  },
+  "err_unreachable": {
+    "message": "ติดต่อเซิร์ฟเวอร์ไม่ได้"
+  },
+  "err_timeout": {
+    "message": "เซิร์ฟเวอร์ไม่ตอบกลับทันเวลา"
+  },
+  "err_unknown": {
+    "message": "ข้อผิดพลาดที่ไม่คาดคิด ({0})"
+  }
+}

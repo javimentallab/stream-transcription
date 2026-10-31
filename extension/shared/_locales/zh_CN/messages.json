@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "为任意标签页提供实时字幕，由你自己的 Whisper 服务器转写和翻译。"
+  },
+  "start": {
+    "message": "开启字幕"
+  },
+  "stop": {
+    "message": "关闭字幕"
+  },
+  "status_idle": {
+    "message": "就绪"
+  },
+  "status_connecting": {
+    "message": "正在连接…"
+  },
+  "status_loading": {
+    "message": "正在加载模型…"
+  },
+  "status_listening": {
+    "message": "正在收听…"
+  },
+  "status_live": {
+    "message": "直播中"
+  },
+  "status_stalled": {
+    "message": "音频已停止"
+  },
+  "status_error": {
+    "message": "错误"
+  },
+  "status_noresponse": {
+    "message": "无响应"
+  },
+  "model": {
+    "message": "模型"
+  },
+  "model_server_default": {
+    "message": "服务器默认"
+  },
+  "model_default_tag": {
+    "message": "{0} · 默认"
+  },
+  "manage_models": {
+    "message": "管理模型"
+  },
+  "spoken_lang": {
+    "message": "音频语言"
+  },
+  "auto_detect": {
+    "message": "自动检测"
+  },
+  "detected": {
+    "message": "检测到：{0}"
+  },
+  "subs_lang": {
+    "message": "字幕语言"
+  },
+  "original_lang": {
+    "message": "不翻译"
+  },
+  "lines": {
+    "message": "行数"
+  },
+  "text_size": {
+    "message": "文字大小"
+  },
+  "save_srt": {
+    "message": "停止时保存字幕 (.srt)"
+  },
+  "advanced": {
+    "message": "高级"
+  },
+  "use_vad": {
+    "message": "跳过静音（语音检测）"
+  },
+  "settings": {
+    "message": "设置"
+  },
+  "first_load_hint": {
+    "message": "首次加载模型可能需要一分钟左右。"
+  },
+  "options_locked": {
+    "message": "关闭字幕后才能更改这些选项。"
+  },
+  "server_setup_title": {
+    "message": "连接你的服务器"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription 需要在你的电脑或网络中运行 WhisperLive 服务器。"
+  },
+  "server_address": {
+    "message": "服务器地址"
+  },
+  "server_placeholder": {
+    "message": "例如 localhost:9090 或 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "连接"
+  },
+  "server_ok_models": {
+    "message": "已连接 · {0} 个模型"
+  },
+  "server_ok_one_model": {
+    "message": "已连接 · 1 个模型"
+  },
+  "server_plain": {
+    "message": "已连接 · 标准 WhisperLive（无模型管理）"
+  },
+  "server_checking": {
+    "message": "正在检查…"
+  },
+  "server_unreachable": {
+    "message": "无法连接服务器。它在运行吗？请检查地址和防火墙。"
+  },
+  "server_timeout": {
+    "message": "服务器未及时响应。"
+  },
+  "server_bad_url": {
+    "message": "该地址无效。"
+  },
+  "server_change": {
+    "message": "更改"
+  },
+  "server_help": {
+    "message": "如何搭建服务器？"
+  },
+  "server_help_1": {
+    "message": "你需要在一台电脑上运行 WhisperLive 服务器（免费开源），最好有 NVIDIA 显卡。小模型只用处理器也能运行。"
+  },
+  "server_help_2": {
+    "message": "然后在这里输入它的地址：电脑的 IP 和端口，例如 192.168.1.10:9090。如果就在这台电脑上，填 localhost:9090。"
+  },
+  "server_help_3": {
+    "message": "要在此页面下载和管理模型，请给服务器加装 Stream Transcription 插件。"
+  },
+  "server_help_guide": {
+    "message": "分步指南"
+  },
+  "error_capture": {
+    "message": "无法捕获此标签页（浏览器页面、扩展商店和 PDF 不允许）。"
+  },
+  "error_no_media": {
+    "message": "此页面没有视频或音频。"
+  },
+  "error_server_full": {
+    "message": "服务器繁忙。预计等待：{0} 分钟。"
+  },
+  "error_disconnected": {
+    "message": "服务器关闭了连接。"
+  },
+  "error_model_load": {
+    "message": "⚠ 服务器的显存 (VRAM) 不足以运行此模型。请选择更小的模型，或在“高级”中开启“节省内存 (int8)”。"
+  },
+  "warn_no_response": {
+    "message": "⚠ 虽然有声音，但字幕不再出现。可能是模型放不进服务器的显存 (VRAM)：请选择更小的模型，或在“高级”中开启“节省内存 (int8)”。"
+  },
+  "warn_slow_load": {
+    "message": "⚠ 模型加载时间过长。可能放不进服务器的显存 (VRAM)：请选择更小的模型，或在“高级”中开启“节省内存 (int8)”。"
+  },
+  "error_reload": {
+    "message": "请刷新页面 (F5) 后重新开始。"
+  },
+  "error_no_server": {
+    "message": "请先设置服务器。"
+  },
+  "settings_title": {
+    "message": "Stream Transcription · 设置"
+  },
+  "section_server": {
+    "message": "服务器"
+  },
+  "section_models": {
+    "message": "模型"
+  },
+  "section_subtitles": {
+    "message": "字幕"
+  },
+  "section_interface": {
+    "message": "界面"
+  },
+  "section_about": {
+    "message": "关于"
+  },
+  "installed_models": {
+    "message": "服务器上已安装"
+  },
+  "no_models": {
+    "message": "还没有安装模型。"
+  },
+  "badge_default": {
+    "message": "默认"
+  },
+  "badge_loaded": {
+    "message": "已在内存中"
+  },
+  "badge_selected": {
+    "message": "已选择"
+  },
+  "use_model": {
+    "message": "使用"
+  },
+  "delete_model": {
+    "message": "删除"
+  },
+  "confirm_delete": {
+    "message": "从服务器删除 {0}？可释放 {1}。"
+  },
+  "add_model": {
+    "message": "添加模型"
+  },
+  "add_model_hint": {
+    "message": "粘贴 Hugging Face 上模型的名称或链接。任何 Whisper 模型都可以：faster-whisper (CTranslate2) 模型直接使用，普通 (transformers) 模型会自动转换。指向包含模型的 .zip 或 .tar.gz 的直链也可以。"
+  },
+  "add_model_placeholder": {
+    "message": "例如 Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "下载"
+  },
+  "suggestions": {
+    "message": "推荐："
+  },
+  "browse_hf": {
+    "message": "在 Hugging Face 浏览 Whisper 模型"
+  },
+  "vram_hint": {
+    "message": "模型越大越准确，但需要更多显存：small ≈ 1 GB，medium ≈ 2 GB，large ≈ 4 GB。"
+  },
+  "keep_open": {
+    "message": "下载完成前请保持此页面打开。"
+  },
+  "job_downloading": {
+    "message": "正在下载… {0} / {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "正在下载… {0}"
+  },
+  "job_converting": {
+    "message": "正在转换为 faster-whisper 格式…"
+  },
+  "job_extracting": {
+    "message": "正在解压…"
+  },
+  "job_ready": {
+    "message": "已安装"
+  },
+  "job_error": {
+    "message": "失败：{0}"
+  },
+  "retry": {
+    "message": "重试"
+  },
+  "plain_server_hint": {
+    "message": "这是标准的 WhisperLive 服务器：输入模型大小（tiny、base、small、medium、large-v3、large-v3-turbo），服务器会在首次使用时下载。要从这里下载任意模型，请在服务器上安装 Stream Transcription 插件。"
+  },
+  "model_name": {
+    "message": "模型名称"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "saved": {
+    "message": "已保存"
+  },
+  "reset_position": {
+    "message": "重置字幕位置"
+  },
+  "position_reset_done": {
+    "message": "完成：字幕会回到底部。"
+  },
+  "section_performance": {
+    "message": "性能"
+  },
+  "performance_hint": {
+    "message": "如果服务器显卡内存不足（字幕不出现或出现内存警告），这两个选项可以释放大量内存。仅适用于 Stream Transcription 服务器。"
+  },
+  "precision": {
+    "message": "模型精度"
+  },
+  "precision_auto": {
+    "message": "自动"
+  },
+  "precision_int8": {
+    "message": "节省内存 (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 大约只用一半显存，实际写出的文字基本相同。"
+  },
+  "translator_device": {
+    "message": "翻译器运行在"
+  },
+  "device_gpu": {
+    "message": "显卡"
+  },
+  "device_cpu": {
+    "message": "处理器 (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "放在处理器上可以释放显存，但翻译后的字幕会稍晚一些。"
+  },
+  "interface_lang": {
+    "message": "界面语言"
+  },
+  "lang_auto": {
+    "message": "跟随浏览器"
+  },
+  "about_text": {
+    "message": "自由软件（MIT 许可证）。音频只会发送到你在这里设置的服务器，不会发往其他任何地方。"
+  },
+  "about_based": {
+    "message": "基于 Collabora 的 WhisperLive。"
+  },
+  "source_code": {
+    "message": "源代码"
+  },
+  "subtitle_preview": {
+    "message": "你的字幕会是这个样子。"
+  },
+  "err_invalid_source": {
+    "message": "这不是 Hugging Face 的模型名称，也不是链接。"
+  },
+  "err_unsupported_url": {
+    "message": "只支持 Hugging Face 链接或指向 .zip / .tar.gz 文件的直链。"
+  },
+  "err_repo_not_found": {
+    "message": "Hugging Face 上没有这个模型（请检查名称）。"
+  },
+  "err_gated_repo": {
+    "message": "该模型要求在 Hugging Face 上接受条款；服务器需要 HF_TOKEN。"
+  },
+  "err_not_whisper": {
+    "message": "这不是 Whisper 模型。"
+  },
+  "err_no_weights": {
+    "message": "该仓库没有模型权重。"
+  },
+  "err_network_error": {
+    "message": "网络错误。请重试：会从中断处继续。"
+  },
+  "err_download_failed": {
+    "message": "下载失败。"
+  },
+  "err_convert_failed": {
+    "message": "无法转换模型。"
+  },
+  "err_bad_archive": {
+    "message": "压缩包已损坏或不安全。"
+  },
+  "err_already_downloading": {
+    "message": "已在下载中。"
+  },
+  "err_already_installed": {
+    "message": "已经安装。"
+  },
+  "err_management_disabled": {
+    "message": "此服务器已关闭模型管理。"
+  },
+  "err_is_default": {
+    "message": "这是服务器的默认模型，不能在这里删除。"
+  },
+  "err_in_use": {
+    "message": "正在进行的转写正在使用它。"
+  },
+  "err_not_found": {
+    "message": "服务器上已没有这个模型。"
+  },
+  "err_server_error": {
+    "message": "服务器错误。"
+  },
+  "err_unreachable": {
+    "message": "无法连接服务器。"
+  },
+  "err_timeout": {
+    "message": "服务器未及时响应。"
+  },
+  "err_unknown": {
+    "message": "意外错误（{0}）。"
+  }
+}

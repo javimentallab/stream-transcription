@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "どのタブにもリアルタイム字幕。自分の Whisper サーバーが文字起こしと翻訳をします。"
+  },
+  "start": {
+    "message": "字幕をオン"
+  },
+  "stop": {
+    "message": "字幕をオフ"
+  },
+  "status_idle": {
+    "message": "準備完了"
+  },
+  "status_connecting": {
+    "message": "接続中…"
+  },
+  "status_loading": {
+    "message": "モデルを読み込み中…"
+  },
+  "status_listening": {
+    "message": "聞き取り中…"
+  },
+  "status_live": {
+    "message": "ライブ"
+  },
+  "status_stalled": {
+    "message": "音声が止まりました"
+  },
+  "status_error": {
+    "message": "エラー"
+  },
+  "status_noresponse": {
+    "message": "応答なし"
+  },
+  "model": {
+    "message": "モデル"
+  },
+  "model_server_default": {
+    "message": "サーバーの既定"
+  },
+  "model_default_tag": {
+    "message": "{0} · 既定"
+  },
+  "manage_models": {
+    "message": "モデルを管理"
+  },
+  "spoken_lang": {
+    "message": "音声の言語"
+  },
+  "auto_detect": {
+    "message": "自動検出"
+  },
+  "detected": {
+    "message": "検出：{0}"
+  },
+  "subs_lang": {
+    "message": "字幕の言語"
+  },
+  "original_lang": {
+    "message": "翻訳しない"
+  },
+  "lines": {
+    "message": "行数"
+  },
+  "text_size": {
+    "message": "文字サイズ"
+  },
+  "save_srt": {
+    "message": "停止時に字幕 (.srt) を保存"
+  },
+  "advanced": {
+    "message": "詳細設定"
+  },
+  "use_vad": {
+    "message": "無音をスキップ（音声検出）"
+  },
+  "settings": {
+    "message": "設定"
+  },
+  "first_load_hint": {
+    "message": "モデルの初回読み込みには最大 1 分ほどかかることがあります。"
+  },
+  "options_locked": {
+    "message": "これらの設定を変えるには字幕をオフにしてください。"
+  },
+  "server_setup_title": {
+    "message": "サーバーに接続"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription には、パソコンかネットワーク上で動く WhisperLive サーバーが必要です。"
+  },
+  "server_address": {
+    "message": "サーバーのアドレス"
+  },
+  "server_placeholder": {
+    "message": "例：localhost:9090 または 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "接続"
+  },
+  "server_ok_models": {
+    "message": "接続済み · モデル {0} 個"
+  },
+  "server_ok_one_model": {
+    "message": "接続済み · モデル 1 個"
+  },
+  "server_plain": {
+    "message": "接続済み · 標準の WhisperLive（モデル管理なし）"
+  },
+  "server_checking": {
+    "message": "確認中…"
+  },
+  "server_unreachable": {
+    "message": "サーバーに接続できません。起動していますか？アドレスとファイアウォールを確認してください。"
+  },
+  "server_timeout": {
+    "message": "サーバーが時間内に応答しませんでした。"
+  },
+  "server_bad_url": {
+    "message": "このアドレスは無効です。"
+  },
+  "server_change": {
+    "message": "変更"
+  },
+  "server_help": {
+    "message": "サーバーの用意のしかた"
+  },
+  "server_help_1": {
+    "message": "パソコンで WhisperLive サーバー（無料のオープンソース）を動かします。NVIDIA のグラフィックボードがあると理想的です。小さなモデルは CPU だけでも動きます。"
+  },
+  "server_help_2": {
+    "message": "次にここにアドレスを入力します：パソコンの IP とポート、例 192.168.1.10:9090。同じパソコンで動かすなら localhost:9090。"
+  },
+  "server_help_3": {
+    "message": "このページからモデルをダウンロード・管理するには、サーバーに Stream Transcription のアドオンを追加してください。"
+  },
+  "server_help_guide": {
+    "message": "手順ガイド"
+  },
+  "error_capture": {
+    "message": "このタブはキャプチャできません（ブラウザーのページ、拡張機能ストア、PDF は対象外です）。"
+  },
+  "error_no_media": {
+    "message": "このページには動画も音声もありません。"
+  },
+  "error_server_full": {
+    "message": "サーバーが混雑しています。待ち時間の目安：{0} 分。"
+  },
+  "error_disconnected": {
+    "message": "サーバーが接続を閉じました。"
+  },
+  "error_model_load": {
+    "message": "⚠ このモデルにはサーバーのビデオメモリ (VRAM) が足りません。小さいモデルを選ぶか、詳細設定で「メモリを節約 (int8)」をオンにしてください。"
+  },
+  "warn_no_response": {
+    "message": "⚠ 音が出ているのに字幕が届かなくなりました。モデルがサーバーのビデオメモリ (VRAM) に収まっていないようです。小さいモデルを選ぶか、詳細設定で「メモリを節約 (int8)」をオンにしてください。"
+  },
+  "warn_slow_load": {
+    "message": "⚠ モデルの読み込みに時間がかかりすぎています。サーバーのビデオメモリ (VRAM) に収まらないのかもしれません。小さいモデルを選ぶか、詳細設定で「メモリを節約 (int8)」をオンにしてください。"
+  },
+  "error_reload": {
+    "message": "ページを再読み込み (F5) して、もう一度始めてください。"
+  },
+  "error_no_server": {
+    "message": "先にサーバーを設定してください。"
+  },
+  "settings_title": {
+    "message": "Stream Transcription · 設定"
+  },
+  "section_server": {
+    "message": "サーバー"
+  },
+  "section_models": {
+    "message": "モデル"
+  },
+  "section_subtitles": {
+    "message": "字幕"
+  },
+  "section_interface": {
+    "message": "インターフェース"
+  },
+  "section_about": {
+    "message": "このアプリについて"
+  },
+  "installed_models": {
+    "message": "サーバーにインストール済み"
+  },
+  "no_models": {
+    "message": "まだモデルがありません。"
+  },
+  "badge_default": {
+    "message": "既定"
+  },
+  "badge_loaded": {
+    "message": "メモリ上"
+  },
+  "badge_selected": {
+    "message": "選択中"
+  },
+  "use_model": {
+    "message": "使う"
+  },
+  "delete_model": {
+    "message": "削除"
+  },
+  "confirm_delete": {
+    "message": "{0} をサーバーから削除しますか？ {1} が空きます。"
+  },
+  "add_model": {
+    "message": "モデルを追加"
+  },
+  "add_model_hint": {
+    "message": "Hugging Face のモデル名かリンクを貼り付けてください。Whisper モデルなら何でも使えます。faster-whisper (CTranslate2) のモデルはそのまま、通常の (transformers) モデルは自動で変換されます。モデル入りの .zip や .tar.gz への直接リンクも使えます。"
+  },
+  "add_model_placeholder": {
+    "message": "例：Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "ダウンロード"
+  },
+  "suggestions": {
+    "message": "おすすめ："
+  },
+  "browse_hf": {
+    "message": "Hugging Face で Whisper モデルを見る"
+  },
+  "vram_hint": {
+    "message": "大きいモデルほど正確ですが、ビデオメモリを多く使います：small ≈ 1 GB、medium ≈ 2 GB、large ≈ 4 GB。"
+  },
+  "keep_open": {
+    "message": "ダウンロードが終わるまでこのページを開いたままにしてください。"
+  },
+  "job_downloading": {
+    "message": "ダウンロード中… {0} / {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "ダウンロード中… {0}"
+  },
+  "job_converting": {
+    "message": "faster-whisper 形式に変換中…"
+  },
+  "job_extracting": {
+    "message": "展開中…"
+  },
+  "job_ready": {
+    "message": "インストール済み"
+  },
+  "job_error": {
+    "message": "失敗：{0}"
+  },
+  "retry": {
+    "message": "再試行"
+  },
+  "plain_server_hint": {
+    "message": "標準の WhisperLive サーバーです。モデルのサイズ（tiny、base、small、medium、large-v3、large-v3-turbo）を入力すると、初回にサーバーがダウンロードします。ここから任意のモデルをダウンロードするには、サーバーに Stream Transcription のアドオンを入れてください。"
+  },
+  "model_name": {
+    "message": "モデル名"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "saved": {
+    "message": "保存しました"
+  },
+  "reset_position": {
+    "message": "字幕の位置をリセット"
+  },
+  "position_reset_done": {
+    "message": "完了：下に戻ります。"
+  },
+  "section_performance": {
+    "message": "パフォーマンス"
+  },
+  "performance_hint": {
+    "message": "サーバーのグラフィックボードのメモリが足りないとき（字幕が届かない、メモリの警告が出る）、この 2 つの設定で大きく空けられます。Stream Transcription のサーバーでのみ有効です。"
+  },
+  "precision": {
+    "message": "モデルの精度"
+  },
+  "precision_auto": {
+    "message": "自動"
+  },
+  "precision_int8": {
+    "message": "メモリを節約 (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 はビデオメモリを約半分しか使わず、実際にはほぼ同じ文字を書き出します。"
+  },
+  "translator_device": {
+    "message": "翻訳を実行する場所"
+  },
+  "device_gpu": {
+    "message": "GPU"
+  },
+  "device_cpu": {
+    "message": "CPU"
+  },
+  "translator_device_hint": {
+    "message": "CPU で動かすとビデオメモリが空きますが、翻訳字幕は少し遅れて届きます。"
+  },
+  "interface_lang": {
+    "message": "表示言語"
+  },
+  "lang_auto": {
+    "message": "ブラウザーに合わせる"
+  },
+  "about_text": {
+    "message": "フリーソフトウェア（MIT ライセンス）。音声はここで設定したサーバーにだけ送られ、ほかには一切送られません。"
+  },
+  "about_based": {
+    "message": "Collabora の WhisperLive をもとにしています。"
+  },
+  "source_code": {
+    "message": "ソースコード"
+  },
+  "subtitle_preview": {
+    "message": "字幕はこのように表示されます。"
+  },
+  "err_invalid_source": {
+    "message": "Hugging Face のモデル名でもリンクでもありません。"
+  },
+  "err_unsupported_url": {
+    "message": "Hugging Face のリンクか、.zip / .tar.gz ファイルへの直接リンクのみです。"
+  },
+  "err_repo_not_found": {
+    "message": "そのモデルは Hugging Face にありません（名前を確認してください）。"
+  },
+  "err_gated_repo": {
+    "message": "そのモデルは Hugging Face で利用条件への同意が必要です。サーバーに HF_TOKEN が必要です。"
+  },
+  "err_not_whisper": {
+    "message": "Whisper モデルではありません。"
+  },
+  "err_no_weights": {
+    "message": "そのリポジトリにはモデルの重みがありません。"
+  },
+  "err_network_error": {
+    "message": "ネットワークエラー。再試行すると、止まったところから続きます。"
+  },
+  "err_download_failed": {
+    "message": "ダウンロードに失敗しました。"
+  },
+  "err_convert_failed": {
+    "message": "モデルを変換できませんでした。"
+  },
+  "err_bad_archive": {
+    "message": "アーカイブが壊れているか、安全ではありません。"
+  },
+  "err_already_downloading": {
+    "message": "すでにダウンロード中です。"
+  },
+  "err_already_installed": {
+    "message": "すでにインストールされています。"
+  },
+  "err_management_disabled": {
+    "message": "このサーバーではモデル管理が無効です。"
+  },
+  "err_is_default": {
+    "message": "サーバーの既定のモデルなので、ここからは削除できません。"
+  },
+  "err_in_use": {
+    "message": "実行中の文字起こしが使用しています。"
+  },
+  "err_not_found": {
+    "message": "そのモデルはもうサーバーにありません。"
+  },
+  "err_server_error": {
+    "message": "サーバーエラー。"
+  },
+  "err_unreachable": {
+    "message": "サーバーに接続できません。"
+  },
+  "err_timeout": {
+    "message": "サーバーが時間内に応答しませんでした。"
+  },
+  "err_unknown": {
+    "message": "予期しないエラー（{0}）。"
+  }
+}

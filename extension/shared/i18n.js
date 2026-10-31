@@ -4,7 +4,9 @@
 "use strict";
 
 (function () {
-  const SUPPORTED = ["en", "es"];
+  // Folder names under _locales. Chrome wants pt_BR and zh_CN, not plain pt and zh.
+  const SUPPORTED = ["en", "es", "pt_BR", "fr", "de", "it", "nl", "pl", "ru", "uk", "zh_CN", "ja", "ko", "th", "hi"];
+  const BY_BASE = { pt: "pt_BR", zh: "zh_CN" };
   let messages = {};
   let fallback = {};
 
@@ -17,18 +19,24 @@
     if (SUPPORTED.includes(setting)) return setting;
     const ui = (ext.i18n && ext.i18n.getUILanguage ? ext.i18n.getUILanguage() : navigator.language) || "en";
     const base = ui.toLowerCase().split(/[-_]/)[0];
-    return SUPPORTED.includes(base) ? base : "en";
+    const lang = BY_BASE[base] || base;
+    return SUPPORTED.includes(lang) ? lang : "en";
   }
 
   const I = {
     lang: "en",
 
+    // Language code for Intl and the language lists ("pt", "zh"); the folder it loads
+    // from can be longer ("pt_BR", "zh_CN").
+    folder: "en",
+
     async init() {
       const settings = await ST.getSettings();
-      I.lang = pickLang(settings.uiLang);
+      I.folder = pickLang(settings.uiLang);
+      I.lang = I.folder.split("_")[0];
       fallback = await load("en");
-      messages = I.lang === "en" ? fallback : await load(I.lang);
-      if (globalThis.document) document.documentElement.lang = I.lang;
+      messages = I.folder === "en" ? fallback : await load(I.folder);
+      if (globalThis.document) document.documentElement.lang = I.folder.replace("_", "-");
       return I.lang;
     },
 

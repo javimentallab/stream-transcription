@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "Live-ondertitels voor elk tabblad, getranscribeerd en vertaald door je eigen Whisper-server."
+  },
+  "start": {
+    "message": "Ondertitels aan"
+  },
+  "stop": {
+    "message": "Ondertitels uit"
+  },
+  "status_idle": {
+    "message": "Klaar"
+  },
+  "status_connecting": {
+    "message": "Verbinden…"
+  },
+  "status_loading": {
+    "message": "Model laden…"
+  },
+  "status_listening": {
+    "message": "Luisteren…"
+  },
+  "status_live": {
+    "message": "Live"
+  },
+  "status_stalled": {
+    "message": "Audio gestopt"
+  },
+  "status_error": {
+    "message": "Fout"
+  },
+  "status_noresponse": {
+    "message": "Geen antwoord"
+  },
+  "model": {
+    "message": "Model"
+  },
+  "model_server_default": {
+    "message": "Dat van de server"
+  },
+  "model_default_tag": {
+    "message": "{0} · standaard"
+  },
+  "manage_models": {
+    "message": "Modellen beheren"
+  },
+  "spoken_lang": {
+    "message": "Taal van de audio"
+  },
+  "auto_detect": {
+    "message": "Automatisch"
+  },
+  "detected": {
+    "message": "Herkend: {0}"
+  },
+  "subs_lang": {
+    "message": "Ondertitels in"
+  },
+  "original_lang": {
+    "message": "Geen vertaling"
+  },
+  "lines": {
+    "message": "Regels"
+  },
+  "text_size": {
+    "message": "Tekstgrootte"
+  },
+  "save_srt": {
+    "message": "Ondertitels (.srt) opslaan bij het stoppen"
+  },
+  "advanced": {
+    "message": "Geavanceerd"
+  },
+  "use_vad": {
+    "message": "Stiltes overslaan (stemdetectie)"
+  },
+  "settings": {
+    "message": "Instellingen"
+  },
+  "first_load_hint": {
+    "message": "De eerste keer kan het laden van een model tot een minuut duren."
+  },
+  "options_locked": {
+    "message": "Zet de ondertitels uit om deze opties te wijzigen."
+  },
+  "server_setup_title": {
+    "message": "Verbind je server"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription heeft een WhisperLive-server op je computer of in je netwerk nodig."
+  },
+  "server_address": {
+    "message": "Serveradres"
+  },
+  "server_placeholder": {
+    "message": "bijv. localhost:9090 of 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "Verbinden"
+  },
+  "server_ok_models": {
+    "message": "Verbonden · {0} modellen"
+  },
+  "server_ok_one_model": {
+    "message": "Verbonden · 1 model"
+  },
+  "server_plain": {
+    "message": "Verbonden · standaard WhisperLive (zonder modelbeheer)"
+  },
+  "server_checking": {
+    "message": "Controleren…"
+  },
+  "server_unreachable": {
+    "message": "De server is niet bereikbaar. Staat hij aan? Controleer het adres en de firewall."
+  },
+  "server_timeout": {
+    "message": "De server antwoordde niet op tijd."
+  },
+  "server_bad_url": {
+    "message": "Dat adres is ongeldig."
+  },
+  "server_change": {
+    "message": "Wijzigen"
+  },
+  "server_help": {
+    "message": "Hoe zet ik een server op?"
+  },
+  "server_help_1": {
+    "message": "Je hebt een WhisperLive-server nodig (vrij en gratis) op een computer, liefst met een NVIDIA-videokaart. Kleine modellen werken ook alleen op de processor."
+  },
+  "server_help_2": {
+    "message": "Typ hier daarna zijn adres: het IP van de computer en de poort, bijv. 192.168.1.10:9090. Draait hij op deze computer, dan localhost:9090."
+  },
+  "server_help_3": {
+    "message": "Om vanaf deze pagina modellen te downloaden en te beheren, voeg je de Stream Transcription-add-on toe aan de server."
+  },
+  "server_help_guide": {
+    "message": "Stapsgewijze handleiding"
+  },
+  "error_capture": {
+    "message": "Dit tabblad kan niet worden opgenomen (browserpagina’s, extensiewinkels en pdf’s zijn uitgesloten)."
+  },
+  "error_no_media": {
+    "message": "Er staat geen video of audio op deze pagina."
+  },
+  "error_server_full": {
+    "message": "De server is bezet. Geschatte wachttijd: {0} min."
+  },
+  "error_disconnected": {
+    "message": "De server heeft de verbinding gesloten."
+  },
+  "error_model_load": {
+    "message": "⚠ Er is te weinig grafisch geheugen (VRAM) op de server voor dit model. Kies een kleiner model of zet ‘Geheugen besparen (int8)’ aan bij Geavanceerd."
+  },
+  "warn_no_response": {
+    "message": "⚠ Er komen geen ondertitels meer, al is er geluid. Waarschijnlijk past het model niet in het grafische geheugen (VRAM) van de server: kies een kleiner model of zet ‘Geheugen besparen (int8)’ aan bij Geavanceerd."
+  },
+  "warn_slow_load": {
+    "message": "⚠ Het laden van het model duurt te lang. Misschien past het niet in het grafische geheugen (VRAM) van de server: kies een kleiner model of zet ‘Geheugen besparen (int8)’ aan bij Geavanceerd."
+  },
+  "error_reload": {
+    "message": "Herlaad de pagina (F5) en begin opnieuw."
+  },
+  "error_no_server": {
+    "message": "Stel eerst de server in."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · Instellingen"
+  },
+  "section_server": {
+    "message": "Server"
+  },
+  "section_models": {
+    "message": "Modellen"
+  },
+  "section_subtitles": {
+    "message": "Ondertitels"
+  },
+  "section_interface": {
+    "message": "Interface"
+  },
+  "section_about": {
+    "message": "Over"
+  },
+  "installed_models": {
+    "message": "Geïnstalleerd op de server"
+  },
+  "no_models": {
+    "message": "Nog geen modellen geïnstalleerd."
+  },
+  "badge_default": {
+    "message": "Standaard"
+  },
+  "badge_loaded": {
+    "message": "In geheugen"
+  },
+  "badge_selected": {
+    "message": "Gekozen"
+  },
+  "use_model": {
+    "message": "Gebruiken"
+  },
+  "delete_model": {
+    "message": "Verwijderen"
+  },
+  "confirm_delete": {
+    "message": "{0} van de server verwijderen? Dat maakt {1} vrij."
+  },
+  "add_model": {
+    "message": "Een model toevoegen"
+  },
+  "add_model_hint": {
+    "message": "Plak de naam of de link van een model op Hugging Face. Elk Whisper-model werkt: faster-whisper-modellen (CTranslate2) worden zo gebruikt en gewone (transformers) automatisch omgezet. Een directe link naar een .zip of .tar.gz met een model werkt ook."
+  },
+  "add_model_placeholder": {
+    "message": "bijv. Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "Downloaden"
+  },
+  "suggestions": {
+    "message": "Suggesties:"
+  },
+  "browse_hf": {
+    "message": "Whisper-modellen op Hugging Face bekijken"
+  },
+  "vram_hint": {
+    "message": "Grotere modellen zijn nauwkeuriger maar vragen meer videogeheugen: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB."
+  },
+  "keep_open": {
+    "message": "Laat deze pagina open tot de download klaar is."
+  },
+  "job_downloading": {
+    "message": "Downloaden… {0} van {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "Downloaden… {0}"
+  },
+  "job_converting": {
+    "message": "Omzetten naar het faster-whisper-formaat…"
+  },
+  "job_extracting": {
+    "message": "Uitpakken…"
+  },
+  "job_ready": {
+    "message": "Geïnstalleerd"
+  },
+  "job_error": {
+    "message": "Mislukt: {0}"
+  },
+  "retry": {
+    "message": "Opnieuw"
+  },
+  "plain_server_hint": {
+    "message": "Dit is een standaard WhisperLive-server: typ een modelgrootte (tiny, base, small, medium, large-v3, large-v3-turbo) en de server downloadt die de eerste keer. Om elk model vanaf hier te downloaden, installeer je de Stream Transcription-add-on op de server."
+  },
+  "model_name": {
+    "message": "Modelnaam"
+  },
+  "save": {
+    "message": "Opslaan"
+  },
+  "saved": {
+    "message": "Opgeslagen"
+  },
+  "reset_position": {
+    "message": "Positie van ondertitels herstellen"
+  },
+  "position_reset_done": {
+    "message": "Klaar: ze gaan weer naar onderen."
+  },
+  "section_performance": {
+    "message": "Prestaties"
+  },
+  "performance_hint": {
+    "message": "Als de videokaart van de server zonder geheugen komt (ondertitels die niet komen of een geheugenwaarschuwing), maken deze twee opties veel vrij. Ze werken alleen met de Stream Transcription-server."
+  },
+  "precision": {
+    "message": "Modelprecisie"
+  },
+  "precision_auto": {
+    "message": "Automatisch"
+  },
+  "precision_int8": {
+    "message": "Geheugen besparen (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 gebruikt ongeveer de helft van het videogeheugen en schrijft in de praktijk dezelfde tekst."
+  },
+  "translator_device": {
+    "message": "De vertaler draait op"
+  },
+  "device_gpu": {
+    "message": "Videokaart"
+  },
+  "device_cpu": {
+    "message": "Processor (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "Op de processor komt videogeheugen vrij, maar vertaalde ondertitels komen iets later."
+  },
+  "interface_lang": {
+    "message": "Taal van de interface"
+  },
+  "lang_auto": {
+    "message": "Die van de browser"
+  },
+  "about_text": {
+    "message": "Vrije software (MIT-licentie). De audio gaat alleen naar de server die je hier instelt; er wordt niets ergens anders heen gestuurd."
+  },
+  "about_based": {
+    "message": "Gebaseerd op WhisperLive van Collabora."
+  },
+  "source_code": {
+    "message": "Broncode"
+  },
+  "subtitle_preview": {
+    "message": "Zo zien je ondertitels eruit."
+  },
+  "err_invalid_source": {
+    "message": "Dat is geen modelnaam van Hugging Face en geen link."
+  },
+  "err_unsupported_url": {
+    "message": "Alleen links van Hugging Face of directe links naar .zip-/.tar.gz-bestanden."
+  },
+  "err_repo_not_found": {
+    "message": "Dat model bestaat niet op Hugging Face (controleer de naam)."
+  },
+  "err_gated_repo": {
+    "message": "Voor dat model moet je de voorwaarden op Hugging Face accepteren; de server heeft een HF_TOKEN nodig."
+  },
+  "err_not_whisper": {
+    "message": "Dat is geen Whisper-model."
+  },
+  "err_no_weights": {
+    "message": "Die repository bevat geen modelgewichten."
+  },
+  "err_network_error": {
+    "message": "Netwerkfout. Probeer opnieuw: het gaat verder waar het stopte."
+  },
+  "err_download_failed": {
+    "message": "De download is mislukt."
+  },
+  "err_convert_failed": {
+    "message": "Het model kon niet worden omgezet."
+  },
+  "err_bad_archive": {
+    "message": "Het archief is beschadigd of onveilig."
+  },
+  "err_already_downloading": {
+    "message": "Het wordt al gedownload."
+  },
+  "err_already_installed": {
+    "message": "Het is al geïnstalleerd."
+  },
+  "err_management_disabled": {
+    "message": "Modelbeheer staat uit op deze server."
+  },
+  "err_is_default": {
+    "message": "Dat is het standaardmodel van de server; het kan hier niet worden verwijderd."
+  },
+  "err_in_use": {
+    "message": "Een lopende transcriptie gebruikt het."
+  },
+  "err_not_found": {
+    "message": "Dat model staat niet meer op de server."
+  },
+  "err_server_error": {
+    "message": "Serverfout."
+  },
+  "err_unreachable": {
+    "message": "De server is niet bereikbaar."
+  },
+  "err_timeout": {
+    "message": "De server antwoordde niet op tijd."
+  },
+  "err_unknown": {
+    "message": "Onverwachte fout ({0})."
+  }
+}

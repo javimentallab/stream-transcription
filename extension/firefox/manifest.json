@@ -3,14 +3,15 @@
   "name": "__MSG_extName__",
   "short_name": "Stream Transcription",
   "description": "__MSG_extDescription__",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "default_locale": "en",
   "browser_specific_settings": {
     "gecko": {
       "id": "stream-transcription@javimentallab",
-      "strict_min_version": "128.0",
+      "strict_min_version": "140.0",
       "data_collection_permissions": { "required": ["websiteContent"] }
-    }
+    },
+    "gecko_android": { "strict_min_version": "142.0" }
   },
   "permissions": ["storage", "<all_urls>"],
   "background": {

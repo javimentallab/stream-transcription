@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "어떤 탭에서든 실시간 자막. 내 Whisper 서버가 받아쓰고 번역합니다."
+  },
+  "start": {
+    "message": "자막 켜기"
+  },
+  "stop": {
+    "message": "자막 끄기"
+  },
+  "status_idle": {
+    "message": "준비됨"
+  },
+  "status_connecting": {
+    "message": "연결 중…"
+  },
+  "status_loading": {
+    "message": "모델 불러오는 중…"
+  },
+  "status_listening": {
+    "message": "듣는 중…"
+  },
+  "status_live": {
+    "message": "실시간"
+  },
+  "status_stalled": {
+    "message": "오디오 멈춤"
+  },
+  "status_error": {
+    "message": "오류"
+  },
+  "status_noresponse": {
+    "message": "응답 없음"
+  },
+  "model": {
+    "message": "모델"
+  },
+  "model_server_default": {
+    "message": "서버 기본값"
+  },
+  "model_default_tag": {
+    "message": "{0} · 기본"
+  },
+  "manage_models": {
+    "message": "모델 관리"
+  },
+  "spoken_lang": {
+    "message": "오디오 언어"
+  },
+  "auto_detect": {
+    "message": "자동 감지"
+  },
+  "detected": {
+    "message": "감지됨: {0}"
+  },
+  "subs_lang": {
+    "message": "자막 언어"
+  },
+  "original_lang": {
+    "message": "번역 안 함"
+  },
+  "lines": {
+    "message": "줄 수"
+  },
+  "text_size": {
+    "message": "글자 크기"
+  },
+  "save_srt": {
+    "message": "끌 때 자막(.srt) 저장"
+  },
+  "advanced": {
+    "message": "고급"
+  },
+  "use_vad": {
+    "message": "무음 건너뛰기(음성 감지)"
+  },
+  "settings": {
+    "message": "설정"
+  },
+  "first_load_hint": {
+    "message": "모델을 처음 불러올 때는 최대 1분 정도 걸릴 수 있습니다."
+  },
+  "options_locked": {
+    "message": "이 설정을 바꾸려면 자막을 끄세요."
+  },
+  "server_setup_title": {
+    "message": "서버 연결"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription을 쓰려면 컴퓨터나 네트워크에서 WhisperLive 서버가 실행 중이어야 합니다."
+  },
+  "server_address": {
+    "message": "서버 주소"
+  },
+  "server_placeholder": {
+    "message": "예: localhost:9090 또는 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "연결"
+  },
+  "server_ok_models": {
+    "message": "연결됨 · 모델 {0}개"
+  },
+  "server_ok_one_model": {
+    "message": "연결됨 · 모델 1개"
+  },
+  "server_plain": {
+    "message": "연결됨 · 표준 WhisperLive(모델 관리 없음)"
+  },
+  "server_checking": {
+    "message": "확인 중…"
+  },
+  "server_unreachable": {
+    "message": "서버에 연결할 수 없습니다. 켜져 있나요? 주소와 방화벽을 확인하세요."
+  },
+  "server_timeout": {
+    "message": "서버가 제때 응답하지 않았습니다."
+  },
+  "server_bad_url": {
+    "message": "올바른 주소가 아닙니다."
+  },
+  "server_change": {
+    "message": "변경"
+  },
+  "server_help": {
+    "message": "서버는 어떻게 준비하나요?"
+  },
+  "server_help_1": {
+    "message": "컴퓨터에서 WhisperLive 서버(무료 오픈 소스)를 실행해야 합니다. NVIDIA 그래픽 카드가 있으면 가장 좋습니다. 작은 모델은 프로세서만으로도 돌아갑니다."
+  },
+  "server_help_2": {
+    "message": "그런 다음 여기에 주소를 입력하세요: 컴퓨터 IP와 포트, 예 192.168.1.10:9090. 같은 컴퓨터라면 localhost:9090."
+  },
+  "server_help_3": {
+    "message": "이 페이지에서 모델을 내려받고 관리하려면 서버에 Stream Transcription 애드온을 추가하세요."
+  },
+  "server_help_guide": {
+    "message": "단계별 안내"
+  },
+  "error_capture": {
+    "message": "이 탭은 캡처할 수 없습니다(브라우저 페이지, 확장 프로그램 스토어, PDF는 제외)."
+  },
+  "error_no_media": {
+    "message": "이 페이지에는 동영상이나 오디오가 없습니다."
+  },
+  "error_server_full": {
+    "message": "서버가 바쁩니다. 예상 대기: {0}분."
+  },
+  "error_disconnected": {
+    "message": "서버가 연결을 닫았습니다."
+  },
+  "error_model_load": {
+    "message": "⚠ 서버의 그래픽 메모리(VRAM)가 이 모델에 부족합니다. 더 작은 모델을 고르거나 고급에서 ‘메모리 절약(int8)’을 켜세요."
+  },
+  "warn_no_response": {
+    "message": "⚠ 소리가 나는데도 자막이 오지 않습니다. 모델이 서버의 그래픽 메모리(VRAM)에 들어가지 않는 것 같습니다. 더 작은 모델을 고르거나 고급에서 ‘메모리 절약(int8)’을 켜세요."
+  },
+  "warn_slow_load": {
+    "message": "⚠ 모델을 불러오는 데 너무 오래 걸립니다. 서버의 그래픽 메모리(VRAM)에 들어가지 않을 수 있습니다. 더 작은 모델을 고르거나 고급에서 ‘메모리 절약(int8)’을 켜세요."
+  },
+  "error_reload": {
+    "message": "페이지를 새로 고침(F5)하고 다시 시작하세요."
+  },
+  "error_no_server": {
+    "message": "먼저 서버를 설정하세요."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · 설정"
+  },
+  "section_server": {
+    "message": "서버"
+  },
+  "section_models": {
+    "message": "모델"
+  },
+  "section_subtitles": {
+    "message": "자막"
+  },
+  "section_interface": {
+    "message": "인터페이스"
+  },
+  "section_about": {
+    "message": "정보"
+  },
+  "installed_models": {
+    "message": "서버에 설치됨"
+  },
+  "no_models": {
+    "message": "아직 설치된 모델이 없습니다."
+  },
+  "badge_default": {
+    "message": "기본"
+  },
+  "badge_loaded": {
+    "message": "메모리에 있음"
+  },
+  "badge_selected": {
+    "message": "선택됨"
+  },
+  "use_model": {
+    "message": "사용"
+  },
+  "delete_model": {
+    "message": "삭제"
+  },
+  "confirm_delete": {
+    "message": "서버에서 {0}을(를) 삭제할까요? {1}이(가) 확보됩니다."
+  },
+  "add_model": {
+    "message": "모델 추가"
+  },
+  "add_model_hint": {
+    "message": "Hugging Face 모델의 이름이나 링크를 붙여 넣으세요. 어떤 Whisper 모델이든 됩니다. faster-whisper(CTranslate2) 모델은 그대로 쓰고, 일반(transformers) 모델은 자동으로 변환합니다. 모델이 든 .zip이나 .tar.gz 직접 링크도 됩니다."
+  },
+  "add_model_placeholder": {
+    "message": "예: Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "내려받기"
+  },
+  "suggestions": {
+    "message": "추천:"
+  },
+  "browse_hf": {
+    "message": "Hugging Face에서 Whisper 모델 보기"
+  },
+  "vram_hint": {
+    "message": "큰 모델일수록 정확하지만 그래픽 메모리를 더 씁니다: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB."
+  },
+  "keep_open": {
+    "message": "내려받기가 끝날 때까지 이 페이지를 열어 두세요."
+  },
+  "job_downloading": {
+    "message": "내려받는 중… {0} / {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "내려받는 중… {0}"
+  },
+  "job_converting": {
+    "message": "faster-whisper 형식으로 변환 중…"
+  },
+  "job_extracting": {
+    "message": "압축 푸는 중…"
+  },
+  "job_ready": {
+    "message": "설치됨"
+  },
+  "job_error": {
+    "message": "실패: {0}"
+  },
+  "retry": {
+    "message": "다시 시도"
+  },
+  "plain_server_hint": {
+    "message": "표준 WhisperLive 서버입니다. 모델 크기(tiny, base, small, medium, large-v3, large-v3-turbo)를 입력하면 서버가 처음에 내려받습니다. 여기서 아무 모델이나 내려받으려면 서버에 Stream Transcription 애드온을 설치하세요."
+  },
+  "model_name": {
+    "message": "모델 이름"
+  },
+  "save": {
+    "message": "저장"
+  },
+  "saved": {
+    "message": "저장됨"
+  },
+  "reset_position": {
+    "message": "자막 위치 초기화"
+  },
+  "position_reset_done": {
+    "message": "완료: 다시 아래로 갑니다."
+  },
+  "section_performance": {
+    "message": "성능"
+  },
+  "performance_hint": {
+    "message": "서버 그래픽 카드의 메모리가 모자라면(자막이 오지 않거나 메모리 경고가 뜨면) 이 두 옵션으로 꽤 많이 확보할 수 있습니다. Stream Transcription 서버에서만 작동합니다."
+  },
+  "precision": {
+    "message": "모델 정밀도"
+  },
+  "precision_auto": {
+    "message": "자동"
+  },
+  "precision_int8": {
+    "message": "메모리 절약(int8)"
+  },
+  "precision_hint": {
+    "message": "int8은 그래픽 메모리를 절반쯤만 쓰며, 실제로는 같은 글을 씁니다."
+  },
+  "translator_device": {
+    "message": "번역기 실행 위치"
+  },
+  "device_gpu": {
+    "message": "그래픽 카드"
+  },
+  "device_cpu": {
+    "message": "프로세서(CPU)"
+  },
+  "translator_device_hint": {
+    "message": "프로세서에서 돌리면 그래픽 메모리가 확보되지만 번역 자막이 조금 늦게 옵니다."
+  },
+  "interface_lang": {
+    "message": "인터페이스 언어"
+  },
+  "lang_auto": {
+    "message": "브라우저와 같게"
+  },
+  "about_text": {
+    "message": "자유 소프트웨어(MIT 라이선스). 오디오는 여기서 설정한 서버로만 가며, 다른 곳으로는 아무것도 보내지 않습니다."
+  },
+  "about_based": {
+    "message": "Collabora의 WhisperLive를 바탕으로 합니다."
+  },
+  "source_code": {
+    "message": "소스 코드"
+  },
+  "subtitle_preview": {
+    "message": "자막은 이렇게 보입니다."
+  },
+  "err_invalid_source": {
+    "message": "Hugging Face 모델 이름도 링크도 아닙니다."
+  },
+  "err_unsupported_url": {
+    "message": "Hugging Face 링크나 .zip / .tar.gz 파일 직접 링크만 됩니다."
+  },
+  "err_repo_not_found": {
+    "message": "그런 모델이 Hugging Face에 없습니다(이름을 확인하세요)."
+  },
+  "err_gated_repo": {
+    "message": "이 모델은 Hugging Face에서 이용 조건에 동의해야 합니다. 서버에 HF_TOKEN이 필요합니다."
+  },
+  "err_not_whisper": {
+    "message": "Whisper 모델이 아닙니다."
+  },
+  "err_no_weights": {
+    "message": "이 저장소에는 모델 가중치가 없습니다."
+  },
+  "err_network_error": {
+    "message": "네트워크 오류입니다. 다시 시도하면 멈춘 곳부터 이어집니다."
+  },
+  "err_download_failed": {
+    "message": "내려받기에 실패했습니다."
+  },
+  "err_convert_failed": {
+    "message": "모델을 변환하지 못했습니다."
+  },
+  "err_bad_archive": {
+    "message": "압축 파일이 손상되었거나 안전하지 않습니다."
+  },
+  "err_already_downloading": {
+    "message": "이미 내려받는 중입니다."
+  },
+  "err_already_installed": {
+    "message": "이미 설치되어 있습니다."
+  },
+  "err_management_disabled": {
+    "message": "이 서버에서는 모델 관리가 꺼져 있습니다."
+  },
+  "err_is_default": {
+    "message": "서버의 기본 모델이라 여기서 삭제할 수 없습니다."
+  },
+  "err_in_use": {
+    "message": "진행 중인 받아쓰기가 사용하고 있습니다."
+  },
+  "err_not_found": {
+    "message": "그 모델은 더 이상 서버에 없습니다."
+  },
+  "err_server_error": {
+    "message": "서버 오류."
+  },
+  "err_unreachable": {
+    "message": "서버에 연결할 수 없습니다."
+  },
+  "err_timeout": {
+    "message": "서버가 제때 응답하지 않았습니다."
+  },
+  "err_unknown": {
+    "message": "예상치 못한 오류({0})."
+  }
+}

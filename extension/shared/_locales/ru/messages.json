@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "Субтитры в реальном времени для любой вкладки: распознаёт и переводит ваш собственный сервер Whisper."
+  },
+  "start": {
+    "message": "Включить субтитры"
+  },
+  "stop": {
+    "message": "Выключить субтитры"
+  },
+  "status_idle": {
+    "message": "Готово"
+  },
+  "status_connecting": {
+    "message": "Подключение…"
+  },
+  "status_loading": {
+    "message": "Загрузка модели…"
+  },
+  "status_listening": {
+    "message": "Слушаю…"
+  },
+  "status_live": {
+    "message": "В эфире"
+  },
+  "status_stalled": {
+    "message": "Звук остановлен"
+  },
+  "status_error": {
+    "message": "Ошибка"
+  },
+  "status_noresponse": {
+    "message": "Нет ответа"
+  },
+  "model": {
+    "message": "Модель"
+  },
+  "model_server_default": {
+    "message": "Как на сервере"
+  },
+  "model_default_tag": {
+    "message": "{0} · по умолчанию"
+  },
+  "manage_models": {
+    "message": "Управлять моделями"
+  },
+  "spoken_lang": {
+    "message": "Язык аудио"
+  },
+  "auto_detect": {
+    "message": "Автоматически"
+  },
+  "detected": {
+    "message": "Определён: {0}"
+  },
+  "subs_lang": {
+    "message": "Субтитры на"
+  },
+  "original_lang": {
+    "message": "Без перевода"
+  },
+  "lines": {
+    "message": "Строки"
+  },
+  "text_size": {
+    "message": "Размер текста"
+  },
+  "save_srt": {
+    "message": "Сохранять субтитры (.srt) при остановке"
+  },
+  "advanced": {
+    "message": "Дополнительно"
+  },
+  "use_vad": {
+    "message": "Пропускать тишину (обнаружение речи)"
+  },
+  "settings": {
+    "message": "Настройки"
+  },
+  "first_load_hint": {
+    "message": "В первый раз загрузка модели может занять до минуты."
+  },
+  "options_locked": {
+    "message": "Выключите субтитры, чтобы изменить эти параметры."
+  },
+  "server_setup_title": {
+    "message": "Подключите свой сервер"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription нужен сервер WhisperLive на вашем компьютере или в вашей сети."
+  },
+  "server_address": {
+    "message": "Адрес сервера"
+  },
+  "server_placeholder": {
+    "message": "напр. localhost:9090 или 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "Подключить"
+  },
+  "server_ok_models": {
+    "message": "Подключено · моделей: {0}"
+  },
+  "server_ok_one_model": {
+    "message": "Подключено · 1 модель"
+  },
+  "server_plain": {
+    "message": "Подключено · стандартный WhisperLive (без управления моделями)"
+  },
+  "server_checking": {
+    "message": "Проверка…"
+  },
+  "server_unreachable": {
+    "message": "Не удаётся связаться с сервером. Он включён? Проверьте адрес и брандмауэр."
+  },
+  "server_timeout": {
+    "message": "Сервер не ответил вовремя."
+  },
+  "server_bad_url": {
+    "message": "Этот адрес недействителен."
+  },
+  "server_change": {
+    "message": "Изменить"
+  },
+  "server_help": {
+    "message": "Как настроить сервер?"
+  },
+  "server_help_1": {
+    "message": "Нужен сервер WhisperLive (свободный и бесплатный) на компьютере, лучше с видеокартой NVIDIA. Небольшие модели работают и на одном процессоре."
+  },
+  "server_help_2": {
+    "message": "Затем введите здесь его адрес: IP компьютера и порт, напр. 192.168.1.10:9090. Если он на этом же компьютере — localhost:9090."
+  },
+  "server_help_3": {
+    "message": "Чтобы скачивать модели и управлять ими с этой страницы, добавьте на сервер дополнение Stream Transcription."
+  },
+  "server_help_guide": {
+    "message": "Пошаговое руководство"
+  },
+  "error_capture": {
+    "message": "Эту вкладку нельзя захватить (страницы браузера, магазины расширений и PDF недоступны)."
+  },
+  "error_no_media": {
+    "message": "На этой странице нет ни видео, ни звука."
+  },
+  "error_server_full": {
+    "message": "Сервер занят. Примерное ожидание: {0} мин."
+  },
+  "error_disconnected": {
+    "message": "Сервер закрыл соединение."
+  },
+  "error_model_load": {
+    "message": "⚠ На сервере не хватает видеопамяти (VRAM) для этой модели. Выберите модель поменьше или включите «Экономить память (int8)» в разделе «Дополнительно»."
+  },
+  "warn_no_response": {
+    "message": "⚠ Субтитры перестали приходить, хотя звук есть. Вероятно, модель не помещается в видеопамять (VRAM) сервера: выберите модель поменьше или включите «Экономить память (int8)» в разделе «Дополнительно»."
+  },
+  "warn_slow_load": {
+    "message": "⚠ Модель загружается слишком долго. Возможно, она не помещается в видеопамять (VRAM) сервера: выберите модель поменьше или включите «Экономить память (int8)» в разделе «Дополнительно»."
+  },
+  "error_reload": {
+    "message": "Перезагрузите страницу (F5) и начните заново."
+  },
+  "error_no_server": {
+    "message": "Сначала настройте сервер."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · Настройки"
+  },
+  "section_server": {
+    "message": "Сервер"
+  },
+  "section_models": {
+    "message": "Модели"
+  },
+  "section_subtitles": {
+    "message": "Субтитры"
+  },
+  "section_interface": {
+    "message": "Интерфейс"
+  },
+  "section_about": {
+    "message": "О программе"
+  },
+  "installed_models": {
+    "message": "Установлены на сервере"
+  },
+  "no_models": {
+    "message": "Моделей пока нет."
+  },
+  "badge_default": {
+    "message": "По умолчанию"
+  },
+  "badge_loaded": {
+    "message": "В памяти"
+  },
+  "badge_selected": {
+    "message": "Выбрана"
+  },
+  "use_model": {
+    "message": "Использовать"
+  },
+  "delete_model": {
+    "message": "Удалить"
+  },
+  "confirm_delete": {
+    "message": "Удалить {0} с сервера? Освободится {1}."
+  },
+  "add_model": {
+    "message": "Добавить модель"
+  },
+  "add_model_hint": {
+    "message": "Вставьте название или ссылку на модель с Hugging Face. Подойдёт любая модель Whisper: модели faster-whisper (CTranslate2) используются как есть, обычные (transformers) конвертируются автоматически. Подойдёт и прямая ссылка на .zip или .tar.gz с моделью."
+  },
+  "add_model_placeholder": {
+    "message": "напр. Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "Скачать"
+  },
+  "suggestions": {
+    "message": "Варианты:"
+  },
+  "browse_hf": {
+    "message": "Смотреть модели Whisper на Hugging Face"
+  },
+  "vram_hint": {
+    "message": "Большие модели точнее, но им нужно больше видеопамяти: small ≈ 1 ГБ, medium ≈ 2 ГБ, large ≈ 4 ГБ."
+  },
+  "keep_open": {
+    "message": "Не закрывайте эту страницу, пока скачивание не закончится."
+  },
+  "job_downloading": {
+    "message": "Скачивание… {0} из {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "Скачивание… {0}"
+  },
+  "job_converting": {
+    "message": "Конвертация в формат faster-whisper…"
+  },
+  "job_extracting": {
+    "message": "Распаковка…"
+  },
+  "job_ready": {
+    "message": "Установлена"
+  },
+  "job_error": {
+    "message": "Не удалось: {0}"
+  },
+  "retry": {
+    "message": "Повторить"
+  },
+  "plain_server_hint": {
+    "message": "Это стандартный сервер WhisperLive: введите размер модели (tiny, base, small, medium, large-v3, large-v3-turbo), и сервер скачает её при первом запуске. Чтобы скачивать отсюда любые модели, установите на сервер дополнение Stream Transcription."
+  },
+  "model_name": {
+    "message": "Название модели"
+  },
+  "save": {
+    "message": "Сохранить"
+  },
+  "saved": {
+    "message": "Сохранено"
+  },
+  "reset_position": {
+    "message": "Сбросить положение субтитров"
+  },
+  "position_reset_done": {
+    "message": "Готово: они вернутся вниз."
+  },
+  "section_performance": {
+    "message": "Производительность"
+  },
+  "performance_hint": {
+    "message": "Если видеокарте сервера не хватает памяти (субтитры не приходят или появляется предупреждение о памяти), эти два параметра освобождают немало. Работают только с сервером Stream Transcription."
+  },
+  "precision": {
+    "message": "Точность модели"
+  },
+  "precision_auto": {
+    "message": "Автоматически"
+  },
+  "precision_int8": {
+    "message": "Экономить память (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 занимает примерно половину видеопамяти и на практике пишет тот же текст."
+  },
+  "translator_device": {
+    "message": "Переводчик работает на"
+  },
+  "device_gpu": {
+    "message": "Видеокарте"
+  },
+  "device_cpu": {
+    "message": "Процессоре (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "На процессоре освобождается видеопамять, но переведённые субтитры приходят чуть позже."
+  },
+  "interface_lang": {
+    "message": "Язык интерфейса"
+  },
+  "lang_auto": {
+    "message": "Как в браузере"
+  },
+  "about_text": {
+    "message": "Свободное ПО (лицензия MIT). Звук идёт только на сервер, который вы здесь укажете; больше никуда ничего не отправляется."
+  },
+  "about_based": {
+    "message": "Основано на WhisperLive от Collabora."
+  },
+  "source_code": {
+    "message": "Исходный код"
+  },
+  "subtitle_preview": {
+    "message": "Так будут выглядеть ваши субтитры."
+  },
+  "err_invalid_source": {
+    "message": "Это не название модели Hugging Face и не ссылка."
+  },
+  "err_unsupported_url": {
+    "message": "Только ссылки на Hugging Face или прямые ссылки на файлы .zip / .tar.gz."
+  },
+  "err_repo_not_found": {
+    "message": "Такой модели на Hugging Face нет (проверьте название)."
+  },
+  "err_gated_repo": {
+    "message": "Для этой модели нужно принять условия на Hugging Face; серверу нужен HF_TOKEN."
+  },
+  "err_not_whisper": {
+    "message": "Это не модель Whisper."
+  },
+  "err_no_weights": {
+    "message": "В этом репозитории нет весов модели."
+  },
+  "err_network_error": {
+    "message": "Ошибка сети. Повторите: продолжит с того места, где остановилось."
+  },
+  "err_download_failed": {
+    "message": "Скачивание не удалось."
+  },
+  "err_convert_failed": {
+    "message": "Не удалось конвертировать модель."
+  },
+  "err_bad_archive": {
+    "message": "Архив повреждён или небезопасен."
+  },
+  "err_already_downloading": {
+    "message": "Уже скачивается."
+  },
+  "err_already_installed": {
+    "message": "Уже установлена."
+  },
+  "err_management_disabled": {
+    "message": "Управление моделями на этом сервере выключено."
+  },
+  "err_is_default": {
+    "message": "Это модель сервера по умолчанию; удалить её отсюда нельзя."
+  },
+  "err_in_use": {
+    "message": "Её использует идущая транскрипция."
+  },
+  "err_not_found": {
+    "message": "Этой модели на сервере больше нет."
+  },
+  "err_server_error": {
+    "message": "Ошибка сервера."
+  },
+  "err_unreachable": {
+    "message": "Не удаётся связаться с сервером."
+  },
+  "err_timeout": {
+    "message": "Сервер не ответил вовремя."
+  },
+  "err_unknown": {
+    "message": "Непредвиденная ошибка ({0})."
+  }
+}

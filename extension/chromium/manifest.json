@@ -3,7 +3,7 @@
   "name": "__MSG_extName__",
   "short_name": "Stream Transcription",
   "description": "__MSG_extDescription__",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "default_locale": "en",
   "minimum_chrome_version": "116",
   "permissions": ["storage", "tabCapture", "offscreen", "scripting", "activeTab"],

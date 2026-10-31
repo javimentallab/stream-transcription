@@ -24,7 +24,8 @@ in yours, in real time. The audio never leaves your network: it goes only to the
   text, the translator can run on the CPU, and if the model doesn't fit you get a clear
   **VRAM warning** instead of subtitles that silently freeze.
 - **Save the subtitles** as an `.srt` file when you stop.
-- English and Spanish interface.
+- Interface in English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese,
+  Japanese, Korean, Thai and Hindi; it follows the browser or can be picked in the settings.
 - No accounts, no tracking, no analytics. Open source (MIT).
 
 | Popup | Settings · models |
@@ -104,7 +105,8 @@ python tools/build.py
 ```
 
 Creates `dist/chromium`, `dist/firefox` and their zips from `extension/shared` plus each
-browser's folder. Texts for both languages live side by side in `tools/i18n-messages.py`.
+browser's folder. English and Spanish texts live side by side in `tools/i18n-messages.py`, the other languages in
+`tools/i18n-more.py`; the script checks every key and placeholder against English.
 
 ## Credits and license
 

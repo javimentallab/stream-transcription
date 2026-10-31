@@ -24,7 +24,8 @@ léelo en el tuyo, en tiempo real. El audio no sale de tu red: solo va al servid
   texto, el traductor puede ir en el procesador, y si el modelo no cabe sale un **aviso de
   VRAM** en vez de unos subtítulos que se congelan sin decir nada.
 - **Guarda los subtítulos** en un `.srt` al parar.
-- Interfaz en español e inglés.
+- Interfaz en castellano, inglés, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano,
+  chino, japonés, coreano, tailandés e hindi; sigue al navegador o se elige en los ajustes.
 - Sin cuentas, sin rastreo, sin estadísticas. Código abierto (MIT).
 
 ## Instalar la extensión
@@ -99,8 +100,9 @@ python tools/build.py
 ```
 
 Genera `dist/chromium`, `dist/firefox` y sus zips a partir de `extension/shared` más la
-carpeta de cada navegador. Los textos de los dos idiomas están juntos en
-`tools/i18n-messages.py`.
+carpeta de cada navegador. Los textos en inglés y castellano están juntos en
+`tools/i18n-messages.py`, y los demás idiomas en `tools/i18n-more.py`; el script comprueba cada clave y
+hueco contra el inglés.
 
 ## Créditos y licencia
 

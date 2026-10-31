@@ -1,0 +1,383 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "Sous-titres en direct pour n’importe quel onglet, transcrits et traduits par votre propre serveur Whisper."
+  },
+  "start": {
+    "message": "Activer les sous-titres"
+  },
+  "stop": {
+    "message": "Arrêter les sous-titres"
+  },
+  "status_idle": {
+    "message": "Prêt"
+  },
+  "status_connecting": {
+    "message": "Connexion…"
+  },
+  "status_loading": {
+    "message": "Chargement du modèle…"
+  },
+  "status_listening": {
+    "message": "Écoute…"
+  },
+  "status_live": {
+    "message": "En direct"
+  },
+  "status_stalled": {
+    "message": "Audio arrêté"
+  },
+  "status_error": {
+    "message": "Erreur"
+  },
+  "status_noresponse": {
+    "message": "Pas de réponse"
+  },
+  "model": {
+    "message": "Modèle"
+  },
+  "model_server_default": {
+    "message": "Celui du serveur"
+  },
+  "model_default_tag": {
+    "message": "{0} · par défaut"
+  },
+  "manage_models": {
+    "message": "Gérer les modèles"
+  },
+  "spoken_lang": {
+    "message": "Langue de l’audio"
+  },
+  "auto_detect": {
+    "message": "Automatique"
+  },
+  "detected": {
+    "message": "Détectée : {0}"
+  },
+  "subs_lang": {
+    "message": "Sous-titres en"
+  },
+  "original_lang": {
+    "message": "Sans traduction"
+  },
+  "lines": {
+    "message": "Lignes"
+  },
+  "text_size": {
+    "message": "Taille du texte"
+  },
+  "save_srt": {
+    "message": "Enregistrer les sous-titres (.srt) à l’arrêt"
+  },
+  "advanced": {
+    "message": "Avancé"
+  },
+  "use_vad": {
+    "message": "Ignorer les silences (détection de voix)"
+  },
+  "settings": {
+    "message": "Réglages"
+  },
+  "first_load_hint": {
+    "message": "La première fois, le chargement d’un modèle peut prendre jusqu’à une minute."
+  },
+  "options_locked": {
+    "message": "Arrêtez les sous-titres pour changer ces options."
+  },
+  "server_setup_title": {
+    "message": "Connectez votre serveur"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription a besoin d’un serveur WhisperLive sur votre ordinateur ou votre réseau."
+  },
+  "server_address": {
+    "message": "Adresse du serveur"
+  },
+  "server_placeholder": {
+    "message": "ex. localhost:9090 ou 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "Connecter"
+  },
+  "server_ok_models": {
+    "message": "Connecté · {0} modèles"
+  },
+  "server_ok_one_model": {
+    "message": "Connecté · 1 modèle"
+  },
+  "server_plain": {
+    "message": "Connecté · WhisperLive standard (sans gestion des modèles)"
+  },
+  "server_checking": {
+    "message": "Vérification…"
+  },
+  "server_unreachable": {
+    "message": "Impossible de joindre le serveur. Est-il allumé ? Vérifiez l’adresse et le pare-feu."
+  },
+  "server_timeout": {
+    "message": "Le serveur n’a pas répondu à temps."
+  },
+  "server_bad_url": {
+    "message": "Cette adresse n’est pas valide."
+  },
+  "server_change": {
+    "message": "Modifier"
+  },
+  "server_help": {
+    "message": "Comment installer un serveur ?"
+  },
+  "server_help_1": {
+    "message": "Il vous faut un serveur WhisperLive (libre et gratuit) sur un ordinateur, idéalement avec une carte graphique NVIDIA. Les petits modèles fonctionnent aussi avec le seul processeur."
+  },
+  "server_help_2": {
+    "message": "Saisissez ensuite son adresse ici : l’IP de l’ordinateur et le port, ex. 192.168.1.10:9090. S’il tourne sur cet ordinateur, localhost:9090."
+  },
+  "server_help_3": {
+    "message": "Pour télécharger et gérer des modèles depuis cette page, ajoutez au serveur le module de Stream Transcription."
+  },
+  "server_help_guide": {
+    "message": "Guide pas à pas"
+  },
+  "error_capture": {
+    "message": "Cet onglet ne peut pas être capturé (pages du navigateur, boutiques d’extensions et PDF sont exclus)."
+  },
+  "error_no_media": {
+    "message": "Il n’y a ni vidéo ni audio sur cette page."
+  },
+  "error_server_full": {
+    "message": "Le serveur est occupé. Attente estimée : {0} min."
+  },
+  "error_disconnected": {
+    "message": "Le serveur a fermé la connexion."
+  },
+  "error_model_load": {
+    "message": "⚠ Pas assez de mémoire graphique (VRAM) sur le serveur pour ce modèle. Choisissez un modèle plus petit ou activez « Économiser la mémoire (int8) » dans Avancé."
+  },
+  "warn_no_response": {
+    "message": "⚠ Les sous-titres n’arrivent plus alors qu’il y a du son. Le modèle ne tient sans doute pas dans la mémoire graphique (VRAM) du serveur : choisissez un modèle plus petit ou activez « Économiser la mémoire (int8) » dans Avancé."
+  },
+  "warn_slow_load": {
+    "message": "⚠ Le modèle met trop de temps à charger. Il ne tient peut-être pas dans la mémoire graphique (VRAM) du serveur : choisissez un modèle plus petit ou activez « Économiser la mémoire (int8) » dans Avancé."
+  },
+  "error_reload": {
+    "message": "Rechargez la page (F5) et recommencez."
+  },
+  "error_no_server": {
+    "message": "Configurez d’abord le serveur."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · Réglages"
+  },
+  "section_server": {
+    "message": "Serveur"
+  },
+  "section_models": {
+    "message": "Modèles"
+  },
+  "section_subtitles": {
+    "message": "Sous-titres"
+  },
+  "section_interface": {
+    "message": "Interface"
+  },
+  "section_about": {
+    "message": "À propos"
+  },
+  "installed_models": {
+    "message": "Installés sur le serveur"
+  },
+  "no_models": {
+    "message": "Aucun modèle installé pour l’instant."
+  },
+  "badge_default": {
+    "message": "Par défaut"
+  },
+  "badge_loaded": {
+    "message": "En mémoire"
+  },
+  "badge_selected": {
+    "message": "Choisi"
+  },
+  "use_model": {
+    "message": "Utiliser"
+  },
+  "delete_model": {
+    "message": "Supprimer"
+  },
+  "confirm_delete": {
+    "message": "Supprimer {0} du serveur ? Cela libère {1}."
+  },
+  "add_model": {
+    "message": "Ajouter un modèle"
+  },
+  "add_model_hint": {
+    "message": "Collez le nom ou le lien d’un modèle Hugging Face. N’importe quel modèle Whisper convient : ceux de faster-whisper (CTranslate2) s’utilisent tels quels et les normaux (transformers) sont convertis automatiquement. Un lien direct vers un .zip ou .tar.gz contenant un modèle fonctionne aussi."
+  },
+  "add_model_placeholder": {
+    "message": "ex. Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "Télécharger"
+  },
+  "suggestions": {
+    "message": "Suggestions :"
+  },
+  "browse_hf": {
+    "message": "Voir les modèles Whisper sur Hugging Face"
+  },
+  "vram_hint": {
+    "message": "Les grands modèles sont plus précis mais demandent plus de mémoire graphique : small ≈ 1 Go, medium ≈ 2 Go, large ≈ 4 Go."
+  },
+  "keep_open": {
+    "message": "Laissez cette page ouverte jusqu’à la fin du téléchargement."
+  },
+  "job_downloading": {
+    "message": "Téléchargement… {0} sur {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "Téléchargement… {0}"
+  },
+  "job_converting": {
+    "message": "Conversion au format faster-whisper…"
+  },
+  "job_extracting": {
+    "message": "Décompression…"
+  },
+  "job_ready": {
+    "message": "Installé"
+  },
+  "job_error": {
+    "message": "Échec : {0}"
+  },
+  "retry": {
+    "message": "Réessayer"
+  },
+  "plain_server_hint": {
+    "message": "C’est un serveur WhisperLive standard : saisissez une taille de modèle (tiny, base, small, medium, large-v3, large-v3-turbo) et le serveur la télécharge la première fois. Pour télécharger n’importe quel modèle d’ici, installez le module de Stream Transcription sur le serveur."
+  },
+  "model_name": {
+    "message": "Nom du modèle"
+  },
+  "save": {
+    "message": "Enregistrer"
+  },
+  "saved": {
+    "message": "Enregistré"
+  },
+  "reset_position": {
+    "message": "Replacer les sous-titres"
+  },
+  "position_reset_done": {
+    "message": "C’est fait : ils reviendront en bas."
+  },
+  "section_performance": {
+    "message": "Performances"
+  },
+  "performance_hint": {
+    "message": "Si la carte graphique du serveur manque de mémoire (sous-titres qui n’arrivent pas ou alerte mémoire), ces deux options en libèrent beaucoup. Elles ne marchent qu’avec le serveur de Stream Transcription."
+  },
+  "precision": {
+    "message": "Précision du modèle"
+  },
+  "precision_auto": {
+    "message": "Automatique"
+  },
+  "precision_int8": {
+    "message": "Économiser la mémoire (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 utilise environ la moitié de la mémoire graphique et, en pratique, écrit le même texte."
+  },
+  "translator_device": {
+    "message": "Le traducteur tourne sur"
+  },
+  "device_gpu": {
+    "message": "La carte graphique"
+  },
+  "device_cpu": {
+    "message": "Le processeur (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "Sur le processeur, il libère de la mémoire graphique, mais les sous-titres traduits arrivent un peu plus tard."
+  },
+  "interface_lang": {
+    "message": "Langue de l’interface"
+  },
+  "lang_auto": {
+    "message": "Celle du navigateur"
+  },
+  "about_text": {
+    "message": "Logiciel libre (licence MIT). L’audio ne va qu’au serveur que vous configurez ici ; rien n’est envoyé ailleurs."
+  },
+  "about_based": {
+    "message": "Basé sur WhisperLive, de Collabora."
+  },
+  "source_code": {
+    "message": "Code source"
+  },
+  "subtitle_preview": {
+    "message": "Voici à quoi ressembleront vos sous-titres."
+  },
+  "err_invalid_source": {
+    "message": "Ce n’est ni un nom de modèle Hugging Face ni un lien."
+  },
+  "err_unsupported_url": {
+    "message": "Uniquement des liens Hugging Face ou des liens directs vers des fichiers .zip / .tar.gz."
+  },
+  "err_repo_not_found": {
+    "message": "Ce modèle n’existe pas sur Hugging Face (vérifiez le nom)."
+  },
+  "err_gated_repo": {
+    "message": "Ce modèle demande d’accepter ses conditions sur Hugging Face ; le serveur a besoin d’un HF_TOKEN."
+  },
+  "err_not_whisper": {
+    "message": "Ce n’est pas un modèle Whisper."
+  },
+  "err_no_weights": {
+    "message": "Ce dépôt ne contient pas les poids du modèle."
+  },
+  "err_network_error": {
+    "message": "Erreur réseau. Réessayez : cela reprend là où ça s’est arrêté."
+  },
+  "err_download_failed": {
+    "message": "Le téléchargement a échoué."
+  },
+  "err_convert_failed": {
+    "message": "Impossible de convertir le modèle."
+  },
+  "err_bad_archive": {
+    "message": "L’archive est endommagée ou dangereuse."
+  },
+  "err_already_downloading": {
+    "message": "Il est déjà en cours de téléchargement."
+  },
+  "err_already_installed": {
+    "message": "Il est déjà installé."
+  },
+  "err_management_disabled": {
+    "message": "La gestion des modèles est désactivée sur ce serveur."
+  },
+  "err_is_default": {
+    "message": "C’est le modèle par défaut du serveur ; il ne peut pas être supprimé d’ici."
+  },
+  "err_in_use": {
+    "message": "Une transcription en cours l’utilise."
+  },
+  "err_not_found": {
+    "message": "Ce modèle n’est plus sur le serveur."
+  },
+  "err_server_error": {
+    "message": "Erreur du serveur."
+  },
+  "err_unreachable": {
+    "message": "Impossible de joindre le serveur."
+  },
+  "err_timeout": {
+    "message": "Le serveur n’a pas répondu à temps."
+  },
+  "err_unknown": {
+    "message": "Erreur inattendue ({0})."
+  }
+}
