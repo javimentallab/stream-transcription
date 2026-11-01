@@ -10,8 +10,10 @@ FROM ghcr.io/collabora/whisperlive-gpu@sha256:fb95a19a7cb13839d074d6f94d3e546bfc
 
 # That image ships CUDA 13 (torch) but faster-whisper's CTranslate2 is built against
 # CUDA 12 and looks for libcublas.so.12; the image's LD_LIBRARY_PATH already points to
-# where this wheel installs it.
-RUN pip install --no-cache-dir nvidia-cublas-cu12
+# where this wheel installs it. Versions are pinned in requirements.txt, which is also
+# what the Trivy scan in CI reads.
+COPY requirements.txt /tmp/st-requirements.txt
+RUN pip install --no-cache-dir -r /tmp/st-requirements.txt && rm /tmp/st-requirements.txt
 
 COPY whisper_live/ /app/whisper_live/
 COPY start.sh /app/start.sh

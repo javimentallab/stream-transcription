@@ -27,3 +27,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-------------------------------------------------------------------------------
+
+Third-party software used by the server
+---------------------------------------
+None of this is included in this repository. Docker downloads it when you build the
+server image on your own computer, and it stays under its own licence.
+
+- WhisperLive base image (ghcr.io/collabora/whisperlive-gpu): WhisperLive is under the
+  MIT License above. The image also contains faster-whisper, CTranslate2, PyTorch and
+  their dependencies, each under its own licence.
+- nvidia-cublas-cu12 and nvidia-cuda-nvrtc-cu12 (server/requirements.txt): proprietary
+  NVIDIA licence, not free software. The licence text comes inside each package
+  (License.txt). https://developer.nvidia.com/cuda-zone
+
+Models the server downloads when you ask for them, not included either:
+
+- Whisper models in faster-whisper format (by default Systran/faster-whisper-small):
+  MIT License, https://huggingface.co/Systran/faster-whisper-small
+- SMALL100 translator (alirezamsh/small100): MIT License,
+  https://huggingface.co/alirezamsh/small100
+- Any other model you add from Hugging Face or a direct link stays under its own licence.
