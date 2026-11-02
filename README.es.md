@@ -28,6 +28,10 @@ léelo en el tuyo, en tiempo real. El audio no sale de tu red: solo va al servid
   chino, japonés, coreano, tailandés e hindi; sigue al navegador o se elige en los ajustes.
 - Sin cuentas, sin rastreo, sin estadísticas. Código abierto (MIT).
 
+| Ventana de la extensión | Ajustes · modelos |
+|---|---|
+| ![Ventana de la extensión](store/screenshot-2-popup.png) | ![Modelos](store/screenshot-3-models.png) |
+
 ## Instalar la extensión
 
 - **Firefox** (y Zen, LibreWolf, Floorp…): [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/stream-transcription/)
