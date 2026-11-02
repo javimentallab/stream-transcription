@@ -47,8 +47,8 @@
   "license": "MIT",
   "approval_notes": "No build step, minifier or bundler: the package is the plain source from https://github.com/javimentallab/stream-transcription (extension/shared + extension/firefox, merged by tools/build.py).\n\nThe extension is a client for a self-hosted WhisperLive speech-to-text server (https://github.com/collabora/WhisperLive). On 'Start subtitles' the content script takes the page's <video>/<audio> through createMediaElementSource, downsamples it to 16 kHz in an AudioWorklet and streams it over a WebSocket to the server address the user typed; the subtitles that come back are drawn in a shadow-DOM overlay. That is the only network traffic (declared as websiteContent). <all_urls> is needed because the subtitles can be shown on any site with video.\n\nTo test without a server you can still open the popup and the settings page; to test end to end, run the server in /server of the repo (docker compose up -d --build, needs an NVIDIA GPU) and enter localhost:9090.",
   "release_notes": {
-   "en-US": "First release.",
-   "es-ES": "Primera versión."
+   "en-US": "Fixes from a code review: session ids no longer rely on Math.random. The store page is now in 13 languages.",
+   "es-ES": "Arreglos de una revisión del código: los identificadores de sesión ya no dependen de Math.random. La ficha ya está en 13 idiomas."
   }
  }
 }
