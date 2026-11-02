@@ -822,7 +822,8 @@ class TranscriptionServer:
                             rest_diarizer = await self._create_rest_diarizer(known_speaker_names, known_speaker_references)
                         except ValueError as e:
                             wl_metrics.track_rest_request(endpoint="transcriptions", status=400)
-                            return JSONResponse({"error": str(e)}, status_code=400)
+                            logging.warning(f"Rejected known speakers: {e}")
+                            return JSONResponse({"error": "Invalid known_speaker_names or known_speaker_references"}, status_code=400)
                         if rest_diarizer is not None:
                             from whisper_live.diarization import load_audio
                             audio_np = load_audio(tmp_path)
@@ -858,10 +859,11 @@ class TranscriptionServer:
                                 output.append(f"{start} --> {end}\n{seg.text.strip()}\n")
                         wl_metrics.track_rest_request(endpoint="transcriptions", status=200)
                         return PlainTextResponse("\n".join(output))
-                except Exception as e:
+                except Exception:
                     wl_metrics.track_rest_request(endpoint="transcriptions", status=500)
                     wl_metrics.track_error("rest_transcription")
-                    return JSONResponse({"error": str(e)}, status_code=500)
+                    logging.exception("REST transcription failed")
+                    return JSONResponse({"error": "Transcription failed"}, status_code=500)
                 finally:
                     if tmp_path and os.path.exists(tmp_path):
                         os.unlink(tmp_path)

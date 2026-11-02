@@ -101,7 +101,9 @@ Engine.Session = class {
     this.options = options;
     this.translating = translating;
     this.emit = emit;
-    this.uid = (crypto.randomUUID && crypto.randomUUID()) || String(Date.now()) + Math.random();
+    this.uid = crypto.randomUUID
+      ? crypto.randomUUID()
+      : Array.from(crypto.getRandomValues(new Uint8Array(16)), (b) => b.toString(16).padStart(2, "0")).join("");
     this.ready = false;
     this.closed = false;
     this.hasText = false;
