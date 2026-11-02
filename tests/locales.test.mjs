@@ -3,8 +3,9 @@ import assert from 'node:assert/strict';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { test } from 'node:test';
+import { fileURLToPath } from 'node:url';
 
-const SRC = new URL('../extension/shared/', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1');
+const SRC = fileURLToPath(new URL('../extension/shared/', import.meta.url));
 const LOC = join(SRC, '_locales');
 const leer = (l) => JSON.parse(readFileSync(join(LOC, l, 'messages.json'), 'utf8'));
 const marcas = (m) => (m.message.match(/\$\d|\{\d+\}/g) || []).sort().join();
