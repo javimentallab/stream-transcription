@@ -15,6 +15,7 @@ For anything big, open an issue first so we can agree on the approach.
 ```sh
 node --test
 python -m unittest discover -s tests
+python -m pip install -r tools/requirements.txt
 python tools/build.py
 ```
 

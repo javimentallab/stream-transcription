@@ -49,3 +49,6 @@ Models the server downloads when you ask for them, not included either:
 - SMALL100 translator (alirezamsh/small100): MIT License,
   https://huggingface.co/alirezamsh/small100
 - Any other model you add from Hugging Face or a direct link stays under its own licence.
+
+Development only (tools/requirements.txt, not part of the extension or the server):
+Pillow (MIT-CMU), to draw the icons.

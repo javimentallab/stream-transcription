@@ -101,6 +101,7 @@ else anywhere. It stores its settings in your browser. See [PRIVACY.md](PRIVACY.
 ## Building
 
 ```sh
+python -m pip install -r tools/requirements.txt
 python tools/build.py
 ```
 

@@ -100,6 +100,7 @@ nada a ningún otro sitio. Guarda sus ajustes en tu navegador. Ver [PRIVACY.md](
 ## Compilar
 
 ```sh
+python -m pip install -r tools/requirements.txt
 python tools/build.py
 ```
 

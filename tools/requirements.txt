@@ -1,0 +1,2 @@
+# Only for tools/make-icons.py, which tools/build.py runs. Not part of the extension or the server.
+Pillow==13.0.0
