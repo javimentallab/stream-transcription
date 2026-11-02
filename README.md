@@ -108,6 +108,10 @@ Creates `dist/chromium`, `dist/firefox` and their zips from `extension/shared` p
 browser's folder. English and Spanish texts live side by side in `tools/i18n-messages.py`, the other languages in
 `tools/i18n-more.py`; the script checks every key and placeholder against English.
 
+## Contributing
+
+See [CONTRIBUTING](CONTRIBUTING.md). To report a security problem privately, see [SECURITY](SECURITY.md).
+
 ## Credits and license
 
 MIT ([LICENSE](LICENSE)). Built on [WhisperLive](https://github.com/collabora/WhisperLive) by Collabora (MIT, see

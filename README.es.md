@@ -104,6 +104,10 @@ carpeta de cada navegador. Los textos en inglés y castellano están juntos en
 `tools/i18n-messages.py`, y los demás idiomas en `tools/i18n-more.py`; el script comprueba cada clave y
 hueco contra el inglés.
 
+## Contribuir
+
+Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de un problema de seguridad, consulta [SECURITY](SECURITY.md).
+
 ## Créditos y licencia
 
 MIT ([LICENSE](LICENSE)). Hecho sobre [WhisperLive](https://github.com/collabora/WhisperLive), de Collabora (MIT, ver
