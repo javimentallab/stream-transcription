@@ -187,6 +187,47 @@ M = {
     "source_code": ("Source code", "Código fuente"),
     "subtitle_preview": ("This is how your subtitles will look.", "Así se verán tus subtítulos."),
 
+    # --- updates (only checked when the user asks) -----------------------------------
+    "updates": ("Updates", "Actualizaciones"),
+    "check_updates": ("Check for updates", "Buscar actualizaciones"),
+    "check_again": ("Check again", "Volver a buscar"),
+    "update_now": ("Update", "Actualizar"),
+    "update_available": ("Version {0} is available (you have {1}).", "Ya está la versión {0} (tienes la {1})."),
+    "update_latest": ("You have the latest version ({0}).", "Tienes la última versión ({0})."),
+    "update_rate_limited": (
+        "GitHub is limiting checks for a while. Try again later.",
+        "GitHub está limitando las consultas durante un rato. Vuelve a intentarlo más tarde."),
+    "update_failed": (
+        "Could not check for updates. Check your connection and try again.",
+        "No se han podido buscar actualizaciones. Revisa la conexión y vuelve a intentarlo."),
+    "update_how_firefox": (
+        "Firefox installs new versions by itself. To get it now, open about:addons, click the gear icon and "
+        "choose ‘Check for Updates’. A version that has just come out can take a few days to reach the add-ons site.",
+        "Firefox instala solo las versiones nuevas. Para tenerla ya, abre about:addons, pulsa el icono del engranaje "
+        "y elige «Buscar actualizaciones». Una versión recién salida puede tardar unos días en llegar a la web de complementos."),
+    "update_how_chromium": (
+        "To update, download the Chromium zip from the release page, unzip it over the old folder and press the "
+        "reload icon on the Stream Transcription card in chrome://extensions. Your settings are kept.",
+        "Para actualizar, descarga el zip de Chromium de la página de la versión, descomprímelo encima de la carpeta "
+        "antigua y pulsa el icono de recargar en la tarjeta de Stream Transcription de chrome://extensions. Los ajustes se conservan."),
+    "update_privacy": (
+        "Checking only asks GitHub for the number of the latest version; nothing else is sent.",
+        "Al buscar, solo se pregunta a GitHub el número de la última versión; no se envía nada más."),
+    "server_update_available": (
+        "Your server has version {0} and {1} is available. To update it, run this on the computer that hosts it:",
+        "Tu servidor tiene la versión {0} y ya está la {1}. Para actualizarlo, ejecuta esto en el ordenador donde está:"),
+    "server_version_unknown": (
+        "Your server does not say which version it has, so it is older than this check. To update it, run this "
+        "on the computer that hosts it:",
+        "Tu servidor no dice qué versión tiene, así que es anterior a esta comprobación. Para actualizarlo, ejecuta "
+        "esto en el ordenador donde está:"),
+    "server_update_latest": ("Your server is up to date ({0}).", "Tu servidor está al día ({0})."),
+    "server_update_note": (
+        "The models stay in the Docker volume and are not downloaded again. If you edited docker-compose.yml and "
+        "git pull complains, run git stash before it and git stash pop after it.",
+        "Los modelos se quedan en el volumen de Docker y no se vuelven a descargar. Si has cambiado "
+        "docker-compose.yml y git pull se queja, ejecuta git stash antes y git stash pop después."),
+
     # --- model errors (codes sent by the server) -------------------------------------
     "err_invalid_source": ("That isn't a Hugging Face model name or a link.", "Eso no es un nombre de modelo de Hugging Face ni un enlace."),
     "err_unsupported_url": (

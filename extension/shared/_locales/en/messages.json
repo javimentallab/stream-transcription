@@ -320,6 +320,51 @@
   "subtitle_preview": {
     "message": "This is how your subtitles will look."
   },
+  "updates": {
+    "message": "Updates"
+  },
+  "check_updates": {
+    "message": "Check for updates"
+  },
+  "check_again": {
+    "message": "Check again"
+  },
+  "update_now": {
+    "message": "Update"
+  },
+  "update_available": {
+    "message": "Version {0} is available (you have {1})."
+  },
+  "update_latest": {
+    "message": "You have the latest version ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub is limiting checks for a while. Try again later."
+  },
+  "update_failed": {
+    "message": "Could not check for updates. Check your connection and try again."
+  },
+  "update_how_firefox": {
+    "message": "Firefox installs new versions by itself. To get it now, open about:addons, click the gear icon and choose ‘Check for Updates’. A version that has just come out can take a few days to reach the add-ons site."
+  },
+  "update_how_chromium": {
+    "message": "To update, download the Chromium zip from the release page, unzip it over the old folder and press the reload icon on the Stream Transcription card in chrome://extensions. Your settings are kept."
+  },
+  "update_privacy": {
+    "message": "Checking only asks GitHub for the number of the latest version; nothing else is sent."
+  },
+  "server_update_available": {
+    "message": "Your server has version {0} and {1} is available. To update it, run this on the computer that hosts it:"
+  },
+  "server_version_unknown": {
+    "message": "Your server does not say which version it has, so it is older than this check. To update it, run this on the computer that hosts it:"
+  },
+  "server_update_latest": {
+    "message": "Your server is up to date ({0})."
+  },
+  "server_update_note": {
+    "message": "The models stay in the Docker volume and are not downloaded again. If you edited docker-compose.yml and git pull complains, run git stash before it and git stash pop after it."
+  },
   "err_invalid_source": {
     "message": "That isn't a Hugging Face model name or a link."
   },

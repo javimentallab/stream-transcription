@@ -132,6 +132,21 @@ err_server_error|Erro do servidor.
 err_unreachable|Não foi possível conectar ao servidor.
 err_timeout|O servidor não respondeu a tempo.
 err_unknown|Erro inesperado ({0}).
+updates|Atualizações
+check_updates|Procurar atualizações
+check_again|Procurar de novo
+update_now|Atualizar
+update_available|A versão {0} já está disponível (você tem a {1}).
+update_latest|Você tem a versão mais recente ({0}).
+update_rate_limited|O GitHub está limitando as consultas por um tempo. Tente de novo mais tarde.
+update_failed|Não foi possível procurar atualizações. Verifique a conexão e tente de novo.
+update_how_firefox|O Firefox instala as versões novas sozinho. Para tê-la agora, abra about:addons, clique no ícone de engrenagem e escolha “Procurar atualizações”. Uma versão recém-lançada pode levar alguns dias para chegar ao site de extensões.
+update_how_chromium|Para atualizar, baixe o zip do Chromium na página da versão, descompacte por cima da pasta antiga e clique no ícone de recarregar no cartão do Stream Transcription em chrome://extensions. Suas configurações são mantidas.
+update_privacy|Ao procurar, só se pergunta ao GitHub o número da versão mais recente; nada mais é enviado.
+server_update_available|Seu servidor tem a versão {0} e a {1} já está disponível. Para atualizá-lo, execute isto no computador onde ele roda:
+server_version_unknown|Seu servidor não informa a versão, então é anterior a esta verificação. Para atualizá-lo, execute isto no computador onde ele roda:
+server_update_latest|Seu servidor está atualizado ({0}).
+server_update_note|Os modelos ficam no volume do Docker e não são baixados de novo. Se você alterou o docker-compose.yml e o git pull reclamar, execute git stash antes e git stash pop depois.
 """
 
 LANGS['fr'] = """
@@ -262,6 +277,21 @@ err_server_error|Erreur du serveur.
 err_unreachable|Impossible de joindre le serveur.
 err_timeout|Le serveur n’a pas répondu à temps.
 err_unknown|Erreur inattendue ({0}).
+updates|Mises à jour
+check_updates|Rechercher des mises à jour
+check_again|Rechercher à nouveau
+update_now|Mettre à jour
+update_available|La version {0} est disponible (vous avez la {1}).
+update_latest|Vous avez la dernière version ({0}).
+update_rate_limited|GitHub limite les vérifications pendant un moment. Réessayez plus tard.
+update_failed|Impossible de rechercher des mises à jour. Vérifiez la connexion et réessayez.
+update_how_firefox|Firefox installe les nouvelles versions tout seul. Pour l’avoir tout de suite, ouvrez about:addons, cliquez sur la roue dentée et choisissez « Rechercher des mises à jour ». Une version qui vient de sortir peut mettre quelques jours à arriver sur le site des modules complémentaires.
+update_how_chromium|Pour mettre à jour, téléchargez le zip Chromium sur la page de la version, décompressez-le par-dessus l’ancien dossier et cliquez sur l’icône de rechargement de la carte Stream Transcription dans chrome://extensions. Vos réglages sont conservés.
+update_privacy|La recherche demande seulement à GitHub le numéro de la dernière version ; rien d’autre n’est envoyé.
+server_update_available|Votre serveur a la version {0} et la {1} est disponible. Pour le mettre à jour, lancez ceci sur l’ordinateur qui l’héberge :
+server_version_unknown|Votre serveur n’indique pas sa version : il est donc antérieur à cette vérification. Pour le mettre à jour, lancez ceci sur l’ordinateur qui l’héberge :
+server_update_latest|Votre serveur est à jour ({0}).
+server_update_note|Les modèles restent dans le volume Docker et ne sont pas retéléchargés. Si vous avez modifié docker-compose.yml et que git pull proteste, lancez git stash avant et git stash pop après.
 """
 
 LANGS['de'] = """
@@ -392,6 +422,21 @@ err_server_error|Serverfehler.
 err_unreachable|Der Server ist nicht erreichbar.
 err_timeout|Der Server hat nicht rechtzeitig geantwortet.
 err_unknown|Unerwarteter Fehler ({0}).
+updates|Updates
+check_updates|Nach Updates suchen
+check_again|Erneut suchen
+update_now|Aktualisieren
+update_available|Version {0} ist verfügbar (Sie haben {1}).
+update_latest|Sie haben die neueste Version ({0}).
+update_rate_limited|GitHub begrenzt die Abfragen für eine Weile. Versuchen Sie es später erneut.
+update_failed|Die Suche nach Updates ist fehlgeschlagen. Prüfen Sie die Verbindung und versuchen Sie es erneut.
+update_how_firefox|Firefox installiert neue Versionen von selbst. Um sie sofort zu bekommen, öffnen Sie about:addons, klicken Sie auf das Zahnrad und wählen Sie „Auf Updates überprüfen“. Eine gerade erschienene Version kann einige Tage brauchen, bis sie auf der Add-on-Website ist.
+update_how_chromium|Zum Aktualisieren laden Sie das Chromium-ZIP von der Seite der Version herunter, entpacken es über den alten Ordner und klicken in chrome://extensions auf der Karte von Stream Transcription auf das Neu-laden-Symbol. Ihre Einstellungen bleiben erhalten.
+update_privacy|Bei der Suche wird GitHub nur nach der Nummer der neuesten Version gefragt; sonst wird nichts gesendet.
+server_update_available|Ihr Server hat Version {0}, und {1} ist verfügbar. Führen Sie zum Aktualisieren dies auf dem Computer aus, auf dem er läuft:
+server_version_unknown|Ihr Server meldet seine Version nicht, er ist also älter als diese Prüfung. Führen Sie zum Aktualisieren dies auf dem Computer aus, auf dem er läuft:
+server_update_latest|Ihr Server ist aktuell ({0}).
+server_update_note|Die Modelle bleiben im Docker-Volume und werden nicht erneut heruntergeladen. Wenn Sie docker-compose.yml geändert haben und git pull sich beschwert, führen Sie vorher git stash und danach git stash pop aus.
 """
 
 LANGS['it'] = """
@@ -522,6 +567,21 @@ err_server_error|Errore del server.
 err_unreachable|Impossibile raggiungere il server.
 err_timeout|Il server non ha risposto in tempo.
 err_unknown|Errore imprevisto ({0}).
+updates|Aggiornamenti
+check_updates|Cerca aggiornamenti
+check_again|Cerca di nuovo
+update_now|Aggiorna
+update_available|È disponibile la versione {0} (hai la {1}).
+update_latest|Hai l’ultima versione ({0}).
+update_rate_limited|GitHub sta limitando le verifiche per un po’. Riprova più tardi.
+update_failed|Impossibile cercare aggiornamenti. Controlla la connessione e riprova.
+update_how_firefox|Firefox installa da solo le nuove versioni. Per averla subito, apri about:addons, fai clic sull’icona dell’ingranaggio e scegli “Controlla aggiornamenti”. Una versione appena uscita può impiegare qualche giorno ad arrivare al sito dei componenti aggiuntivi.
+update_how_chromium|Per aggiornare, scarica lo zip per Chromium dalla pagina della versione, estrailo sopra la vecchia cartella e fai clic sull’icona di ricarica nella scheda di Stream Transcription in chrome://extensions. Le impostazioni restano.
+update_privacy|La ricerca chiede a GitHub solo il numero dell’ultima versione; non viene inviato nient’altro.
+server_update_available|Il tuo server ha la versione {0} ed è disponibile la {1}. Per aggiornarlo, esegui questo sul computer che lo ospita:
+server_version_unknown|Il tuo server non dice quale versione ha, quindi è precedente a questa verifica. Per aggiornarlo, esegui questo sul computer che lo ospita:
+server_update_latest|Il tuo server è aggiornato ({0}).
+server_update_note|I modelli restano nel volume Docker e non vengono riscaricati. Se hai modificato docker-compose.yml e git pull si lamenta, esegui git stash prima e git stash pop dopo.
 """
 
 LANGS['nl'] = """
@@ -652,6 +712,21 @@ err_server_error|Serverfout.
 err_unreachable|De server is niet bereikbaar.
 err_timeout|De server antwoordde niet op tijd.
 err_unknown|Onverwachte fout ({0}).
+updates|Updates
+check_updates|Controleren op updates
+check_again|Opnieuw controleren
+update_now|Bijwerken
+update_available|Versie {0} is beschikbaar (je hebt {1}).
+update_latest|Je hebt de nieuwste versie ({0}).
+update_rate_limited|GitHub beperkt de controles een tijdje. Probeer het later opnieuw.
+update_failed|Kon niet op updates controleren. Controleer de verbinding en probeer het opnieuw.
+update_how_firefox|Firefox installeert nieuwe versies zelf. Wil je hem nu al, open dan about:addons, klik op het tandwiel en kies ‘Controleren op updates’. Een net verschenen versie kan een paar dagen nodig hebben om op de add-onsite te komen.
+update_how_chromium|Om bij te werken download je de Chromium-zip van de pagina van de versie, pak je hem uit over de oude map en klik je in chrome://extensions op het herlaadpictogram op de kaart van Stream Transcription. Je instellingen blijven bewaard.
+update_privacy|Bij het controleren wordt GitHub alleen naar het nummer van de nieuwste versie gevraagd; verder wordt er niets verstuurd.
+server_update_available|Je server heeft versie {0} en {1} is beschikbaar. Voer dit uit op de computer waarop hij draait om hem bij te werken:
+server_version_unknown|Je server zegt niet welke versie hij heeft, dus hij is ouder dan deze controle. Voer dit uit op de computer waarop hij draait om hem bij te werken:
+server_update_latest|Je server is bijgewerkt ({0}).
+server_update_note|De modellen blijven in het Docker-volume en worden niet opnieuw gedownload. Als je docker-compose.yml hebt aangepast en git pull klaagt, voer dan eerst git stash uit en daarna git stash pop.
 """
 
 LANGS['pl'] = """
@@ -782,6 +857,21 @@ err_server_error|Błąd serwera.
 err_unreachable|Nie można połączyć się z serwerem.
 err_timeout|Serwer nie odpowiedział na czas.
 err_unknown|Nieoczekiwany błąd ({0}).
+updates|Aktualizacje
+check_updates|Sprawdź aktualizacje
+check_again|Sprawdź ponownie
+update_now|Aktualizuj
+update_available|Dostępna jest wersja {0} (masz {1}).
+update_latest|Masz najnowszą wersję ({0}).
+update_rate_limited|GitHub przez jakiś czas ogranicza sprawdzanie. Spróbuj ponownie później.
+update_failed|Nie udało się sprawdzić aktualizacji. Sprawdź połączenie i spróbuj ponownie.
+update_how_firefox|Firefox sam instaluje nowe wersje. Aby mieć ją od razu, otwórz about:addons, kliknij ikonę koła zębatego i wybierz „Sprawdź dostępność aktualizacji”. Świeżo wydana wersja może dotrzeć do witryny dodatków dopiero po kilku dniach.
+update_how_chromium|Aby zaktualizować, pobierz plik zip dla Chromium ze strony wersji, rozpakuj go na starym folderze i kliknij ikonę ponownego wczytania na karcie Stream Transcription w chrome://extensions. Ustawienia zostają zachowane.
+update_privacy|Sprawdzanie tylko pyta GitHub o numer najnowszej wersji; nic więcej nie jest wysyłane.
+server_update_available|Twój serwer ma wersję {0}, a dostępna jest {1}. Aby go zaktualizować, uruchom to na komputerze, na którym działa:
+server_version_unknown|Twój serwer nie podaje swojej wersji, więc jest starszy niż to sprawdzanie. Aby go zaktualizować, uruchom to na komputerze, na którym działa:
+server_update_latest|Twój serwer jest aktualny ({0}).
+server_update_note|Modele zostają w woluminie Dockera i nie są pobierane ponownie. Jeśli plik docker-compose.yml był zmieniany, a git pull zgłasza błąd, uruchom przed nim git stash, a po nim git stash pop.
 """
 
 LANGS['ru'] = """
@@ -912,6 +1002,21 @@ err_server_error|Ошибка сервера.
 err_unreachable|Не удаётся связаться с сервером.
 err_timeout|Сервер не ответил вовремя.
 err_unknown|Непредвиденная ошибка ({0}).
+updates|Обновления
+check_updates|Проверить обновления
+check_again|Проверить ещё раз
+update_now|Обновить
+update_available|Доступна версия {0} (у вас {1}).
+update_latest|У вас последняя версия ({0}).
+update_rate_limited|GitHub временно ограничивает проверки. Попробуйте позже.
+update_failed|Не удалось проверить обновления. Проверьте подключение и попробуйте ещё раз.
+update_how_firefox|Firefox сам устанавливает новые версии. Чтобы получить её сразу, откройте about:addons, нажмите на значок шестерёнки и выберите «Проверить наличие обновлений». Только что вышедшая версия может появиться на сайте дополнений через несколько дней.
+update_how_chromium|Чтобы обновить, скачайте zip для Chromium со страницы версии, распакуйте его поверх старой папки и нажмите значок перезагрузки на карточке Stream Transcription в chrome://extensions. Настройки сохранятся.
+update_privacy|При проверке у GitHub запрашивается только номер последней версии; больше ничего не отправляется.
+server_update_available|На вашем сервере версия {0}, а доступна {1}. Чтобы обновить его, выполните это на компьютере, где он работает:
+server_version_unknown|Ваш сервер не сообщает свою версию, значит, он старше этой проверки. Чтобы обновить его, выполните это на компьютере, где он работает:
+server_update_latest|Ваш сервер обновлён ({0}).
+server_update_note|Модели остаются в томе Docker и заново не скачиваются. Если вы меняли docker-compose.yml и git pull выдаёт ошибку, выполните git stash перед ним и git stash pop после.
 """
 
 LANGS['uk'] = """
@@ -1042,6 +1147,21 @@ err_server_error|Помилка сервера.
 err_unreachable|Не вдається зв’язатися із сервером.
 err_timeout|Сервер не відповів вчасно.
 err_unknown|Неочікувана помилка ({0}).
+updates|Оновлення
+check_updates|Перевірити оновлення
+check_again|Перевірити ще раз
+update_now|Оновити
+update_available|Доступна версія {0} (у вас {1}).
+update_latest|У вас найновіша версія ({0}).
+update_rate_limited|GitHub тимчасово обмежує перевірки. Спробуйте пізніше.
+update_failed|Не вдалося перевірити оновлення. Перевірте з’єднання і спробуйте ще раз.
+update_how_firefox|Firefox сам встановлює нові версії. Щоб отримати її одразу, відкрийте about:addons, натисніть значок шестерні й виберіть «Перевірити наявність оновлень». Щойно випущена версія може з’явитися на сайті додатків за кілька днів.
+update_how_chromium|Щоб оновити, завантажте zip для Chromium зі сторінки версії, розпакуйте його поверх старої теки й натисніть значок перезавантаження на картці Stream Transcription у chrome://extensions. Налаштування збережуться.
+update_privacy|Під час перевірки в GitHub запитується лише номер найновішої версії; більше нічого не надсилається.
+server_update_available|На вашому сервері версія {0}, а доступна {1}. Щоб оновити його, виконайте це на комп’ютері, де він працює:
+server_version_unknown|Ваш сервер не повідомляє свою версію, отже, він старіший за цю перевірку. Щоб оновити його, виконайте це на комп’ютері, де він працює:
+server_update_latest|Ваш сервер оновлений ({0}).
+server_update_note|Моделі залишаються в томі Docker і не завантажуються знову. Якщо ви змінювали docker-compose.yml і git pull видає помилку, виконайте git stash перед ним і git stash pop після.
 """
 
 LANGS['zh_CN'] = """
@@ -1172,6 +1292,21 @@ err_server_error|服务器错误。
 err_unreachable|无法连接服务器。
 err_timeout|服务器未及时响应。
 err_unknown|意外错误（{0}）。
+updates|更新
+check_updates|检查更新
+check_again|再次检查
+update_now|更新
+update_available|已有 {0} 版（你的是 {1}）。
+update_latest|你已是最新版本（{0}）。
+update_rate_limited|GitHub 暂时限制了查询次数，请稍后再试。
+update_failed|无法检查更新。请检查网络连接后重试。
+update_how_firefox|Firefox 会自动安装新版本。想立即获取，请打开 about:addons，点击齿轮图标，选择“检查更新”。刚发布的版本可能要过几天才会出现在附加组件网站上。
+update_how_chromium|更新方法：从版本页面下载 Chromium 版 zip，解压覆盖旧文件夹，然后在 chrome://extensions 中点击 Stream Transcription 卡片上的重新加载图标。你的设置会保留。
+update_privacy|检查时只会向 GitHub 询问最新版本号，不会发送其他任何内容。
+server_update_available|你的服务器是 {0} 版，已有 {1} 版。要更新，请在运行服务器的电脑上执行：
+server_version_unknown|你的服务器没有报告版本，说明它比这项检查更早。要更新，请在运行服务器的电脑上执行：
+server_update_latest|你的服务器已是最新（{0}）。
+server_update_note|模型保留在 Docker 卷中，不会重新下载。如果你改过 docker-compose.yml 且 git pull 报错，请先执行 git stash，之后再执行 git stash pop。
 """
 
 LANGS['ja'] = """
@@ -1302,6 +1437,21 @@ err_server_error|サーバーエラー。
 err_unreachable|サーバーに接続できません。
 err_timeout|サーバーが時間内に応答しませんでした。
 err_unknown|予期しないエラー（{0}）。
+updates|アップデート
+check_updates|アップデートを確認
+check_again|もう一度確認
+update_now|アップデート
+update_available|バージョン {0} が出ています（現在は {1}）。
+update_latest|最新バージョンです（{0}）。
+update_rate_limited|GitHub がしばらく確認を制限しています。後でもう一度お試しください。
+update_failed|アップデートを確認できませんでした。接続を確認してもう一度お試しください。
+update_how_firefox|Firefox は新しいバージョンを自動でインストールします。すぐに入れるには about:addons を開き、歯車アイコンから「今すぐ更新を確認」を選んでください。出たばかりのバージョンはアドオンサイトに載るまで数日かかることがあります。
+update_how_chromium|アップデートするには、バージョンのページから Chromium 用の zip をダウンロードして古いフォルダーに上書きで展開し、chrome://extensions の Stream Transcription のカードで再読み込みアイコンを押してください。設定はそのまま残ります。
+update_privacy|確認では GitHub に最新バージョンの番号を問い合わせるだけで、ほかには何も送信しません。
+server_update_available|サーバーはバージョン {0} で、{1} が出ています。アップデートするには、サーバーが動いているパソコンで次を実行してください：
+server_version_unknown|サーバーがバージョンを伝えていないため、この確認機能より古いものです。アップデートするには、サーバーが動いているパソコンで次を実行してください：
+server_update_latest|サーバーは最新です（{0}）。
+server_update_note|モデルは Docker ボリュームに残り、再ダウンロードされません。docker-compose.yml を変更していて git pull がエラーになる場合は、先に git stash を、後で git stash pop を実行してください。
 """
 
 LANGS['ko'] = """
@@ -1432,6 +1582,21 @@ err_server_error|서버 오류.
 err_unreachable|서버에 연결할 수 없습니다.
 err_timeout|서버가 제때 응답하지 않았습니다.
 err_unknown|예상치 못한 오류({0}).
+updates|업데이트
+check_updates|업데이트 확인
+check_again|다시 확인
+update_now|업데이트
+update_available|{0} 버전이 나왔습니다 (현재 {1}).
+update_latest|최신 버전입니다 ({0}).
+update_rate_limited|GitHub가 잠시 확인 횟수를 제한하고 있습니다. 나중에 다시 시도하세요.
+update_failed|업데이트를 확인하지 못했습니다. 연결을 확인하고 다시 시도하세요.
+update_how_firefox|Firefox는 새 버전을 자동으로 설치합니다. 지금 바로 받으려면 about:addons를 열고 톱니바퀴 아이콘을 누른 뒤 ‘업데이트 확인’을 선택하세요. 갓 나온 버전은 부가 기능 사이트에 올라오기까지 며칠 걸릴 수 있습니다.
+update_how_chromium|업데이트하려면 버전 페이지에서 Chromium용 zip을 내려받아 기존 폴더에 덮어써서 압축을 풀고, chrome://extensions의 Stream Transcription 카드에서 새로고침 아이콘을 누르세요. 설정은 그대로 유지됩니다.
+update_privacy|확인할 때는 GitHub에 최신 버전 번호만 물어보며, 그 밖에는 아무것도 보내지 않습니다.
+server_update_available|서버는 {0} 버전이고 {1} 버전이 나왔습니다. 업데이트하려면 서버가 실행 중인 컴퓨터에서 다음을 실행하세요:
+server_version_unknown|서버가 버전을 알려 주지 않으므로 이 확인 기능보다 오래된 버전입니다. 업데이트하려면 서버가 실행 중인 컴퓨터에서 다음을 실행하세요:
+server_update_latest|서버가 최신 상태입니다 ({0}).
+server_update_note|모델은 Docker 볼륨에 남아 있어 다시 내려받지 않습니다. docker-compose.yml을 수정했고 git pull이 오류를 내면 먼저 git stash를, 끝난 뒤 git stash pop을 실행하세요.
 """
 
 LANGS['th'] = """
@@ -1562,6 +1727,21 @@ err_server_error|เซิร์ฟเวอร์ผิดพลาด
 err_unreachable|ติดต่อเซิร์ฟเวอร์ไม่ได้
 err_timeout|เซิร์ฟเวอร์ไม่ตอบกลับทันเวลา
 err_unknown|ข้อผิดพลาดที่ไม่คาดคิด ({0})
+updates|การอัปเดต
+check_updates|ตรวจหาการอัปเดต
+check_again|ตรวจอีกครั้ง
+update_now|อัปเดต
+update_available|มีเวอร์ชัน {0} แล้ว (คุณใช้ {1})
+update_latest|คุณใช้เวอร์ชันล่าสุดแล้ว ({0})
+update_rate_limited|GitHub จำกัดการตรวจสอบชั่วคราว ลองใหม่ภายหลัง
+update_failed|ตรวจหาการอัปเดตไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองใหม่
+update_how_firefox|Firefox ติดตั้งเวอร์ชันใหม่ให้เอง หากต้องการทันที ให้เปิด about:addons คลิกไอคอนเฟือง แล้วเลือก “ตรวจสอบการอัปเดต” เวอร์ชันที่เพิ่งออกอาจใช้เวลาสองสามวันกว่าจะขึ้นบนเว็บไซต์ส่วนเสริม
+update_how_chromium|วิธีอัปเดต: ดาวน์โหลดไฟล์ zip สำหรับ Chromium จากหน้าของเวอร์ชัน แตกไฟล์ทับโฟลเดอร์เดิม แล้วกดไอคอนโหลดใหม่บนการ์ด Stream Transcription ใน chrome://extensions การตั้งค่าของคุณจะยังอยู่
+update_privacy|การตรวจสอบจะถาม GitHub เพียงหมายเลขเวอร์ชันล่าสุด ไม่มีการส่งข้อมูลอื่นใด
+server_update_available|เซิร์ฟเวอร์ของคุณเป็นเวอร์ชัน {0} และมีเวอร์ชัน {1} แล้ว หากต้องการอัปเดต ให้รันคำสั่งนี้บนคอมพิวเตอร์ที่เซิร์ฟเวอร์ทำงานอยู่:
+server_version_unknown|เซิร์ฟเวอร์ของคุณไม่ได้บอกเวอร์ชัน จึงเก่ากว่าการตรวจสอบนี้ หากต้องการอัปเดต ให้รันคำสั่งนี้บนคอมพิวเตอร์ที่เซิร์ฟเวอร์ทำงานอยู่:
+server_update_latest|เซิร์ฟเวอร์ของคุณเป็นเวอร์ชันล่าสุดแล้ว ({0})
+server_update_note|โมเดลยังอยู่ในวอลุ่มของ Docker และไม่ต้องดาวน์โหลดใหม่ หากคุณแก้ไข docker-compose.yml แล้ว git pull แจ้งข้อผิดพลาด ให้รัน git stash ก่อน และ git stash pop หลังจากนั้น
 """
 
 LANGS['hi'] = """
@@ -1692,4 +1872,19 @@ err_server_error|सर्वर त्रुटि।
 err_unreachable|सर्वर से कनेक्ट नहीं हो पा रहा।
 err_timeout|सर्वर ने समय पर जवाब नहीं दिया।
 err_unknown|अनपेक्षित त्रुटि ({0})।
+updates|अपडेट
+check_updates|अपडेट देखें
+check_again|फिर से देखें
+update_now|अपडेट करें
+update_available|संस्करण {0} उपलब्ध है (आपके पास {1} है)।
+update_latest|आपके पास नवीनतम संस्करण है ({0})।
+update_rate_limited|GitHub कुछ समय के लिए जाँच सीमित कर रहा है। बाद में फिर कोशिश करें।
+update_failed|अपडेट की जाँच नहीं हो सकी। कनेक्शन जाँचें और फिर कोशिश करें।
+update_how_firefox|Firefox नए संस्करण अपने आप इंस्टॉल करता है। अभी पाने के लिए about:addons खोलें, गियर आइकन पर क्लिक करें और “अपडेट के लिए जाँचें” चुनें। अभी-अभी आया संस्करण ऐड-ऑन साइट पर पहुँचने में कुछ दिन ले सकता है।
+update_how_chromium|अपडेट करने के लिए संस्करण के पेज से Chromium वाली zip डाउनलोड करें, उसे पुराने फ़ोल्डर के ऊपर अनज़िप करें और chrome://extensions में Stream Transcription के कार्ड पर रीलोड आइकन दबाएँ। आपकी सेटिंग्स बनी रहती हैं।
+update_privacy|जाँच में GitHub से सिर्फ़ नवीनतम संस्करण का नंबर पूछा जाता है; और कुछ नहीं भेजा जाता।
+server_update_available|आपके सर्वर पर संस्करण {0} है और {1} उपलब्ध है। अपडेट करने के लिए, जिस कंप्यूटर पर सर्वर चलता है वहाँ यह चलाएँ:
+server_version_unknown|आपका सर्वर अपना संस्करण नहीं बताता, यानी वह इस जाँच से पुराना है। अपडेट करने के लिए, जिस कंप्यूटर पर सर्वर चलता है वहाँ यह चलाएँ:
+server_update_latest|आपका सर्वर अप-टू-डेट है ({0})।
+server_update_note|मॉडल Docker वॉल्यूम में रहते हैं और दोबारा डाउनलोड नहीं होते। अगर आपने docker-compose.yml बदला है और git pull त्रुटि देता है, तो पहले git stash और बाद में git stash pop चलाएँ।
 """

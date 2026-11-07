@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "Errore imprevisto ({0})."
+  },
+  "updates": {
+    "message": "Aggiornamenti"
+  },
+  "check_updates": {
+    "message": "Cerca aggiornamenti"
+  },
+  "check_again": {
+    "message": "Cerca di nuovo"
+  },
+  "update_now": {
+    "message": "Aggiorna"
+  },
+  "update_available": {
+    "message": "È disponibile la versione {0} (hai la {1})."
+  },
+  "update_latest": {
+    "message": "Hai l’ultima versione ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub sta limitando le verifiche per un po’. Riprova più tardi."
+  },
+  "update_failed": {
+    "message": "Impossibile cercare aggiornamenti. Controlla la connessione e riprova."
+  },
+  "update_how_firefox": {
+    "message": "Firefox installa da solo le nuove versioni. Per averla subito, apri about:addons, fai clic sull’icona dell’ingranaggio e scegli “Controlla aggiornamenti”. Una versione appena uscita può impiegare qualche giorno ad arrivare al sito dei componenti aggiuntivi."
+  },
+  "update_how_chromium": {
+    "message": "Per aggiornare, scarica lo zip per Chromium dalla pagina della versione, estrailo sopra la vecchia cartella e fai clic sull’icona di ricarica nella scheda di Stream Transcription in chrome://extensions. Le impostazioni restano."
+  },
+  "update_privacy": {
+    "message": "La ricerca chiede a GitHub solo il numero dell’ultima versione; non viene inviato nient’altro."
+  },
+  "server_update_available": {
+    "message": "Il tuo server ha la versione {0} ed è disponibile la {1}. Per aggiornarlo, esegui questo sul computer che lo ospita:"
+  },
+  "server_version_unknown": {
+    "message": "Il tuo server non dice quale versione ha, quindi è precedente a questa verifica. Per aggiornarlo, esegui questo sul computer che lo ospita:"
+  },
+  "server_update_latest": {
+    "message": "Il tuo server è aggiornato ({0})."
+  },
+  "server_update_note": {
+    "message": "I modelli restano nel volume Docker e non vengono riscaricati. Se hai modificato docker-compose.yml e git pull si lamenta, esegui git stash prima e git stash pop dopo."
   }
 }

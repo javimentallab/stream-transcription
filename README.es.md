@@ -41,6 +41,14 @@ léelo en el tuyo, en tiempo real. El audio no sale de tu red: solo va al servid
   descomprímelo, abre `chrome://extensions`, activa el **Modo de desarrollador** y pulsa
   **Cargar descomprimida** sobre la carpeta.
 
+**Actualizaciones.** Firefox actualiza solo el complemento desde AMO. En los dos navegadores,
+**Buscar actualizaciones** (al pie de la ventana de la extensión o en Ajustes → Acerca de)
+pregunta a GitHub cuál es la última versión y, si hay una más nueva, abre la página para
+conseguirla: la del complemento en AMO en Firefox, o la de la versión en GitHub en Chromium,
+donde se descomprime el zip nuevo encima de la carpeta antigua y se pulsa el icono de recargar
+en `chrome://extensions` (los ajustes se conservan). La extensión nunca descarga código ni se
+sustituye sola.
+
 Después pulsa el icono de la extensión, escribe la dirección de tu servidor (p. ej.
 `192.168.1.10:9090`) y **Conectar**.
 
@@ -76,6 +84,23 @@ y se puede borrar; los modelos se vuelven a descargar). Opciones en `docker-comp
 Quien llegue al puerto puede usar el servidor (y, con la gestión activada, descargar o borrar
 modelos): déjalo dentro de tu red o detrás de un cortafuegos.
 
+### Actualizar el servidor
+
+El servidor nunca se actualiza solo. En la extensión, **Ajustes → Acerca de → Buscar
+actualizaciones** dice si hay una versión más nueva (los servidores a partir de esta versión
+dicen la suya). Para actualizar, ejecuta esto desde la carpeta donde clonaste el repositorio:
+
+```sh
+cd stream-transcription
+git pull
+cd server
+docker compose up -d --build
+```
+
+Los modelos se quedan en el volumen `models` y no se vuelven a descargar. Si has cambiado
+`docker-compose.yml` y `git pull` se niega, ejecuta `git stash` antes y `git stash pop`
+después.
+
 ### Opción B — WhisperLive tal cual
 
 La extensión también funciona con un WhisperLive sin modificar. En ese caso escribes un
@@ -95,7 +120,8 @@ El traductor suma ~0,7 GB en la gráfica (o nada, si lo pones en el procesador).
 ## Privacidad
 
 La extensión envía el audio de la pestaña **solo** a la dirección de servidor que escribas, y
-nada a ningún otro sitio. Guarda sus ajustes en tu navegador. Ver [PRIVACY.md](PRIVACY.md).
+nada a ningún otro sitio. Solo cuando pulsas **Buscar actualizaciones** pregunta a GitHub el
+número de la última versión. Guarda sus ajustes en tu navegador. Ver [PRIVACY.md](PRIVACY.md).
 
 ## Compilar
 

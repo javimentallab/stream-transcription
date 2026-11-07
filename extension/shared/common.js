@@ -166,3 +166,108 @@ ST.sortedLanguages = function (codes, uiLang) {
     .map((c) => ({ code: c, name: ST.languageName(c, uiLang) }))
     .sort((a, b) => a.name.localeCompare(b.name, uiLang));
 };
+
+// ------------------------------------------------------------------------------- updates
+// Only when the user presses "Check for updates": nothing is checked in the background.
+// The extension never replaces itself: it says there is a new version and opens the page
+// to get it (the add-on's page on AMO in Firefox, the release on GitHub in Chromium).
+
+ST.REPO = "javimentallab/stream-transcription";
+ST.RELEASES_API = "https://api.github.com/repos/" + ST.REPO + "/releases/latest";
+ST.RELEASES_PAGE = "https://github.com/" + ST.REPO + "/releases/latest";
+ST.AMO_PAGE = "https://addons.mozilla.org/firefox/addon/stream-transcription/";
+
+// "v2.1.0", "2.1", "2.2.0-beta.1" -> {nums: [2, 1, 0], pre: [...]}; anything else -> null.
+ST.parseVersion = function (v) {
+  const m = /^\s*v?(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:-([0-9A-Za-z.-]+))?(?:\+[0-9A-Za-z.-]+)?\s*$/
+    .exec(v == null ? "" : String(v));
+  if (!m) return null;
+  return { nums: [Number(m[1]), Number(m[2] || 0), Number(m[3] || 0)], pre: m[4] ? m[4].split(".") : [] };
+};
+
+// Semantic versioning order: -1, 0 or 1; null if either is not a version.
+ST.compareVersions = function (a, b) {
+  const x = ST.parseVersion(a);
+  const y = ST.parseVersion(b);
+  if (!x || !y) return null;
+  for (let i = 0; i < 3; i++) {
+    if (x.nums[i] !== y.nums[i]) return x.nums[i] < y.nums[i] ? -1 : 1;
+  }
+  // 2.0.0-beta < 2.0.0
+  if (!x.pre.length || !y.pre.length) return x.pre.length === y.pre.length ? 0 : (x.pre.length ? -1 : 1);
+  for (let i = 0; i < Math.max(x.pre.length, y.pre.length); i++) {
+    const p = x.pre[i];
+    const q = y.pre[i];
+    if (p === undefined) return -1;
+    if (q === undefined) return 1;
+    if (p === q) continue;
+    const pn = /^\d+$/.test(p);
+    const qn = /^\d+$/.test(q);
+    if (pn && qn) return Number(p) < Number(q) ? -1 : 1;
+    if (pn !== qn) return pn ? -1 : 1;     // numbers go before words
+    return p < q ? -1 : 1;
+  }
+  return 0;
+};
+
+ST.isFirefox = function () {
+  try { return !!ext.runtime.getManifest().browser_specific_settings; } catch (e) { return false; }
+};
+
+// Asks GitHub for the latest release. Resolves
+//   {ok: true, current, latest, newer, page}   or   {ok: false, error}
+// with error "timeout" | "network" | "rate_limited" | "no_release" | "http" | "bad_reply".
+// The browser sends its own User-Agent (an extension cannot change it in Chromium, and the
+// browser's is the least telling one anyway); no cookies, no referrer.
+ST.checkForUpdate = async function (opts = {}) {
+  const current = opts.current || ext.runtime.getManifest().version;
+  const fetchFn = opts.fetch || globalThis.fetch;
+  const timeoutMs = opts.timeoutMs || 8000;
+  const ctrl = typeof AbortController === "function" ? new AbortController() : null;
+  let timer;
+  const timeout = new Promise((resolve) => {
+    timer = setTimeout(() => {
+      try { ctrl && ctrl.abort(); } catch (e) { /* ignore */ }
+      resolve({ ok: false, error: "timeout" });
+    }, timeoutMs);
+  });
+  const ask = (async () => {
+    let res;
+    try {
+      res = await fetchFn(ST.RELEASES_API, {
+        headers: { Accept: "application/vnd.github+json" },
+        cache: "no-store", credentials: "omit", referrerPolicy: "no-referrer",
+        signal: ctrl ? ctrl.signal : undefined,
+      });
+    } catch (e) {
+      return { ok: false, error: "network" };
+    }
+    if (res.status === 403 || res.status === 429) return { ok: false, error: "rate_limited" };
+    if (res.status === 404) return { ok: false, error: "no_release" };
+    if (!res.ok) return { ok: false, error: "http" };
+    let data;
+    try { data = await res.json(); } catch (e) { return { ok: false, error: "bad_reply" }; }
+    const latest = data && typeof data.tag_name === "string" ? data.tag_name.trim().replace(/^v/i, "") : "";
+    const cmp = ST.compareVersions(latest, current);
+    if (cmp === null) return { ok: false, error: "bad_reply" };
+    const own = "https://github.com/" + ST.REPO + "/releases/";
+    const release = typeof data.html_url === "string" && data.html_url.startsWith(own) ? data.html_url : ST.RELEASES_PAGE;
+    return { ok: true, current, latest, newer: cmp > 0, page: ST.isFirefox() ? ST.AMO_PAGE : release };
+  })();
+  try {
+    return await Promise.race([ask, timeout]);
+  } finally {
+    clearTimeout(timer);
+  }
+};
+
+// The server's version (newer servers send it with every answer) against the latest release:
+// "unknown" (it does not say: older server), "newer" (a newer release exists) or "current".
+ST.serverUpdateState = function (serverVersion, latest) {
+  const cmp = ST.compareVersions(latest, serverVersion);
+  if (cmp === null) return "unknown";
+  return cmp > 0 ? "newer" : "current";
+};
+
+// What the README says to run, on the computer where the server is.
+ST.SERVER_UPDATE_COMMANDS = "cd stream-transcription\ngit pull\ncd server\ndocker compose up -d --build";

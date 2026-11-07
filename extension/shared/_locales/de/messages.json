@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "Unerwarteter Fehler ({0})."
+  },
+  "updates": {
+    "message": "Updates"
+  },
+  "check_updates": {
+    "message": "Nach Updates suchen"
+  },
+  "check_again": {
+    "message": "Erneut suchen"
+  },
+  "update_now": {
+    "message": "Aktualisieren"
+  },
+  "update_available": {
+    "message": "Version {0} ist verfügbar (Sie haben {1})."
+  },
+  "update_latest": {
+    "message": "Sie haben die neueste Version ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub begrenzt die Abfragen für eine Weile. Versuchen Sie es später erneut."
+  },
+  "update_failed": {
+    "message": "Die Suche nach Updates ist fehlgeschlagen. Prüfen Sie die Verbindung und versuchen Sie es erneut."
+  },
+  "update_how_firefox": {
+    "message": "Firefox installiert neue Versionen von selbst. Um sie sofort zu bekommen, öffnen Sie about:addons, klicken Sie auf das Zahnrad und wählen Sie „Auf Updates überprüfen“. Eine gerade erschienene Version kann einige Tage brauchen, bis sie auf der Add-on-Website ist."
+  },
+  "update_how_chromium": {
+    "message": "Zum Aktualisieren laden Sie das Chromium-ZIP von der Seite der Version herunter, entpacken es über den alten Ordner und klicken in chrome://extensions auf der Karte von Stream Transcription auf das Neu-laden-Symbol. Ihre Einstellungen bleiben erhalten."
+  },
+  "update_privacy": {
+    "message": "Bei der Suche wird GitHub nur nach der Nummer der neuesten Version gefragt; sonst wird nichts gesendet."
+  },
+  "server_update_available": {
+    "message": "Ihr Server hat Version {0}, und {1} ist verfügbar. Führen Sie zum Aktualisieren dies auf dem Computer aus, auf dem er läuft:"
+  },
+  "server_version_unknown": {
+    "message": "Ihr Server meldet seine Version nicht, er ist also älter als diese Prüfung. Führen Sie zum Aktualisieren dies auf dem Computer aus, auf dem er läuft:"
+  },
+  "server_update_latest": {
+    "message": "Ihr Server ist aktuell ({0})."
+  },
+  "server_update_note": {
+    "message": "Die Modelle bleiben im Docker-Volume und werden nicht erneut heruntergeladen. Wenn Sie docker-compose.yml geändert haben und git pull sich beschwert, führen Sie vorher git stash und danach git stash pop aus."
   }
 }

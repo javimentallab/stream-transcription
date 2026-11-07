@@ -168,6 +168,20 @@
       <p data-i18n="about_text"></p>
       <p class="muted" data-i18n="about_based"></p>
       <p><a class="link" href="https://github.com/javimentallab/stream-transcription" target="_blank" rel="noopener" data-i18n="source_code"></a></p>
+
+      <h3 data-i18n="updates"></h3>
+      <div class="row">
+        <button class="btn ghost" id="updCheck" data-i18n="check_updates"></button>
+        <button class="btn" id="updGo" data-i18n="update_now" hidden></button>
+      </div>
+      <p class="msg" id="updMsg" role="status"></p>
+      <p class="hint" id="updHow" hidden></p>
+      <div class="srv-upd" id="srvUpd" hidden>
+        <p id="srvUpdText"></p>
+        <pre class="cmd" id="srvUpdCmd"></pre>
+        <p class="hint" data-i18n="server_update_note"></p>
+      </div>
+      <p class="hint" data-i18n="update_privacy"></p>
     </section>
   </main>
 

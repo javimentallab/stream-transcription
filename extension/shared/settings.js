@@ -22,6 +22,7 @@ async function init() {
   initSubtitles();
   initPerformance();
   initInterface();
+  initUpdates();
   initToc();
 
   if (settings.serverUrl) refreshModels();
@@ -64,6 +65,50 @@ function initServer() {
   };
   $("serverSave").addEventListener("click", go);
   $("serverUrl").addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
+}
+
+// ------------------------------------------------------------------------------- updates
+// On demand only. The extension never updates itself: "Update" opens the page to get it.
+
+function initUpdates() {
+  let page = "";
+  $("updGo").addEventListener("click", () => { if (page) ext.tabs.create({ url: page }); });
+  $("updCheck").addEventListener("click", async () => {
+    $("updCheck").disabled = true;
+    $("updGo").hidden = true;
+    $("updHow").hidden = true;
+    $("srvUpd").hidden = true;
+    setMsg($("updMsg"), t("server_checking"));
+    const res = await ST.checkForUpdate();
+    $("updCheck").disabled = false;
+    if (!res.ok) {
+      setMsg($("updMsg"), t(res.error === "rate_limited" ? "update_rate_limited" : "update_failed"), "bad");
+      return;
+    }
+    if (res.newer) {
+      page = res.page;
+      setMsg($("updMsg"), t("update_available", res.latest, res.current), "warn");
+      $("updGo").hidden = false;
+      $("updHow").textContent = t(ST.isFirefox() ? "update_how_firefox" : "update_how_chromium");
+      $("updHow").hidden = false;
+    } else {
+      setMsg($("updMsg"), t("update_latest", res.current), "ok");
+    }
+    renderServerUpdate(res.latest);
+  });
+}
+
+// Only for the Stream Transcription server (a plain WhisperLive one has its own updates).
+function renderServerUpdate(latest) {
+  if (!info || !info.st) return;
+  const state = ST.serverUpdateState(info.version, latest);
+  $("srvUpdText").textContent = state === "current" ? t("server_update_latest", info.version)
+    : state === "newer" ? t("server_update_available", info.version, latest)
+    : t("server_version_unknown");
+  $("srvUpdCmd").textContent = ST.SERVER_UPDATE_COMMANDS;
+  $("srvUpdCmd").hidden = state === "current";
+  $("srvUpd").querySelector(".hint").hidden = state === "current";
+  $("srvUpd").hidden = false;
 }
 
 // -------------------------------------------------------------------------------- models

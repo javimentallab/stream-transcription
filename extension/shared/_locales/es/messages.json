@@ -320,6 +320,51 @@
   "subtitle_preview": {
     "message": "Así se verán tus subtítulos."
   },
+  "updates": {
+    "message": "Actualizaciones"
+  },
+  "check_updates": {
+    "message": "Buscar actualizaciones"
+  },
+  "check_again": {
+    "message": "Volver a buscar"
+  },
+  "update_now": {
+    "message": "Actualizar"
+  },
+  "update_available": {
+    "message": "Ya está la versión {0} (tienes la {1})."
+  },
+  "update_latest": {
+    "message": "Tienes la última versión ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub está limitando las consultas durante un rato. Vuelve a intentarlo más tarde."
+  },
+  "update_failed": {
+    "message": "No se han podido buscar actualizaciones. Revisa la conexión y vuelve a intentarlo."
+  },
+  "update_how_firefox": {
+    "message": "Firefox instala solo las versiones nuevas. Para tenerla ya, abre about:addons, pulsa el icono del engranaje y elige «Buscar actualizaciones». Una versión recién salida puede tardar unos días en llegar a la web de complementos."
+  },
+  "update_how_chromium": {
+    "message": "Para actualizar, descarga el zip de Chromium de la página de la versión, descomprímelo encima de la carpeta antigua y pulsa el icono de recargar en la tarjeta de Stream Transcription de chrome://extensions. Los ajustes se conservan."
+  },
+  "update_privacy": {
+    "message": "Al buscar, solo se pregunta a GitHub el número de la última versión; no se envía nada más."
+  },
+  "server_update_available": {
+    "message": "Tu servidor tiene la versión {0} y ya está la {1}. Para actualizarlo, ejecuta esto en el ordenador donde está:"
+  },
+  "server_version_unknown": {
+    "message": "Tu servidor no dice qué versión tiene, así que es anterior a esta comprobación. Para actualizarlo, ejecuta esto en el ordenador donde está:"
+  },
+  "server_update_latest": {
+    "message": "Tu servidor está al día ({0})."
+  },
+  "server_update_note": {
+    "message": "Los modelos se quedan en el volumen de Docker y no se vuelven a descargar. Si has cambiado docker-compose.yml y git pull se queja, ejecuta git stash antes y git stash pop después."
+  },
   "err_invalid_source": {
     "message": "Eso no es un nombre de modelo de Hugging Face ni un enlace."
   },

@@ -40,3 +40,13 @@ main, .card { padding: 14px; display: flex; flex-direction: column; gap: 12px; }
 .srv-dot.ok { background: var(--ok); }
 .srv-dot.bad { background: var(--bad); }
 .srv-dot.warn { background: var(--warn); }
+
+.upd {
+  display: flex; align-items: center; gap: 8px; padding: 7px 14px;
+  border-top: 1px solid var(--line); background: var(--bg-2); font-size: 12px;
+}
+.upd #updText { flex: 1; min-width: 0; }
+.upd #updText.ok { color: var(--ok); }
+.upd #updText.bad { color: var(--bad); }
+.upd #updText.new { color: var(--text); font-weight: 600; }
+.upd .link, .upd .btn { flex: none; }

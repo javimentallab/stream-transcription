@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "予期しないエラー（{0}）。"
+  },
+  "updates": {
+    "message": "アップデート"
+  },
+  "check_updates": {
+    "message": "アップデートを確認"
+  },
+  "check_again": {
+    "message": "もう一度確認"
+  },
+  "update_now": {
+    "message": "アップデート"
+  },
+  "update_available": {
+    "message": "バージョン {0} が出ています（現在は {1}）。"
+  },
+  "update_latest": {
+    "message": "最新バージョンです（{0}）。"
+  },
+  "update_rate_limited": {
+    "message": "GitHub がしばらく確認を制限しています。後でもう一度お試しください。"
+  },
+  "update_failed": {
+    "message": "アップデートを確認できませんでした。接続を確認してもう一度お試しください。"
+  },
+  "update_how_firefox": {
+    "message": "Firefox は新しいバージョンを自動でインストールします。すぐに入れるには about:addons を開き、歯車アイコンから「今すぐ更新を確認」を選んでください。出たばかりのバージョンはアドオンサイトに載るまで数日かかることがあります。"
+  },
+  "update_how_chromium": {
+    "message": "アップデートするには、バージョンのページから Chromium 用の zip をダウンロードして古いフォルダーに上書きで展開し、chrome://extensions の Stream Transcription のカードで再読み込みアイコンを押してください。設定はそのまま残ります。"
+  },
+  "update_privacy": {
+    "message": "確認では GitHub に最新バージョンの番号を問い合わせるだけで、ほかには何も送信しません。"
+  },
+  "server_update_available": {
+    "message": "サーバーはバージョン {0} で、{1} が出ています。アップデートするには、サーバーが動いているパソコンで次を実行してください："
+  },
+  "server_version_unknown": {
+    "message": "サーバーがバージョンを伝えていないため、この確認機能より古いものです。アップデートするには、サーバーが動いているパソコンで次を実行してください："
+  },
+  "server_update_latest": {
+    "message": "サーバーは最新です（{0}）。"
+  },
+  "server_update_note": {
+    "message": "モデルは Docker ボリュームに残り、再ダウンロードされません。docker-compose.yml を変更していて git pull がエラーになる場合は、先に git stash を、後で git stash pop を実行してください。"
   }
 }

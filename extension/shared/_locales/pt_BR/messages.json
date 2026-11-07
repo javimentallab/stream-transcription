@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "Erro inesperado ({0})."
+  },
+  "updates": {
+    "message": "Atualizações"
+  },
+  "check_updates": {
+    "message": "Procurar atualizações"
+  },
+  "check_again": {
+    "message": "Procurar de novo"
+  },
+  "update_now": {
+    "message": "Atualizar"
+  },
+  "update_available": {
+    "message": "A versão {0} já está disponível (você tem a {1})."
+  },
+  "update_latest": {
+    "message": "Você tem a versão mais recente ({0})."
+  },
+  "update_rate_limited": {
+    "message": "O GitHub está limitando as consultas por um tempo. Tente de novo mais tarde."
+  },
+  "update_failed": {
+    "message": "Não foi possível procurar atualizações. Verifique a conexão e tente de novo."
+  },
+  "update_how_firefox": {
+    "message": "O Firefox instala as versões novas sozinho. Para tê-la agora, abra about:addons, clique no ícone de engrenagem e escolha “Procurar atualizações”. Uma versão recém-lançada pode levar alguns dias para chegar ao site de extensões."
+  },
+  "update_how_chromium": {
+    "message": "Para atualizar, baixe o zip do Chromium na página da versão, descompacte por cima da pasta antiga e clique no ícone de recarregar no cartão do Stream Transcription em chrome://extensions. Suas configurações são mantidas."
+  },
+  "update_privacy": {
+    "message": "Ao procurar, só se pergunta ao GitHub o número da versão mais recente; nada mais é enviado."
+  },
+  "server_update_available": {
+    "message": "Seu servidor tem a versão {0} e a {1} já está disponível. Para atualizá-lo, execute isto no computador onde ele roda:"
+  },
+  "server_version_unknown": {
+    "message": "Seu servidor não informa a versão, então é anterior a esta verificação. Para atualizá-lo, execute isto no computador onde ele roda:"
+  },
+  "server_update_latest": {
+    "message": "Seu servidor está atualizado ({0})."
+  },
+  "server_update_note": {
+    "message": "Os modelos ficam no volume do Docker e não são baixados de novo. Se você alterou o docker-compose.yml e o git pull reclamar, execute git stash antes e git stash pop depois."
   }
 }

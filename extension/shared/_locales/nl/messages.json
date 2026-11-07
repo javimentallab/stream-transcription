@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "Onverwachte fout ({0})."
+  },
+  "updates": {
+    "message": "Updates"
+  },
+  "check_updates": {
+    "message": "Controleren op updates"
+  },
+  "check_again": {
+    "message": "Opnieuw controleren"
+  },
+  "update_now": {
+    "message": "Bijwerken"
+  },
+  "update_available": {
+    "message": "Versie {0} is beschikbaar (je hebt {1})."
+  },
+  "update_latest": {
+    "message": "Je hebt de nieuwste versie ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub beperkt de controles een tijdje. Probeer het later opnieuw."
+  },
+  "update_failed": {
+    "message": "Kon niet op updates controleren. Controleer de verbinding en probeer het opnieuw."
+  },
+  "update_how_firefox": {
+    "message": "Firefox installeert nieuwe versies zelf. Wil je hem nu al, open dan about:addons, klik op het tandwiel en kies ‘Controleren op updates’. Een net verschenen versie kan een paar dagen nodig hebben om op de add-onsite te komen."
+  },
+  "update_how_chromium": {
+    "message": "Om bij te werken download je de Chromium-zip van de pagina van de versie, pak je hem uit over de oude map en klik je in chrome://extensions op het herlaadpictogram op de kaart van Stream Transcription. Je instellingen blijven bewaard."
+  },
+  "update_privacy": {
+    "message": "Bij het controleren wordt GitHub alleen naar het nummer van de nieuwste versie gevraagd; verder wordt er niets verstuurd."
+  },
+  "server_update_available": {
+    "message": "Je server heeft versie {0} en {1} is beschikbaar. Voer dit uit op de computer waarop hij draait om hem bij te werken:"
+  },
+  "server_version_unknown": {
+    "message": "Je server zegt niet welke versie hij heeft, dus hij is ouder dan deze controle. Voer dit uit op de computer waarop hij draait om hem bij te werken:"
+  },
+  "server_update_latest": {
+    "message": "Je server is bijgewerkt ({0})."
+  },
+  "server_update_note": {
+    "message": "De modellen blijven in het Docker-volume en worden niet opnieuw gedownload. Als je docker-compose.yml hebt aangepast en git pull klaagt, voer dan eerst git stash uit en daarna git stash pop."
   }
 }

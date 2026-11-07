@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "예상치 못한 오류({0})."
+  },
+  "updates": {
+    "message": "업데이트"
+  },
+  "check_updates": {
+    "message": "업데이트 확인"
+  },
+  "check_again": {
+    "message": "다시 확인"
+  },
+  "update_now": {
+    "message": "업데이트"
+  },
+  "update_available": {
+    "message": "{0} 버전이 나왔습니다 (현재 {1})."
+  },
+  "update_latest": {
+    "message": "최신 버전입니다 ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub가 잠시 확인 횟수를 제한하고 있습니다. 나중에 다시 시도하세요."
+  },
+  "update_failed": {
+    "message": "업데이트를 확인하지 못했습니다. 연결을 확인하고 다시 시도하세요."
+  },
+  "update_how_firefox": {
+    "message": "Firefox는 새 버전을 자동으로 설치합니다. 지금 바로 받으려면 about:addons를 열고 톱니바퀴 아이콘을 누른 뒤 ‘업데이트 확인’을 선택하세요. 갓 나온 버전은 부가 기능 사이트에 올라오기까지 며칠 걸릴 수 있습니다."
+  },
+  "update_how_chromium": {
+    "message": "업데이트하려면 버전 페이지에서 Chromium용 zip을 내려받아 기존 폴더에 덮어써서 압축을 풀고, chrome://extensions의 Stream Transcription 카드에서 새로고침 아이콘을 누르세요. 설정은 그대로 유지됩니다."
+  },
+  "update_privacy": {
+    "message": "확인할 때는 GitHub에 최신 버전 번호만 물어보며, 그 밖에는 아무것도 보내지 않습니다."
+  },
+  "server_update_available": {
+    "message": "서버는 {0} 버전이고 {1} 버전이 나왔습니다. 업데이트하려면 서버가 실행 중인 컴퓨터에서 다음을 실행하세요:"
+  },
+  "server_version_unknown": {
+    "message": "서버가 버전을 알려 주지 않으므로 이 확인 기능보다 오래된 버전입니다. 업데이트하려면 서버가 실행 중인 컴퓨터에서 다음을 실행하세요:"
+  },
+  "server_update_latest": {
+    "message": "서버가 최신 상태입니다 ({0})."
+  },
+  "server_update_note": {
+    "message": "모델은 Docker 볼륨에 남아 있어 다시 내려받지 않습니다. docker-compose.yml을 수정했고 git pull이 오류를 내면 먼저 git stash를, 끝난 뒤 git stash pop을 실행하세요."
   }
 }

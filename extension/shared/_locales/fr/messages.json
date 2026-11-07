@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "Erreur inattendue ({0})."
+  },
+  "updates": {
+    "message": "Mises à jour"
+  },
+  "check_updates": {
+    "message": "Rechercher des mises à jour"
+  },
+  "check_again": {
+    "message": "Rechercher à nouveau"
+  },
+  "update_now": {
+    "message": "Mettre à jour"
+  },
+  "update_available": {
+    "message": "La version {0} est disponible (vous avez la {1})."
+  },
+  "update_latest": {
+    "message": "Vous avez la dernière version ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub limite les vérifications pendant un moment. Réessayez plus tard."
+  },
+  "update_failed": {
+    "message": "Impossible de rechercher des mises à jour. Vérifiez la connexion et réessayez."
+  },
+  "update_how_firefox": {
+    "message": "Firefox installe les nouvelles versions tout seul. Pour l’avoir tout de suite, ouvrez about:addons, cliquez sur la roue dentée et choisissez « Rechercher des mises à jour ». Une version qui vient de sortir peut mettre quelques jours à arriver sur le site des modules complémentaires."
+  },
+  "update_how_chromium": {
+    "message": "Pour mettre à jour, téléchargez le zip Chromium sur la page de la version, décompressez-le par-dessus l’ancien dossier et cliquez sur l’icône de rechargement de la carte Stream Transcription dans chrome://extensions. Vos réglages sont conservés."
+  },
+  "update_privacy": {
+    "message": "La recherche demande seulement à GitHub le numéro de la dernière version ; rien d’autre n’est envoyé."
+  },
+  "server_update_available": {
+    "message": "Votre serveur a la version {0} et la {1} est disponible. Pour le mettre à jour, lancez ceci sur l’ordinateur qui l’héberge :"
+  },
+  "server_version_unknown": {
+    "message": "Votre serveur n’indique pas sa version : il est donc antérieur à cette vérification. Pour le mettre à jour, lancez ceci sur l’ordinateur qui l’héberge :"
+  },
+  "server_update_latest": {
+    "message": "Votre serveur est à jour ({0})."
+  },
+  "server_update_note": {
+    "message": "Les modèles restent dans le volume Docker et ne sont pas retéléchargés. Si vous avez modifié docker-compose.yml et que git pull proteste, lancez git stash avant et git stash pop après."
   }
 }

@@ -41,6 +41,13 @@ in yours, in real time. The audio never leaves your network: it goes only to the
   unzip it, open `chrome://extensions`, turn on **Developer mode** and click
   **Load unpacked** on the unzipped folder.
 
+**Updates.** Firefox updates the add-on from AMO by itself. In both browsers, **Check for
+updates** (at the bottom of the popup, or in Settings → About) asks GitHub for the latest
+release and, if there is a newer one, opens the page to get it: the add-on's page on AMO in
+Firefox, or the release on GitHub in Chromium, where you unzip the new zip over the old folder
+and press the reload icon in `chrome://extensions` (your settings are kept). The extension
+never downloads code or replaces itself.
+
 Then click the extension's icon, type your server's address (e.g. `192.168.1.10:9090`) and
 **Connect**.
 
@@ -77,6 +84,23 @@ the models are downloaded again). Options in
 Anyone who can reach the port can use the server (and, with management on, download or
 delete models): keep it inside your network or behind a firewall.
 
+### Updating the server
+
+The server never updates itself. In the extension, **Settings → About → Check for updates**
+says whether a newer release exists (servers from this version on report their own version).
+To update, run this from the folder where you cloned the repository:
+
+```sh
+cd stream-transcription
+git pull
+cd server
+docker compose up -d --build
+```
+
+The models stay in the `models` volume and are not downloaded again. If you edited
+`docker-compose.yml` and `git pull` refuses to run, run `git stash` before it and
+`git stash pop` after it.
+
 ### Option B — plain WhisperLive
 
 The extension also works with an unmodified WhisperLive server. You then type a model size
@@ -96,7 +120,8 @@ The translator adds ~0.7 GB on the GPU (or nothing, set to run on the CPU).
 ## Privacy
 
 The extension sends the tab's audio **only** to the server address you enter, and nothing
-else anywhere. It stores its settings in your browser. See [PRIVACY.md](PRIVACY.md).
+else anywhere. Only when you press **Check for updates** does it ask GitHub for the number of
+the latest release. It stores its settings in your browser. See [PRIVACY.md](PRIVACY.md).
 
 ## Building
 

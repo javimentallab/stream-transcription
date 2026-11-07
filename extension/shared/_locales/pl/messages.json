@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "Nieoczekiwany błąd ({0})."
+  },
+  "updates": {
+    "message": "Aktualizacje"
+  },
+  "check_updates": {
+    "message": "Sprawdź aktualizacje"
+  },
+  "check_again": {
+    "message": "Sprawdź ponownie"
+  },
+  "update_now": {
+    "message": "Aktualizuj"
+  },
+  "update_available": {
+    "message": "Dostępna jest wersja {0} (masz {1})."
+  },
+  "update_latest": {
+    "message": "Masz najnowszą wersję ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub przez jakiś czas ogranicza sprawdzanie. Spróbuj ponownie później."
+  },
+  "update_failed": {
+    "message": "Nie udało się sprawdzić aktualizacji. Sprawdź połączenie i spróbuj ponownie."
+  },
+  "update_how_firefox": {
+    "message": "Firefox sam instaluje nowe wersje. Aby mieć ją od razu, otwórz about:addons, kliknij ikonę koła zębatego i wybierz „Sprawdź dostępność aktualizacji”. Świeżo wydana wersja może dotrzeć do witryny dodatków dopiero po kilku dniach."
+  },
+  "update_how_chromium": {
+    "message": "Aby zaktualizować, pobierz plik zip dla Chromium ze strony wersji, rozpakuj go na starym folderze i kliknij ikonę ponownego wczytania na karcie Stream Transcription w chrome://extensions. Ustawienia zostają zachowane."
+  },
+  "update_privacy": {
+    "message": "Sprawdzanie tylko pyta GitHub o numer najnowszej wersji; nic więcej nie jest wysyłane."
+  },
+  "server_update_available": {
+    "message": "Twój serwer ma wersję {0}, a dostępna jest {1}. Aby go zaktualizować, uruchom to na komputerze, na którym działa:"
+  },
+  "server_version_unknown": {
+    "message": "Twój serwer nie podaje swojej wersji, więc jest starszy niż to sprawdzanie. Aby go zaktualizować, uruchom to na komputerze, na którym działa:"
+  },
+  "server_update_latest": {
+    "message": "Twój serwer jest aktualny ({0})."
+  },
+  "server_update_note": {
+    "message": "Modele zostają w woluminie Dockera i nie są pobierane ponownie. Jeśli plik docker-compose.yml był zmieniany, a git pull zgłasza błąd, uruchom przed nim git stash, a po nim git stash pop."
   }
 }

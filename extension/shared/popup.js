@@ -6,6 +6,7 @@ const t = (...a) => ST.t(...a);
 let settings;
 let runState = { state: "idle" };
 let serverInfo = null;      // last list_models answer, or {ok:false, error}
+let updatePage = "";        // where "Update" goes once a newer version was found
 
 const ACTIVE = ["connecting", "loading", "listening", "live", "stalled", "noresponse"];
 const LOCKED_IDS = ["model", "modelFree", "sourceLang", "targetLang", "useVad", "precision", "translatorDevice"];
@@ -76,6 +77,7 @@ function applySettingsToForm() {
   $("modelFree").value = settings.model;
   renderLines();
   renderFooter();
+  $("updText").textContent = "v" + ext.runtime.getManifest().version;
 }
 
 function renderLines() {
@@ -115,6 +117,13 @@ function bindControls() {
   $("manageModels").addEventListener("click", (e) => { e.preventDefault(); openSettings("models"); });
   $("srvChange").addEventListener("click", (e) => { e.preventDefault(); showSetup(true); });
   $("serverHelp").addEventListener("click", (e) => { e.preventDefault(); openSettings("server"); });
+
+  $("updCheck").addEventListener("click", (e) => { e.preventDefault(); onCheckUpdate(); });
+  $("updGo").addEventListener("click", () => {
+    if (!updatePage) return;
+    ext.tabs.create({ url: updatePage });
+    window.close();
+  });
 
   $("setupConnect").addEventListener("click", onSetupConnect);
   $("setupUrl").addEventListener("keydown", (e) => { if (e.key === "Enter") onSetupConnect(); });
@@ -309,6 +318,33 @@ async function onToggle() {
   runState = { state: "connecting" };
   renderState();
   await ext.runtime.sendMessage({ cmd: "start", tabId: tab.id, streamId }).catch(() => {});
+}
+
+// ------------------------------------------------------------------------------- updates
+
+async function onCheckUpdate() {
+  const text = $("updText");
+  const link = $("updCheck");
+  link.hidden = true;
+  text.className = "muted";
+  text.textContent = t("server_checking");
+  const res = await ST.checkForUpdate();
+  if (res.ok && res.newer) {
+    updatePage = res.page;
+    text.className = "new";
+    text.textContent = t("update_available", res.latest, res.current);
+    $("updGo").hidden = false;
+    return;
+  }
+  link.hidden = false;
+  link.textContent = t("check_again");
+  if (res.ok) {
+    text.className = "ok";
+    text.textContent = t("update_latest", res.current);
+  } else {
+    text.className = "bad";
+    text.textContent = t(res.error === "rate_limited" ? "update_rate_limited" : "update_failed");
+  }
 }
 
 function setMsg(el, text, kind) {

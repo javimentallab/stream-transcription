@@ -379,5 +379,50 @@
   },
   "err_unknown": {
     "message": "意外错误（{0}）。"
+  },
+  "updates": {
+    "message": "更新"
+  },
+  "check_updates": {
+    "message": "检查更新"
+  },
+  "check_again": {
+    "message": "再次检查"
+  },
+  "update_now": {
+    "message": "更新"
+  },
+  "update_available": {
+    "message": "已有 {0} 版（你的是 {1}）。"
+  },
+  "update_latest": {
+    "message": "你已是最新版本（{0}）。"
+  },
+  "update_rate_limited": {
+    "message": "GitHub 暂时限制了查询次数，请稍后再试。"
+  },
+  "update_failed": {
+    "message": "无法检查更新。请检查网络连接后重试。"
+  },
+  "update_how_firefox": {
+    "message": "Firefox 会自动安装新版本。想立即获取，请打开 about:addons，点击齿轮图标，选择“检查更新”。刚发布的版本可能要过几天才会出现在附加组件网站上。"
+  },
+  "update_how_chromium": {
+    "message": "更新方法：从版本页面下载 Chromium 版 zip，解压覆盖旧文件夹，然后在 chrome://extensions 中点击 Stream Transcription 卡片上的重新加载图标。你的设置会保留。"
+  },
+  "update_privacy": {
+    "message": "检查时只会向 GitHub 询问最新版本号，不会发送其他任何内容。"
+  },
+  "server_update_available": {
+    "message": "你的服务器是 {0} 版，已有 {1} 版。要更新，请在运行服务器的电脑上执行："
+  },
+  "server_version_unknown": {
+    "message": "你的服务器没有报告版本，说明它比这项检查更早。要更新，请在运行服务器的电脑上执行："
+  },
+  "server_update_latest": {
+    "message": "你的服务器已是最新（{0}）。"
+  },
+  "server_update_note": {
+    "message": "模型保留在 Docker 卷中，不会重新下载。如果你改过 docker-compose.yml 且 git pull 报错，请先执行 git stash，之后再执行 git stash pop。"
   }
 }
