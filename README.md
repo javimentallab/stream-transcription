@@ -24,6 +24,8 @@ in yours, in real time. The audio never leaves your network: it goes only to the
   text, the translator can run on the CPU, and if the model doesn't fit you get a clear
   **VRAM warning** instead of subtitles that silently freeze.
 - **Save the subtitles** as an `.srt` file when you stop.
+- **Check for updates** from the extension: it says whether a newer version exists, for the
+  extension and for the server, and takes you to it. Only when you ask.
 - Interface in English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese,
   Japanese, Korean, Thai and Hindi; it follows the browser or can be picked in the settings.
 - No accounts, no tracking, no analytics. Open source (MIT).
@@ -136,7 +138,7 @@ browser's folder. English and Spanish texts live side by side in `tools/i18n-mes
 
 ## Contributing
 
-See [CONTRIBUTING](CONTRIBUTING.md). To report a security problem privately, see [SECURITY](SECURITY.md).
+What changed in each version: [CHANGELOG](CHANGELOG.md). See [CONTRIBUTING](CONTRIBUTING.md). To report a security problem privately, see [SECURITY](SECURITY.md).
 
 ## Credits and license
 

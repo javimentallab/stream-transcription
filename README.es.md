@@ -24,6 +24,8 @@ léelo en el tuyo, en tiempo real. El audio no sale de tu red: solo va al servid
   texto, el traductor puede ir en el procesador, y si el modelo no cabe sale un **aviso de
   VRAM** en vez de unos subtítulos que se congelan sin decir nada.
 - **Guarda los subtítulos** en un `.srt` al parar.
+- **Busca actualizaciones** desde la extensión: dice si hay una versión más nueva, de la
+  extensión y del servidor, y te lleva a ella. Solo cuando lo pides.
 - Interfaz en castellano, inglés, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano,
   chino, japonés, coreano, tailandés e hindi; sigue al navegador o se elige en los ajustes.
 - Sin cuentas, sin rastreo, sin estadísticas. Código abierto (MIT).
@@ -137,7 +139,7 @@ hueco contra el inglés.
 
 ## Contribuir
 
-Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de un problema de seguridad, consulta [SECURITY](SECURITY.md).
+Qué cambia en cada versión: [CHANGELOG](CHANGELOG.md), en inglés. Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de un problema de seguridad, consulta [SECURITY](SECURITY.md).
 
 ## Créditos y licencia
 

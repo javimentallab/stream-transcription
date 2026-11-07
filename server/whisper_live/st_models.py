@@ -39,7 +39,7 @@ PROTOCOL_VERSION = 1
 # Version of this server, the same as the release (tests/test_st_models.py checks it against
 # the extension's manifests). Sent with every answer so the extension can say whether a
 # newer release exists; the server itself never checks or updates anything.
-SERVER_VERSION = "2.1.1"
+SERVER_VERSION = "2.2.0"
 
 ST_ROOT = os.path.expanduser(
     os.environ.get("ST_MODELS_DIR", "~/.cache/stream-transcription"))
