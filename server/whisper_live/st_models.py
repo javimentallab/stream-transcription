@@ -36,6 +36,10 @@ import urllib.request
 import zipfile
 
 PROTOCOL_VERSION = 1
+# Version of this server, the same as the release (tests/test_st_models.py checks it against
+# the extension's manifests). Sent with every answer so the extension can say whether a
+# newer release exists; the server itself never checks or updates anything.
+SERVER_VERSION = "2.1.1"
 
 ST_ROOT = os.path.expanduser(
     os.environ.get("ST_MODELS_DIR", "~/.cache/stream-transcription"))
@@ -639,6 +643,7 @@ def handle_control(websocket, options, default_path):
         logging.exception("[stream-transcription] %s failed", action)
         reply = {"ok": False, "error": "server_error", "detail": str(e)[:300]}
     reply["st"] = PROTOCOL_VERSION
+    reply["version"] = SERVER_VERSION
     reply["management"] = ALLOW_MANAGEMENT
     try:
         websocket.send(json.dumps(reply))

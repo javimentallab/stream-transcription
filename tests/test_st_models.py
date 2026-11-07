@@ -1,6 +1,7 @@
 """Model management on the server: what it accepts to download, and archives that try to escape."""
 import importlib.util
 import io
+import json
 import os
 import tarfile
 import tempfile
@@ -135,6 +136,31 @@ class Requested(unittest.TestCase):
     def test_options_that_are_not_a_dict(self):
         M.set_request("nonsense")
         self.assertEqual(M.requested("x", "d"), "d")
+
+
+class Version(unittest.TestCase):
+    """The server says its version, which is the release's: the extension compares it with GitHub."""
+
+    def test_same_as_the_extension(self):
+        raiz = os.path.dirname(os.path.dirname(RUTA))
+        for navegador in ("chromium", "firefox"):
+            with open(os.path.join(raiz, "..", "extension", navegador, "manifest.json"), encoding="utf-8") as fh:
+                self.assertEqual(M.SERVER_VERSION, json.load(fh)["version"], navegador)
+
+    def test_every_answer_carries_it(self):
+        class WS:
+            enviado = []
+
+            def send(self, d):
+                self.enviado.append(json.loads(d))
+
+        ws = WS()
+        self.assertTrue(M.handle_control(ws, {"st_action": "nonsense"}, ""))
+        self.assertEqual(ws.enviado[0]["version"], M.SERVER_VERSION)
+        self.assertEqual(ws.enviado[0]["st"], M.PROTOCOL_VERSION)
+
+    def test_not_a_control_message(self):
+        self.assertFalse(M.handle_control(None, {"uid": "x"}, ""))
 
 
 if __name__ == "__main__":
