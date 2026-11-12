@@ -5,7 +5,7 @@
 
 (function () {
   // Folder names under _locales. Chrome wants pt_BR and zh_CN, not plain pt and zh.
-  const SUPPORTED = ["en", "es", "pt_BR", "fr", "de", "it", "nl", "pl", "ru", "uk", "zh_CN", "ja", "ko", "th", "hi"];
+  const SUPPORTED = ["en", "es", "pt_BR", "fr", "de", "it", "nl", "pl", "ru", "uk", "zh_CN", "ja", "ko", "th", "hi", "ca", "gl", "eu"];
   const BY_BASE = { pt: "pt_BR", zh: "zh_CN" };
   let messages = {};
   let fallback = {};

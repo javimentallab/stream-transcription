@@ -1888,3 +1888,438 @@ server_version_unknown|आपका सर्वर अपना संस्क
 server_update_latest|आपका सर्वर अप-टू-डेट है ({0})।
 server_update_note|मॉडल Docker वॉल्यूम में रहते हैं और दोबारा डाउनलोड नहीं होते। अगर आपने docker-compose.yml बदला है और git pull त्रुटि देता है, तो पहले git stash और बाद में git stash pop चलाएँ।
 """
+
+LANGS['ca'] = """
+extName|Stream Transcription
+extDescription|Subtítols en directe per a qualsevol pestanya, transcrits i traduïts pel teu propi servidor Whisper.
+start|Activa els subtítols
+stop|Treu els subtítols
+status_idle|A punt
+status_connecting|Connectant…
+status_loading|Carregant el model…
+status_listening|Escoltant…
+status_live|En directe
+status_stalled|Àudio aturat
+status_error|Error
+status_noresponse|Sense resposta
+model|Model
+model_server_default|El del servidor
+model_default_tag|{0} · per defecte
+manage_models|Gestiona els models
+spoken_lang|Idioma de l'àudio
+auto_detect|Automàtic
+detected|Detectat: {0}
+subs_lang|Subtítols en
+original_lang|Sense traduir
+lines|Línies
+text_size|Mida del text
+save_srt|Desa els subtítols (.srt) en aturar
+advanced|Avançat
+use_vad|Salta els silencis (detecció de veu)
+settings|Configuració
+first_load_hint|La primera vegada que es carrega un model pot trigar fins a un minut.
+options_locked|Treu els subtítols per canviar aquestes opcions.
+server_setup_title|Connecta el teu servidor
+server_setup_hint|Stream Transcription necessita un servidor WhisperLive al teu ordinador o a la teva xarxa.
+server_address|Adreça del servidor
+server_placeholder|p. ex. localhost:9090 o 192.168.1.10:9090
+connect|Connecta
+server_ok_models|Connectat · {0} models
+server_ok_one_model|Connectat · 1 model
+server_plain|Connectat · WhisperLive estàndard (sense gestió de models)
+server_checking|Comprovant…
+server_unreachable|No es pot connectar amb el servidor. Està engegat? Revisa l'adreça i el tallafoc.
+server_timeout|El servidor no ha respost a temps.
+server_bad_url|Aquesta adreça no és vàlida.
+server_change|Canvia
+server_help|Com munto un servidor?
+server_help_1|Necessites un servidor WhisperLive (lliure i gratuït) en un ordinador, millor si té una targeta gràfica NVIDIA. Els models petits també funcionen només amb el processador.
+server_help_2|Després escriu aquí la seva adreça: la IP de l'ordinador i el port, p. ex. 192.168.1.10:9090. Si és en aquest mateix ordinador, localhost:9090.
+server_help_3|Per baixar i gestionar models des d'aquesta pàgina, afegeix al servidor el complement de Stream Transcription.
+server_help_guide|Guia pas a pas
+error_capture|No es pot capturar aquesta pestanya (les pàgines del navegador, les botigues d'extensions i els PDF no ho permeten).
+error_no_media|No hi ha vídeo ni àudio en aquesta pàgina.
+error_server_full|El servidor està ocupat. Espera estimada: {0} min.
+error_disconnected|El servidor ha tancat la connexió.
+error_model_load|⚠ No hi ha prou memòria gràfica (VRAM) al servidor per a aquest model. Tria un model més petit o activa «Estalvia memòria (int8)» a Avançat.
+warn_no_response|⚠ Han deixat d'arribar subtítols tot i que hi ha so. Segurament el model no cap a la memòria gràfica (VRAM) del servidor: tria un model més petit o activa «Estalvia memòria (int8)» a Avançat.
+warn_slow_load|⚠ El model triga massa a carregar-se. Pot ser que no càpiga a la memòria gràfica (VRAM) del servidor: tria un model més petit o activa «Estalvia memòria (int8)» a Avançat.
+error_reload|Torna a carregar la pàgina (F5) i torna a començar.
+error_no_server|Primer configura el servidor.
+settings_title|Stream Transcription · Configuració
+section_server|Servidor
+section_models|Models
+section_subtitles|Subtítols
+section_interface|Interfície
+section_about|Quant a
+installed_models|Instal·lats al servidor
+no_models|Encara no hi ha models instal·lats.
+badge_default|Per defecte
+badge_loaded|En memòria
+badge_selected|Triat
+use_model|Fes-lo servir
+delete_model|Esborra
+confirm_delete|Vols esborrar {0} del servidor? Allibera {1}.
+add_model|Afegeix un model
+add_model_hint|Enganxa el nom o l'enllaç d'un model de Hugging Face. Serveix qualsevol model Whisper: els de faster-whisper (CTranslate2) es fan servir tal qual i els normals (transformers) es converteixen sols. També serveix un enllaç directe a un .zip o .tar.gz amb un model.
+add_model_placeholder|p. ex. Systran/faster-whisper-large-v3
+download|Baixa
+suggestions|Suggeriments:
+browse_hf|Mira models Whisper a Hugging Face
+vram_hint|Els models grans encerten més però demanen més memòria de la targeta gràfica: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB.
+keep_open|Deixa aquesta pàgina oberta fins que acabi la baixada.
+job_downloading|Baixant… {0} de {1}
+job_downloading_nosize|Baixant… {0}
+job_converting|Convertint al format de faster-whisper…
+job_extracting|Descomprimint…
+job_ready|Instal·lat
+job_error|Ha fallat: {0}
+retry|Torna-ho a provar
+plain_server_hint|És un servidor WhisperLive estàndard: escriu una mida de model (tiny, base, small, medium, large-v3, large-v3-turbo) i el servidor el baixa la primera vegada. Per baixar qualsevol model des d'aquí, instal·la el complement de Stream Transcription al servidor.
+model_name|Nom del model
+save|Desa
+saved|Desat
+reset_position|Recol·loca els subtítols
+position_reset_done|Fet: tornaran a baix.
+section_performance|Rendiment
+performance_hint|Si la targeta gràfica del servidor es queda sense memòria (els subtítols no arriben o surt un avís de memòria), aquestes dues opcions n'alliberen força. Només funcionen amb el servidor de Stream Transcription.
+precision|Precisió del model
+precision_auto|Automàtica
+precision_int8|Estalvia memòria (int8)
+precision_hint|int8 gasta més o menys la meitat de memòria gràfica i, a la pràctica, escriu el mateix text.
+translator_device|El traductor va a
+device_gpu|La targeta gràfica
+device_cpu|El processador (CPU)
+translator_device_hint|Al processador allibera memòria gràfica, però els subtítols traduïts arriben una mica més tard.
+interface_lang|Idioma de la interfície
+lang_auto|El del navegador
+about_text|Codi font disponible (llicència PolyForm Noncommercial). L'àudio només va al servidor que configuris aquí; no s'envia res a cap altre lloc.
+about_based|Basat en WhisperLive, de Collabora.
+source_code|Codi font
+subtitle_preview|Així es veuran els teus subtítols.
+updates|Actualitzacions
+check_updates|Cerca actualitzacions
+check_again|Torna a cercar
+update_now|Actualitza
+update_available|Ja hi ha la versió {0} (tens la {1}).
+update_latest|Tens l'última versió ({0}).
+update_rate_limited|GitHub està limitant les consultes durant una estona. Torna-ho a provar més tard.
+update_failed|No s'han pogut cercar actualitzacions. Revisa la connexió i torna-ho a provar.
+update_how_firefox|El Firefox instal·la les versions noves tot sol. Per tenir-la ja, obre about:addons, prem la icona de l'engranatge i tria «Cerca actualitzacions». Una versió acabada de sortir pot trigar uns dies a arribar al web de complements.
+update_how_chromium|Per actualitzar, baixa el zip de Chromium de la pàgina de la versió, descomprimeix-lo a sobre de la carpeta antiga i prem la icona de recarregar a la targeta de Stream Transcription de chrome://extensions. La configuració es conserva.
+update_privacy|En cercar, només es pregunta a GitHub el número de l'última versió; no s'envia res més.
+server_update_available|El teu servidor té la versió {0} i ja hi ha la {1}. Per actualitzar-lo, executa això a l'ordinador on és:
+server_version_unknown|El teu servidor no diu quina versió té, així que és anterior a aquesta comprovació. Per actualitzar-lo, executa això a l'ordinador on és:
+server_update_latest|El teu servidor està al dia ({0}).
+server_update_note|Els models es queden al volum de Docker i no es tornen a baixar. Si has canviat docker-compose.yml i git pull es queixa, executa git stash abans i git stash pop després.
+err_invalid_source|Això no és un nom de model de Hugging Face ni un enllaç.
+err_unsupported_url|Només enllaços de Hugging Face o enllaços directes a fitxers .zip / .tar.gz.
+err_repo_not_found|Aquest model no existeix a Hugging Face (revisa el nom).
+err_gated_repo|Aquest model demana acceptar les seves condicions a Hugging Face; el servidor necessita un HF_TOKEN.
+err_not_whisper|Això no és un model Whisper.
+err_no_weights|Aquest repositori no té els pesos del model.
+err_network_error|Error de xarxa. Torna-ho a provar: continua per on anava.
+err_download_failed|La baixada ha fallat.
+err_convert_failed|No s'ha pogut convertir el model.
+err_bad_archive|El fitxer comprimit està malmès o no és segur.
+err_already_downloading|Ja s'està baixant.
+err_already_installed|Ja està instal·lat.
+err_management_disabled|La gestió de models està desactivada en aquest servidor.
+err_is_default|És el model per defecte del servidor; no es pot esborrar des d'aquí.
+err_in_use|L'està fent servir una transcripció en marxa.
+err_not_found|Aquest model ja no és al servidor.
+err_server_error|Error del servidor.
+err_unreachable|No es pot connectar amb el servidor.
+err_timeout|El servidor no ha respost a temps.
+err_unknown|Error inesperat ({0}).
+"""
+
+LANGS['gl'] = """
+extName|Stream Transcription
+extDescription|Subtítulos en directo para calquera lapela, transcritos e traducidos polo teu propio servidor Whisper.
+start|Activar subtítulos
+stop|Quitar subtítulos
+status_idle|Listo
+status_connecting|Conectando…
+status_loading|Cargando o modelo…
+status_listening|Escoitando…
+status_live|En directo
+status_stalled|Audio parado
+status_error|Erro
+status_noresponse|Sen resposta
+model|Modelo
+model_server_default|O do servidor
+model_default_tag|{0} · predeterminado
+manage_models|Xestionar modelos
+spoken_lang|Idioma do audio
+auto_detect|Automático
+detected|Detectado: {0}
+subs_lang|Subtítulos en
+original_lang|Sen traducir
+lines|Liñas
+text_size|Tamaño do texto
+save_srt|Gardar os subtítulos (.srt) ao parar
+advanced|Avanzado
+use_vad|Saltar silencios (detección de voz)
+settings|Axustes
+first_load_hint|A primeira vez que se carga un modelo pode tardar ata un minuto.
+options_locked|Quita os subtítulos para cambiar estas opcións.
+server_setup_title|Conecta o teu servidor
+server_setup_hint|Stream Transcription necesita un servidor WhisperLive no teu ordenador ou na túa rede.
+server_address|Enderezo do servidor
+server_placeholder|p. ex. localhost:9090 ou 192.168.1.10:9090
+connect|Conectar
+server_ok_models|Conectado · {0} modelos
+server_ok_one_model|Conectado · 1 modelo
+server_plain|Conectado · WhisperLive estándar (sen xestión de modelos)
+server_checking|Comprobando…
+server_unreachable|Non se pode conectar co servidor. Está aceso? Revisa o enderezo e a devasa.
+server_timeout|O servidor non respondeu a tempo.
+server_bad_url|Ese enderezo non é válido.
+server_change|Cambiar
+server_help|Como monto un servidor?
+server_help_1|Necesitas un servidor WhisperLive (libre e gratuíto) nun ordenador, mellor se ten unha tarxeta gráfica NVIDIA. Os modelos pequenos tamén funcionan só co procesador.
+server_help_2|Despois escribe aquí o seu enderezo: a IP do ordenador e o porto, p. ex. 192.168.1.10:9090. Se está neste mesmo ordenador, localhost:9090.
+server_help_3|Para descargar e xestionar modelos desde esta páxina, engade ao servidor o complemento de Stream Transcription.
+server_help_guide|Guía paso a paso
+error_capture|Non se pode capturar esta lapela (as páxinas do navegador, as tendas de extensións e os PDF non o permiten).
+error_no_media|Non hai vídeo nin audio nesta páxina.
+error_server_full|O servidor está ocupado. Espera estimada: {0} min.
+error_disconnected|O servidor pechou a conexión.
+error_model_load|⚠ Non hai memoria gráfica (VRAM) abonda no servidor para este modelo. Escolle un modelo máis pequeno ou activa «Aforrar memoria (int8)» en Avanzado.
+warn_no_response|⚠ Deixaron de chegar subtítulos aínda que hai son. Seguramente o modelo non cabe na memoria gráfica (VRAM) do servidor: escolle un modelo máis pequeno ou activa «Aforrar memoria (int8)» en Avanzado.
+warn_slow_load|⚠ O modelo está a tardar demasiado en cargar. Pode que non caiba na memoria gráfica (VRAM) do servidor: escolle un modelo máis pequeno ou activa «Aforrar memoria (int8)» en Avanzado.
+error_reload|Recarga a páxina (F5) e volve empezar.
+error_no_server|Primeiro configura o servidor.
+settings_title|Stream Transcription · Axustes
+section_server|Servidor
+section_models|Modelos
+section_subtitles|Subtítulos
+section_interface|Interface
+section_about|Acerca de
+installed_models|Instalados no servidor
+no_models|Aínda non hai modelos instalados.
+badge_default|Predeterminado
+badge_loaded|En memoria
+badge_selected|Escollido
+use_model|Usar
+delete_model|Borrar
+confirm_delete|Borrar {0} do servidor? Libera {1}.
+add_model|Engadir un modelo
+add_model_hint|Pega o nome ou a ligazón dun modelo de Hugging Face. Serve calquera modelo Whisper: os de faster-whisper (CTranslate2) úsanse tal cal e os normais (transformers) convértense sós. Tamén serve unha ligazón directa a un .zip ou .tar.gz cun modelo.
+add_model_placeholder|p. ex. Systran/faster-whisper-large-v3
+download|Descargar
+suggestions|Suxestións:
+browse_hf|Ver modelos Whisper en Hugging Face
+vram_hint|Os modelos grandes acertan máis pero piden máis memoria da tarxeta gráfica: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB.
+keep_open|Deixa esta páxina aberta ata que remate a descarga.
+job_downloading|Descargando… {0} de {1}
+job_downloading_nosize|Descargando… {0}
+job_converting|Convertendo ao formato de faster-whisper…
+job_extracting|Descomprimindo…
+job_ready|Instalado
+job_error|Fallou: {0}
+retry|Tentar de novo
+plain_server_hint|É un servidor WhisperLive estándar: escribe un tamaño de modelo (tiny, base, small, medium, large-v3, large-v3-turbo) e o servidor descárgao a primeira vez. Para descargar calquera modelo desde aquí, instala o complemento de Stream Transcription no servidor.
+model_name|Nome do modelo
+save|Gardar
+saved|Gardado
+reset_position|Recolocar os subtítulos
+position_reset_done|Feito: volverán abaixo.
+section_performance|Rendemento
+performance_hint|Se a tarxeta gráfica do servidor se queda sen memoria (os subtítulos non chegan ou sae un aviso de memoria), estas dúas opcións liberan bastante. Só funcionan co servidor de Stream Transcription.
+precision|Precisión do modelo
+precision_auto|Automática
+precision_int8|Aforrar memoria (int8)
+precision_hint|int8 gasta máis ou menos a metade de memoria gráfica e, na práctica, escribe o mesmo texto.
+translator_device|O tradutor vai en
+device_gpu|A tarxeta gráfica
+device_cpu|O procesador (CPU)
+translator_device_hint|No procesador libera memoria gráfica, pero os subtítulos traducidos chegan algo máis tarde.
+interface_lang|Idioma da interface
+lang_auto|O do navegador
+about_text|Código fonte dispoñible (licenza PolyForm Noncommercial). O audio só vai ao servidor que configures aquí; non se envía nada a ningún outro sitio.
+about_based|Baseado en WhisperLive, de Collabora.
+source_code|Código fonte
+subtitle_preview|Así se verán os teus subtítulos.
+updates|Actualizacións
+check_updates|Buscar actualizacións
+check_again|Volver buscar
+update_now|Actualizar
+update_available|Xa está a versión {0} (tes a {1}).
+update_latest|Tes a última versión ({0}).
+update_rate_limited|GitHub está a limitar as consultas durante un tempo. Volve tentalo máis tarde.
+update_failed|Non se puideron buscar actualizacións. Revisa a conexión e volve tentalo.
+update_how_firefox|Firefox instala as versións novas el só. Para tela xa, abre about:addons, preme a icona da roda dentada e escolle «Buscar actualizacións». Unha versión recén saída pode tardar uns días en chegar á web de complementos.
+update_how_chromium|Para actualizar, descarga o zip de Chromium da páxina da versión, descomprímeo enriba do cartafol antigo e preme a icona de recargar na tarxeta de Stream Transcription de chrome://extensions. Os axustes consérvanse.
+update_privacy|Ao buscar, só se lle pregunta a GitHub o número da última versión; non se envía nada máis.
+server_update_available|O teu servidor ten a versión {0} e xa está a {1}. Para actualizalo, executa isto no ordenador onde está:
+server_version_unknown|O teu servidor non di que versión ten, así que é anterior a esta comprobación. Para actualizalo, executa isto no ordenador onde está:
+server_update_latest|O teu servidor está ao día ({0}).
+server_update_note|Os modelos quédanse no volume de Docker e non se volven descargar. Se cambiaches docker-compose.yml e git pull se queixa, executa git stash antes e git stash pop despois.
+err_invalid_source|Iso non é un nome de modelo de Hugging Face nin unha ligazón.
+err_unsupported_url|Só ligazóns de Hugging Face ou ligazóns directas a ficheiros .zip / .tar.gz.
+err_repo_not_found|Ese modelo non existe en Hugging Face (revisa o nome).
+err_gated_repo|Ese modelo pide aceptar as súas condicións en Hugging Face; o servidor necesita un HF_TOKEN.
+err_not_whisper|Iso non é un modelo Whisper.
+err_no_weights|Ese repositorio non ten os pesos do modelo.
+err_network_error|Erro de rede. Volve tentalo: segue por onde ía.
+err_download_failed|A descarga fallou.
+err_convert_failed|Non se puido converter o modelo.
+err_bad_archive|O ficheiro comprimido está danado ou non é seguro.
+err_already_downloading|Xa se está a descargar.
+err_already_installed|Xa está instalado.
+err_management_disabled|A xestión de modelos está desactivada neste servidor.
+err_is_default|É o modelo predeterminado do servidor; non se pode borrar desde aquí.
+err_in_use|Estao a usar unha transcrición en marcha.
+err_not_found|Ese modelo xa non está no servidor.
+err_server_error|Erro do servidor.
+err_unreachable|Non se pode conectar co servidor.
+err_timeout|O servidor non respondeu a tempo.
+err_unknown|Erro inesperado ({0}).
+"""
+
+LANGS['eu'] = """
+extName|Stream Transcription
+extDescription|Zuzeneko azpitituluak edozein fitxatan, zure Whisper zerbitzariak transkribatuak eta itzuliak.
+start|Aktibatu azpitituluak
+stop|Kendu azpitituluak
+status_idle|Prest
+status_connecting|Konektatzen…
+status_loading|Eredua kargatzen…
+status_listening|Entzuten…
+status_live|Zuzenean
+status_stalled|Audioa geldituta
+status_error|Errorea
+status_noresponse|Erantzunik ez
+model|Eredua
+model_server_default|Zerbitzariarena
+model_default_tag|{0} · lehenetsia
+manage_models|Kudeatu ereduak
+spoken_lang|Audioaren hizkuntza
+auto_detect|Automatikoa
+detected|Hautemana: {0}
+subs_lang|Azpitituluen hizkuntza
+original_lang|Itzuli gabe
+lines|Lerroak
+text_size|Testuaren tamaina
+save_srt|Gorde azpitituluak (.srt) gelditzean
+advanced|Aurreratua
+use_vad|Saltatu isiluneak (ahotsa hautematea)
+settings|Ezarpenak
+first_load_hint|Eredu bat lehen aldiz kargatzeak minutu bat ere iraun dezake.
+options_locked|Kendu azpitituluak aukera hauek aldatzeko.
+server_setup_title|Konektatu zure zerbitzaria
+server_setup_hint|Stream Transcription-ek WhisperLive zerbitzari bat behar du zure ordenagailuan edo zure sarean.
+server_address|Zerbitzariaren helbidea
+server_placeholder|adib. localhost:9090 edo 192.168.1.10:9090
+connect|Konektatu
+server_ok_models|Konektatuta · {0} eredu
+server_ok_one_model|Konektatuta · eredu 1
+server_plain|Konektatuta · WhisperLive estandarra (ereduak kudeatu gabe)
+server_checking|Egiaztatzen…
+server_unreachable|Ezin da zerbitzarira konektatu. Piztuta dago? Berrikusi helbidea eta suebakia.
+server_timeout|Zerbitzariak ez du garaiz erantzun.
+server_bad_url|Helbide hori ez da baliozkoa.
+server_change|Aldatu
+server_help|Nola muntatu zerbitzari bat?
+server_help_1|WhisperLive zerbitzari bat behar duzu (librea eta doakoa) ordenagailu batean, hobe NVIDIA txartel grafikoa badu. Eredu txikiek prozesadorearekin bakarrik ere funtzionatzen dute.
+server_help_2|Gero, idatzi hemen haren helbidea: ordenagailuaren IPa eta ataka, adib. 192.168.1.10:9090. Ordenagailu honetan bertan badago, localhost:9090.
+server_help_3|Orri honetatik ereduak deskargatu eta kudeatzeko, gehitu Stream Transcription-en osagarria zerbitzariari.
+server_help_guide|Urratsez urratseko gida
+error_capture|Ezin da fitxa hau kapturatu (nabigatzailearen orriek, gehigarrien dendek eta PDFek ez dute uzten).
+error_no_media|Orri honetan ez dago ez bideorik ez audiorik.
+error_server_full|Zerbitzaria lanpetuta dago. Gutxi gorabeherako itxaronaldia: {0} min.
+error_disconnected|Zerbitzariak konexioa itxi du.
+error_model_load|⚠ Zerbitzariak ez du memoria grafiko (VRAM) nahikorik eredu honetarako. Aukeratu eredu txikiago bat edo aktibatu «Aurreztu memoria (int8)» Aurreratua atalean.
+warn_no_response|⚠ Azpitituluak ez dira iristen, soinua egon arren. Seguruenik eredua ez da sartzen zerbitzariaren memoria grafikoan (VRAM): aukeratu eredu txikiago bat edo aktibatu «Aurreztu memoria (int8)» Aurreratua atalean.
+warn_slow_load|⚠ Ereduak denbora gehiegi behar du kargatzeko. Agian ez da sartzen zerbitzariaren memoria grafikoan (VRAM): aukeratu eredu txikiago bat edo aktibatu «Aurreztu memoria (int8)» Aurreratua atalean.
+error_reload|Kargatu berriro orria (F5) eta hasi berriz.
+error_no_server|Lehenik, konfiguratu zerbitzaria.
+settings_title|Stream Transcription · Ezarpenak
+section_server|Zerbitzaria
+section_models|Ereduak
+section_subtitles|Azpitituluak
+section_interface|Interfazea
+section_about|Honi buruz
+installed_models|Zerbitzarian instalatuak
+no_models|Oraindik ez dago eredurik instalatuta.
+badge_default|Lehenetsia
+badge_loaded|Memorian
+badge_selected|Aukeratua
+use_model|Erabili
+delete_model|Ezabatu
+confirm_delete|{0} zerbitzaritik ezabatu? {1} askatuko dira.
+add_model|Gehitu eredu bat
+add_model_hint|Itsatsi Hugging Face-ko eredu baten izena edo esteka. Edozein Whisper eredu balio du: faster-whisper-enak (CTranslate2) bere horretan erabiltzen dira, eta arruntak (transformers) berez bihurtzen dira. Eredu bat duen .zip edo .tar.gz baterako esteka zuzena ere balio du.
+add_model_placeholder|adib. Systran/faster-whisper-large-v3
+download|Deskargatu
+suggestions|Iradokizunak:
+browse_hf|Ikusi Whisper ereduak Hugging Face-n
+vram_hint|Eredu handiek gehiago asmatzen dute, baina txartel grafikoaren memoria gehiago behar dute: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB.
+keep_open|Utzi orri hau irekita deskarga amaitu arte.
+job_downloading|Deskargatzen… {0} / {1}
+job_downloading_nosize|Deskargatzen… {0}
+job_converting|faster-whisper formatura bihurtzen…
+job_extracting|Deskonprimatzen…
+job_ready|Instalatuta
+job_error|Huts egin du: {0}
+retry|Saiatu berriro
+plain_server_hint|WhisperLive zerbitzari estandar bat da: idatzi eredu-tamaina bat (tiny, base, small, medium, large-v3, large-v3-turbo), eta zerbitzariak lehen aldian deskargatuko du. Hemendik edozein eredu deskargatzeko, instalatu Stream Transcription-en osagarria zerbitzarian.
+model_name|Ereduaren izena
+save|Gorde
+saved|Gordeta
+reset_position|Kokatu berriro azpitituluak
+position_reset_done|Eginda: behera itzuliko dira.
+section_performance|Errendimendua
+performance_hint|Zerbitzariaren txartel grafikoa memoriarik gabe geratzen bada (azpitituluak ez dira iristen edo memoria-abisu bat agertzen da), bi aukera hauek dezente askatzen dute. Stream Transcription-en zerbitzariarekin bakarrik funtzionatzen dute.
+precision|Ereduaren zehaztasuna
+precision_auto|Automatikoa
+precision_int8|Aurreztu memoria (int8)
+precision_hint|int8-k memoria grafikoaren erdia inguru erabiltzen du eta, praktikan, testu bera idazten du.
+translator_device|Itzultzailea exekutatzeko
+device_gpu|Txartel grafikoa
+device_cpu|Prozesadorea (CPU)
+translator_device_hint|Prozesadorean memoria grafikoa askatzen da, baina itzulitako azpitituluak pixka bat beranduago iristen dira.
+interface_lang|Interfazearen hizkuntza
+lang_auto|Nabigatzailearena
+about_text|Iturburu-kodea eskuragarri (PolyForm Noncommercial lizentzia). Audioa hemen konfiguratzen duzun zerbitzarira bakarrik doa; ez da ezer bidaltzen beste inora.
+about_based|WhisperLive-n oinarritua, Collaborarena.
+source_code|Iturburu-kodea
+subtitle_preview|Horrela ikusiko dira zure azpitituluak.
+updates|Eguneratzeak
+check_updates|Bilatu eguneratzeak
+check_again|Bilatu berriro
+update_now|Eguneratu
+update_available|{0} bertsioa dago jada ({1} duzu).
+update_latest|Azken bertsioa duzu ({0}).
+update_rate_limited|GitHub kontsultak mugatzen ari da denbora batez. Saiatu berriro geroago.
+update_failed|Ezin izan dira eguneratzeak bilatu. Berrikusi konexioa eta saiatu berriro.
+update_how_firefox|Firefoxek berez instalatzen ditu bertsio berriak. Orain bertan izateko, ireki about:addons, sakatu engranajearen ikonoa eta aukeratu «Bilatu eguneratzeak». Argitaratu berri den bertsio batek egun batzuk behar ditzake gehigarrien webgunera iristeko.
+update_how_chromium|Eguneratzeko, deskargatu Chromiumen zip-a bertsioaren orritik, deskonprimatu karpeta zaharraren gainean eta sakatu birkargatzeko ikonoa chrome://extensions-eko Stream Transcription txartelean. Ezarpenak gordetzen dira.
+update_privacy|Bilatzean, azken bertsioaren zenbakia bakarrik galdetzen zaio GitHubi; ez da beste ezer bidaltzen.
+server_update_available|Zure zerbitzariak {0} bertsioa du eta {1} dago jada. Eguneratzeko, exekutatu hau zerbitzaria dagoen ordenagailuan:
+server_version_unknown|Zure zerbitzariak ez du esaten zer bertsio duen; beraz, egiaztapen hau baino zaharragoa da. Eguneratzeko, exekutatu hau zerbitzaria dagoen ordenagailuan:
+server_update_latest|Zure zerbitzaria egunean dago ({0}).
+server_update_note|Ereduak Dockerren bolumenean geratzen dira eta ez dira berriro deskargatzen. docker-compose.yml aldatu baduzu eta git pull-ek kexa egiten badu, exekutatu git stash aurretik eta git stash pop ondoren.
+err_invalid_source|Hori ez da Hugging Face-ko eredu-izen bat, ezta esteka bat ere.
+err_unsupported_url|Hugging Face-ko estekak edo .zip / .tar.gz fitxategietarako esteka zuzenak bakarrik.
+err_repo_not_found|Eredu hori ez dago Hugging Face-n (berrikusi izena).
+err_gated_repo|Eredu horrek bere baldintzak onartzea eskatzen du Hugging Face-n; zerbitzariak HF_TOKEN bat behar du.
+err_not_whisper|Hori ez da Whisper eredu bat.
+err_no_weights|Biltegi horrek ez ditu ereduaren pisuak.
+err_network_error|Sare-errorea. Saiatu berriro: utzitako lekutik jarraituko du.
+err_download_failed|Deskargak huts egin du.
+err_convert_failed|Ezin izan da eredua bihurtu.
+err_bad_archive|Fitxategi konprimatua hondatuta dago edo ez da segurua.
+err_already_downloading|Deskargatzen ari da jada.
+err_already_installed|Instalatuta dago jada.
+err_management_disabled|Ereduen kudeaketa desaktibatuta dago zerbitzari honetan.
+err_is_default|Zerbitzariaren eredu lehenetsia da; ezin da hemendik ezabatu.
+err_in_use|Martxan dagoen transkripzio bat erabiltzen ari da.
+err_not_found|Eredu hori ez dago jada zerbitzarian.
+err_server_error|Zerbitzariaren errorea.
+err_unreachable|Ezin da zerbitzarira konektatu.
+err_timeout|Zerbitzariak ez du garaiz erantzun.
+err_unknown|Ustekabeko errorea ({0}).
+"""

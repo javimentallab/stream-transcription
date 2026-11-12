@@ -1,0 +1,428 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "Subtítols en directe per a qualsevol pestanya, transcrits i traduïts pel teu propi servidor Whisper."
+  },
+  "start": {
+    "message": "Activa els subtítols"
+  },
+  "stop": {
+    "message": "Treu els subtítols"
+  },
+  "status_idle": {
+    "message": "A punt"
+  },
+  "status_connecting": {
+    "message": "Connectant…"
+  },
+  "status_loading": {
+    "message": "Carregant el model…"
+  },
+  "status_listening": {
+    "message": "Escoltant…"
+  },
+  "status_live": {
+    "message": "En directe"
+  },
+  "status_stalled": {
+    "message": "Àudio aturat"
+  },
+  "status_error": {
+    "message": "Error"
+  },
+  "status_noresponse": {
+    "message": "Sense resposta"
+  },
+  "model": {
+    "message": "Model"
+  },
+  "model_server_default": {
+    "message": "El del servidor"
+  },
+  "model_default_tag": {
+    "message": "{0} · per defecte"
+  },
+  "manage_models": {
+    "message": "Gestiona els models"
+  },
+  "spoken_lang": {
+    "message": "Idioma de l'àudio"
+  },
+  "auto_detect": {
+    "message": "Automàtic"
+  },
+  "detected": {
+    "message": "Detectat: {0}"
+  },
+  "subs_lang": {
+    "message": "Subtítols en"
+  },
+  "original_lang": {
+    "message": "Sense traduir"
+  },
+  "lines": {
+    "message": "Línies"
+  },
+  "text_size": {
+    "message": "Mida del text"
+  },
+  "save_srt": {
+    "message": "Desa els subtítols (.srt) en aturar"
+  },
+  "advanced": {
+    "message": "Avançat"
+  },
+  "use_vad": {
+    "message": "Salta els silencis (detecció de veu)"
+  },
+  "settings": {
+    "message": "Configuració"
+  },
+  "first_load_hint": {
+    "message": "La primera vegada que es carrega un model pot trigar fins a un minut."
+  },
+  "options_locked": {
+    "message": "Treu els subtítols per canviar aquestes opcions."
+  },
+  "server_setup_title": {
+    "message": "Connecta el teu servidor"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription necessita un servidor WhisperLive al teu ordinador o a la teva xarxa."
+  },
+  "server_address": {
+    "message": "Adreça del servidor"
+  },
+  "server_placeholder": {
+    "message": "p. ex. localhost:9090 o 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "Connecta"
+  },
+  "server_ok_models": {
+    "message": "Connectat · {0} models"
+  },
+  "server_ok_one_model": {
+    "message": "Connectat · 1 model"
+  },
+  "server_plain": {
+    "message": "Connectat · WhisperLive estàndard (sense gestió de models)"
+  },
+  "server_checking": {
+    "message": "Comprovant…"
+  },
+  "server_unreachable": {
+    "message": "No es pot connectar amb el servidor. Està engegat? Revisa l'adreça i el tallafoc."
+  },
+  "server_timeout": {
+    "message": "El servidor no ha respost a temps."
+  },
+  "server_bad_url": {
+    "message": "Aquesta adreça no és vàlida."
+  },
+  "server_change": {
+    "message": "Canvia"
+  },
+  "server_help": {
+    "message": "Com munto un servidor?"
+  },
+  "server_help_1": {
+    "message": "Necessites un servidor WhisperLive (lliure i gratuït) en un ordinador, millor si té una targeta gràfica NVIDIA. Els models petits també funcionen només amb el processador."
+  },
+  "server_help_2": {
+    "message": "Després escriu aquí la seva adreça: la IP de l'ordinador i el port, p. ex. 192.168.1.10:9090. Si és en aquest mateix ordinador, localhost:9090."
+  },
+  "server_help_3": {
+    "message": "Per baixar i gestionar models des d'aquesta pàgina, afegeix al servidor el complement de Stream Transcription."
+  },
+  "server_help_guide": {
+    "message": "Guia pas a pas"
+  },
+  "error_capture": {
+    "message": "No es pot capturar aquesta pestanya (les pàgines del navegador, les botigues d'extensions i els PDF no ho permeten)."
+  },
+  "error_no_media": {
+    "message": "No hi ha vídeo ni àudio en aquesta pàgina."
+  },
+  "error_server_full": {
+    "message": "El servidor està ocupat. Espera estimada: {0} min."
+  },
+  "error_disconnected": {
+    "message": "El servidor ha tancat la connexió."
+  },
+  "error_model_load": {
+    "message": "⚠ No hi ha prou memòria gràfica (VRAM) al servidor per a aquest model. Tria un model més petit o activa «Estalvia memòria (int8)» a Avançat."
+  },
+  "warn_no_response": {
+    "message": "⚠ Han deixat d'arribar subtítols tot i que hi ha so. Segurament el model no cap a la memòria gràfica (VRAM) del servidor: tria un model més petit o activa «Estalvia memòria (int8)» a Avançat."
+  },
+  "warn_slow_load": {
+    "message": "⚠ El model triga massa a carregar-se. Pot ser que no càpiga a la memòria gràfica (VRAM) del servidor: tria un model més petit o activa «Estalvia memòria (int8)» a Avançat."
+  },
+  "error_reload": {
+    "message": "Torna a carregar la pàgina (F5) i torna a començar."
+  },
+  "error_no_server": {
+    "message": "Primer configura el servidor."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · Configuració"
+  },
+  "section_server": {
+    "message": "Servidor"
+  },
+  "section_models": {
+    "message": "Models"
+  },
+  "section_subtitles": {
+    "message": "Subtítols"
+  },
+  "section_interface": {
+    "message": "Interfície"
+  },
+  "section_about": {
+    "message": "Quant a"
+  },
+  "installed_models": {
+    "message": "Instal·lats al servidor"
+  },
+  "no_models": {
+    "message": "Encara no hi ha models instal·lats."
+  },
+  "badge_default": {
+    "message": "Per defecte"
+  },
+  "badge_loaded": {
+    "message": "En memòria"
+  },
+  "badge_selected": {
+    "message": "Triat"
+  },
+  "use_model": {
+    "message": "Fes-lo servir"
+  },
+  "delete_model": {
+    "message": "Esborra"
+  },
+  "confirm_delete": {
+    "message": "Vols esborrar {0} del servidor? Allibera {1}."
+  },
+  "add_model": {
+    "message": "Afegeix un model"
+  },
+  "add_model_hint": {
+    "message": "Enganxa el nom o l'enllaç d'un model de Hugging Face. Serveix qualsevol model Whisper: els de faster-whisper (CTranslate2) es fan servir tal qual i els normals (transformers) es converteixen sols. També serveix un enllaç directe a un .zip o .tar.gz amb un model."
+  },
+  "add_model_placeholder": {
+    "message": "p. ex. Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "Baixa"
+  },
+  "suggestions": {
+    "message": "Suggeriments:"
+  },
+  "browse_hf": {
+    "message": "Mira models Whisper a Hugging Face"
+  },
+  "vram_hint": {
+    "message": "Els models grans encerten més però demanen més memòria de la targeta gràfica: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB."
+  },
+  "keep_open": {
+    "message": "Deixa aquesta pàgina oberta fins que acabi la baixada."
+  },
+  "job_downloading": {
+    "message": "Baixant… {0} de {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "Baixant… {0}"
+  },
+  "job_converting": {
+    "message": "Convertint al format de faster-whisper…"
+  },
+  "job_extracting": {
+    "message": "Descomprimint…"
+  },
+  "job_ready": {
+    "message": "Instal·lat"
+  },
+  "job_error": {
+    "message": "Ha fallat: {0}"
+  },
+  "retry": {
+    "message": "Torna-ho a provar"
+  },
+  "plain_server_hint": {
+    "message": "És un servidor WhisperLive estàndard: escriu una mida de model (tiny, base, small, medium, large-v3, large-v3-turbo) i el servidor el baixa la primera vegada. Per baixar qualsevol model des d'aquí, instal·la el complement de Stream Transcription al servidor."
+  },
+  "model_name": {
+    "message": "Nom del model"
+  },
+  "save": {
+    "message": "Desa"
+  },
+  "saved": {
+    "message": "Desat"
+  },
+  "reset_position": {
+    "message": "Recol·loca els subtítols"
+  },
+  "position_reset_done": {
+    "message": "Fet: tornaran a baix."
+  },
+  "section_performance": {
+    "message": "Rendiment"
+  },
+  "performance_hint": {
+    "message": "Si la targeta gràfica del servidor es queda sense memòria (els subtítols no arriben o surt un avís de memòria), aquestes dues opcions n'alliberen força. Només funcionen amb el servidor de Stream Transcription."
+  },
+  "precision": {
+    "message": "Precisió del model"
+  },
+  "precision_auto": {
+    "message": "Automàtica"
+  },
+  "precision_int8": {
+    "message": "Estalvia memòria (int8)"
+  },
+  "precision_hint": {
+    "message": "int8 gasta més o menys la meitat de memòria gràfica i, a la pràctica, escriu el mateix text."
+  },
+  "translator_device": {
+    "message": "El traductor va a"
+  },
+  "device_gpu": {
+    "message": "La targeta gràfica"
+  },
+  "device_cpu": {
+    "message": "El processador (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "Al processador allibera memòria gràfica, però els subtítols traduïts arriben una mica més tard."
+  },
+  "interface_lang": {
+    "message": "Idioma de la interfície"
+  },
+  "lang_auto": {
+    "message": "El del navegador"
+  },
+  "about_text": {
+    "message": "Codi font disponible (llicència PolyForm Noncommercial). L'àudio només va al servidor que configuris aquí; no s'envia res a cap altre lloc."
+  },
+  "about_based": {
+    "message": "Basat en WhisperLive, de Collabora."
+  },
+  "source_code": {
+    "message": "Codi font"
+  },
+  "subtitle_preview": {
+    "message": "Així es veuran els teus subtítols."
+  },
+  "updates": {
+    "message": "Actualitzacions"
+  },
+  "check_updates": {
+    "message": "Cerca actualitzacions"
+  },
+  "check_again": {
+    "message": "Torna a cercar"
+  },
+  "update_now": {
+    "message": "Actualitza"
+  },
+  "update_available": {
+    "message": "Ja hi ha la versió {0} (tens la {1})."
+  },
+  "update_latest": {
+    "message": "Tens l'última versió ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub està limitant les consultes durant una estona. Torna-ho a provar més tard."
+  },
+  "update_failed": {
+    "message": "No s'han pogut cercar actualitzacions. Revisa la connexió i torna-ho a provar."
+  },
+  "update_how_firefox": {
+    "message": "El Firefox instal·la les versions noves tot sol. Per tenir-la ja, obre about:addons, prem la icona de l'engranatge i tria «Cerca actualitzacions». Una versió acabada de sortir pot trigar uns dies a arribar al web de complements."
+  },
+  "update_how_chromium": {
+    "message": "Per actualitzar, baixa el zip de Chromium de la pàgina de la versió, descomprimeix-lo a sobre de la carpeta antiga i prem la icona de recarregar a la targeta de Stream Transcription de chrome://extensions. La configuració es conserva."
+  },
+  "update_privacy": {
+    "message": "En cercar, només es pregunta a GitHub el número de l'última versió; no s'envia res més."
+  },
+  "server_update_available": {
+    "message": "El teu servidor té la versió {0} i ja hi ha la {1}. Per actualitzar-lo, executa això a l'ordinador on és:"
+  },
+  "server_version_unknown": {
+    "message": "El teu servidor no diu quina versió té, així que és anterior a aquesta comprovació. Per actualitzar-lo, executa això a l'ordinador on és:"
+  },
+  "server_update_latest": {
+    "message": "El teu servidor està al dia ({0})."
+  },
+  "server_update_note": {
+    "message": "Els models es queden al volum de Docker i no es tornen a baixar. Si has canviat docker-compose.yml i git pull es queixa, executa git stash abans i git stash pop després."
+  },
+  "err_invalid_source": {
+    "message": "Això no és un nom de model de Hugging Face ni un enllaç."
+  },
+  "err_unsupported_url": {
+    "message": "Només enllaços de Hugging Face o enllaços directes a fitxers .zip / .tar.gz."
+  },
+  "err_repo_not_found": {
+    "message": "Aquest model no existeix a Hugging Face (revisa el nom)."
+  },
+  "err_gated_repo": {
+    "message": "Aquest model demana acceptar les seves condicions a Hugging Face; el servidor necessita un HF_TOKEN."
+  },
+  "err_not_whisper": {
+    "message": "Això no és un model Whisper."
+  },
+  "err_no_weights": {
+    "message": "Aquest repositori no té els pesos del model."
+  },
+  "err_network_error": {
+    "message": "Error de xarxa. Torna-ho a provar: continua per on anava."
+  },
+  "err_download_failed": {
+    "message": "La baixada ha fallat."
+  },
+  "err_convert_failed": {
+    "message": "No s'ha pogut convertir el model."
+  },
+  "err_bad_archive": {
+    "message": "El fitxer comprimit està malmès o no és segur."
+  },
+  "err_already_downloading": {
+    "message": "Ja s'està baixant."
+  },
+  "err_already_installed": {
+    "message": "Ja està instal·lat."
+  },
+  "err_management_disabled": {
+    "message": "La gestió de models està desactivada en aquest servidor."
+  },
+  "err_is_default": {
+    "message": "És el model per defecte del servidor; no es pot esborrar des d'aquí."
+  },
+  "err_in_use": {
+    "message": "L'està fent servir una transcripció en marxa."
+  },
+  "err_not_found": {
+    "message": "Aquest model ja no és al servidor."
+  },
+  "err_server_error": {
+    "message": "Error del servidor."
+  },
+  "err_unreachable": {
+    "message": "No es pot connectar amb el servidor."
+  },
+  "err_timeout": {
+    "message": "El servidor no ha respost a temps."
+  },
+  "err_unknown": {
+    "message": "Error inesperat ({0})."
+  }
+}

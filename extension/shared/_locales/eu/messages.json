@@ -1,0 +1,428 @@
+{
+  "extName": {
+    "message": "Stream Transcription"
+  },
+  "extDescription": {
+    "message": "Zuzeneko azpitituluak edozein fitxatan, zure Whisper zerbitzariak transkribatuak eta itzuliak."
+  },
+  "start": {
+    "message": "Aktibatu azpitituluak"
+  },
+  "stop": {
+    "message": "Kendu azpitituluak"
+  },
+  "status_idle": {
+    "message": "Prest"
+  },
+  "status_connecting": {
+    "message": "Konektatzen…"
+  },
+  "status_loading": {
+    "message": "Eredua kargatzen…"
+  },
+  "status_listening": {
+    "message": "Entzuten…"
+  },
+  "status_live": {
+    "message": "Zuzenean"
+  },
+  "status_stalled": {
+    "message": "Audioa geldituta"
+  },
+  "status_error": {
+    "message": "Errorea"
+  },
+  "status_noresponse": {
+    "message": "Erantzunik ez"
+  },
+  "model": {
+    "message": "Eredua"
+  },
+  "model_server_default": {
+    "message": "Zerbitzariarena"
+  },
+  "model_default_tag": {
+    "message": "{0} · lehenetsia"
+  },
+  "manage_models": {
+    "message": "Kudeatu ereduak"
+  },
+  "spoken_lang": {
+    "message": "Audioaren hizkuntza"
+  },
+  "auto_detect": {
+    "message": "Automatikoa"
+  },
+  "detected": {
+    "message": "Hautemana: {0}"
+  },
+  "subs_lang": {
+    "message": "Azpitituluen hizkuntza"
+  },
+  "original_lang": {
+    "message": "Itzuli gabe"
+  },
+  "lines": {
+    "message": "Lerroak"
+  },
+  "text_size": {
+    "message": "Testuaren tamaina"
+  },
+  "save_srt": {
+    "message": "Gorde azpitituluak (.srt) gelditzean"
+  },
+  "advanced": {
+    "message": "Aurreratua"
+  },
+  "use_vad": {
+    "message": "Saltatu isiluneak (ahotsa hautematea)"
+  },
+  "settings": {
+    "message": "Ezarpenak"
+  },
+  "first_load_hint": {
+    "message": "Eredu bat lehen aldiz kargatzeak minutu bat ere iraun dezake."
+  },
+  "options_locked": {
+    "message": "Kendu azpitituluak aukera hauek aldatzeko."
+  },
+  "server_setup_title": {
+    "message": "Konektatu zure zerbitzaria"
+  },
+  "server_setup_hint": {
+    "message": "Stream Transcription-ek WhisperLive zerbitzari bat behar du zure ordenagailuan edo zure sarean."
+  },
+  "server_address": {
+    "message": "Zerbitzariaren helbidea"
+  },
+  "server_placeholder": {
+    "message": "adib. localhost:9090 edo 192.168.1.10:9090"
+  },
+  "connect": {
+    "message": "Konektatu"
+  },
+  "server_ok_models": {
+    "message": "Konektatuta · {0} eredu"
+  },
+  "server_ok_one_model": {
+    "message": "Konektatuta · eredu 1"
+  },
+  "server_plain": {
+    "message": "Konektatuta · WhisperLive estandarra (ereduak kudeatu gabe)"
+  },
+  "server_checking": {
+    "message": "Egiaztatzen…"
+  },
+  "server_unreachable": {
+    "message": "Ezin da zerbitzarira konektatu. Piztuta dago? Berrikusi helbidea eta suebakia."
+  },
+  "server_timeout": {
+    "message": "Zerbitzariak ez du garaiz erantzun."
+  },
+  "server_bad_url": {
+    "message": "Helbide hori ez da baliozkoa."
+  },
+  "server_change": {
+    "message": "Aldatu"
+  },
+  "server_help": {
+    "message": "Nola muntatu zerbitzari bat?"
+  },
+  "server_help_1": {
+    "message": "WhisperLive zerbitzari bat behar duzu (librea eta doakoa) ordenagailu batean, hobe NVIDIA txartel grafikoa badu. Eredu txikiek prozesadorearekin bakarrik ere funtzionatzen dute."
+  },
+  "server_help_2": {
+    "message": "Gero, idatzi hemen haren helbidea: ordenagailuaren IPa eta ataka, adib. 192.168.1.10:9090. Ordenagailu honetan bertan badago, localhost:9090."
+  },
+  "server_help_3": {
+    "message": "Orri honetatik ereduak deskargatu eta kudeatzeko, gehitu Stream Transcription-en osagarria zerbitzariari."
+  },
+  "server_help_guide": {
+    "message": "Urratsez urratseko gida"
+  },
+  "error_capture": {
+    "message": "Ezin da fitxa hau kapturatu (nabigatzailearen orriek, gehigarrien dendek eta PDFek ez dute uzten)."
+  },
+  "error_no_media": {
+    "message": "Orri honetan ez dago ez bideorik ez audiorik."
+  },
+  "error_server_full": {
+    "message": "Zerbitzaria lanpetuta dago. Gutxi gorabeherako itxaronaldia: {0} min."
+  },
+  "error_disconnected": {
+    "message": "Zerbitzariak konexioa itxi du."
+  },
+  "error_model_load": {
+    "message": "⚠ Zerbitzariak ez du memoria grafiko (VRAM) nahikorik eredu honetarako. Aukeratu eredu txikiago bat edo aktibatu «Aurreztu memoria (int8)» Aurreratua atalean."
+  },
+  "warn_no_response": {
+    "message": "⚠ Azpitituluak ez dira iristen, soinua egon arren. Seguruenik eredua ez da sartzen zerbitzariaren memoria grafikoan (VRAM): aukeratu eredu txikiago bat edo aktibatu «Aurreztu memoria (int8)» Aurreratua atalean."
+  },
+  "warn_slow_load": {
+    "message": "⚠ Ereduak denbora gehiegi behar du kargatzeko. Agian ez da sartzen zerbitzariaren memoria grafikoan (VRAM): aukeratu eredu txikiago bat edo aktibatu «Aurreztu memoria (int8)» Aurreratua atalean."
+  },
+  "error_reload": {
+    "message": "Kargatu berriro orria (F5) eta hasi berriz."
+  },
+  "error_no_server": {
+    "message": "Lehenik, konfiguratu zerbitzaria."
+  },
+  "settings_title": {
+    "message": "Stream Transcription · Ezarpenak"
+  },
+  "section_server": {
+    "message": "Zerbitzaria"
+  },
+  "section_models": {
+    "message": "Ereduak"
+  },
+  "section_subtitles": {
+    "message": "Azpitituluak"
+  },
+  "section_interface": {
+    "message": "Interfazea"
+  },
+  "section_about": {
+    "message": "Honi buruz"
+  },
+  "installed_models": {
+    "message": "Zerbitzarian instalatuak"
+  },
+  "no_models": {
+    "message": "Oraindik ez dago eredurik instalatuta."
+  },
+  "badge_default": {
+    "message": "Lehenetsia"
+  },
+  "badge_loaded": {
+    "message": "Memorian"
+  },
+  "badge_selected": {
+    "message": "Aukeratua"
+  },
+  "use_model": {
+    "message": "Erabili"
+  },
+  "delete_model": {
+    "message": "Ezabatu"
+  },
+  "confirm_delete": {
+    "message": "{0} zerbitzaritik ezabatu? {1} askatuko dira."
+  },
+  "add_model": {
+    "message": "Gehitu eredu bat"
+  },
+  "add_model_hint": {
+    "message": "Itsatsi Hugging Face-ko eredu baten izena edo esteka. Edozein Whisper eredu balio du: faster-whisper-enak (CTranslate2) bere horretan erabiltzen dira, eta arruntak (transformers) berez bihurtzen dira. Eredu bat duen .zip edo .tar.gz baterako esteka zuzena ere balio du."
+  },
+  "add_model_placeholder": {
+    "message": "adib. Systran/faster-whisper-large-v3"
+  },
+  "download": {
+    "message": "Deskargatu"
+  },
+  "suggestions": {
+    "message": "Iradokizunak:"
+  },
+  "browse_hf": {
+    "message": "Ikusi Whisper ereduak Hugging Face-n"
+  },
+  "vram_hint": {
+    "message": "Eredu handiek gehiago asmatzen dute, baina txartel grafikoaren memoria gehiago behar dute: small ≈ 1 GB, medium ≈ 2 GB, large ≈ 4 GB."
+  },
+  "keep_open": {
+    "message": "Utzi orri hau irekita deskarga amaitu arte."
+  },
+  "job_downloading": {
+    "message": "Deskargatzen… {0} / {1}"
+  },
+  "job_downloading_nosize": {
+    "message": "Deskargatzen… {0}"
+  },
+  "job_converting": {
+    "message": "faster-whisper formatura bihurtzen…"
+  },
+  "job_extracting": {
+    "message": "Deskonprimatzen…"
+  },
+  "job_ready": {
+    "message": "Instalatuta"
+  },
+  "job_error": {
+    "message": "Huts egin du: {0}"
+  },
+  "retry": {
+    "message": "Saiatu berriro"
+  },
+  "plain_server_hint": {
+    "message": "WhisperLive zerbitzari estandar bat da: idatzi eredu-tamaina bat (tiny, base, small, medium, large-v3, large-v3-turbo), eta zerbitzariak lehen aldian deskargatuko du. Hemendik edozein eredu deskargatzeko, instalatu Stream Transcription-en osagarria zerbitzarian."
+  },
+  "model_name": {
+    "message": "Ereduaren izena"
+  },
+  "save": {
+    "message": "Gorde"
+  },
+  "saved": {
+    "message": "Gordeta"
+  },
+  "reset_position": {
+    "message": "Kokatu berriro azpitituluak"
+  },
+  "position_reset_done": {
+    "message": "Eginda: behera itzuliko dira."
+  },
+  "section_performance": {
+    "message": "Errendimendua"
+  },
+  "performance_hint": {
+    "message": "Zerbitzariaren txartel grafikoa memoriarik gabe geratzen bada (azpitituluak ez dira iristen edo memoria-abisu bat agertzen da), bi aukera hauek dezente askatzen dute. Stream Transcription-en zerbitzariarekin bakarrik funtzionatzen dute."
+  },
+  "precision": {
+    "message": "Ereduaren zehaztasuna"
+  },
+  "precision_auto": {
+    "message": "Automatikoa"
+  },
+  "precision_int8": {
+    "message": "Aurreztu memoria (int8)"
+  },
+  "precision_hint": {
+    "message": "int8-k memoria grafikoaren erdia inguru erabiltzen du eta, praktikan, testu bera idazten du."
+  },
+  "translator_device": {
+    "message": "Itzultzailea exekutatzeko"
+  },
+  "device_gpu": {
+    "message": "Txartel grafikoa"
+  },
+  "device_cpu": {
+    "message": "Prozesadorea (CPU)"
+  },
+  "translator_device_hint": {
+    "message": "Prozesadorean memoria grafikoa askatzen da, baina itzulitako azpitituluak pixka bat beranduago iristen dira."
+  },
+  "interface_lang": {
+    "message": "Interfazearen hizkuntza"
+  },
+  "lang_auto": {
+    "message": "Nabigatzailearena"
+  },
+  "about_text": {
+    "message": "Iturburu-kodea eskuragarri (PolyForm Noncommercial lizentzia). Audioa hemen konfiguratzen duzun zerbitzarira bakarrik doa; ez da ezer bidaltzen beste inora."
+  },
+  "about_based": {
+    "message": "WhisperLive-n oinarritua, Collaborarena."
+  },
+  "source_code": {
+    "message": "Iturburu-kodea"
+  },
+  "subtitle_preview": {
+    "message": "Horrela ikusiko dira zure azpitituluak."
+  },
+  "updates": {
+    "message": "Eguneratzeak"
+  },
+  "check_updates": {
+    "message": "Bilatu eguneratzeak"
+  },
+  "check_again": {
+    "message": "Bilatu berriro"
+  },
+  "update_now": {
+    "message": "Eguneratu"
+  },
+  "update_available": {
+    "message": "{0} bertsioa dago jada ({1} duzu)."
+  },
+  "update_latest": {
+    "message": "Azken bertsioa duzu ({0})."
+  },
+  "update_rate_limited": {
+    "message": "GitHub kontsultak mugatzen ari da denbora batez. Saiatu berriro geroago."
+  },
+  "update_failed": {
+    "message": "Ezin izan dira eguneratzeak bilatu. Berrikusi konexioa eta saiatu berriro."
+  },
+  "update_how_firefox": {
+    "message": "Firefoxek berez instalatzen ditu bertsio berriak. Orain bertan izateko, ireki about:addons, sakatu engranajearen ikonoa eta aukeratu «Bilatu eguneratzeak». Argitaratu berri den bertsio batek egun batzuk behar ditzake gehigarrien webgunera iristeko."
+  },
+  "update_how_chromium": {
+    "message": "Eguneratzeko, deskargatu Chromiumen zip-a bertsioaren orritik, deskonprimatu karpeta zaharraren gainean eta sakatu birkargatzeko ikonoa chrome://extensions-eko Stream Transcription txartelean. Ezarpenak gordetzen dira."
+  },
+  "update_privacy": {
+    "message": "Bilatzean, azken bertsioaren zenbakia bakarrik galdetzen zaio GitHubi; ez da beste ezer bidaltzen."
+  },
+  "server_update_available": {
+    "message": "Zure zerbitzariak {0} bertsioa du eta {1} dago jada. Eguneratzeko, exekutatu hau zerbitzaria dagoen ordenagailuan:"
+  },
+  "server_version_unknown": {
+    "message": "Zure zerbitzariak ez du esaten zer bertsio duen; beraz, egiaztapen hau baino zaharragoa da. Eguneratzeko, exekutatu hau zerbitzaria dagoen ordenagailuan:"
+  },
+  "server_update_latest": {
+    "message": "Zure zerbitzaria egunean dago ({0})."
+  },
+  "server_update_note": {
+    "message": "Ereduak Dockerren bolumenean geratzen dira eta ez dira berriro deskargatzen. docker-compose.yml aldatu baduzu eta git pull-ek kexa egiten badu, exekutatu git stash aurretik eta git stash pop ondoren."
+  },
+  "err_invalid_source": {
+    "message": "Hori ez da Hugging Face-ko eredu-izen bat, ezta esteka bat ere."
+  },
+  "err_unsupported_url": {
+    "message": "Hugging Face-ko estekak edo .zip / .tar.gz fitxategietarako esteka zuzenak bakarrik."
+  },
+  "err_repo_not_found": {
+    "message": "Eredu hori ez dago Hugging Face-n (berrikusi izena)."
+  },
+  "err_gated_repo": {
+    "message": "Eredu horrek bere baldintzak onartzea eskatzen du Hugging Face-n; zerbitzariak HF_TOKEN bat behar du."
+  },
+  "err_not_whisper": {
+    "message": "Hori ez da Whisper eredu bat."
+  },
+  "err_no_weights": {
+    "message": "Biltegi horrek ez ditu ereduaren pisuak."
+  },
+  "err_network_error": {
+    "message": "Sare-errorea. Saiatu berriro: utzitako lekutik jarraituko du."
+  },
+  "err_download_failed": {
+    "message": "Deskargak huts egin du."
+  },
+  "err_convert_failed": {
+    "message": "Ezin izan da eredua bihurtu."
+  },
+  "err_bad_archive": {
+    "message": "Fitxategi konprimatua hondatuta dago edo ez da segurua."
+  },
+  "err_already_downloading": {
+    "message": "Deskargatzen ari da jada."
+  },
+  "err_already_installed": {
+    "message": "Instalatuta dago jada."
+  },
+  "err_management_disabled": {
+    "message": "Ereduen kudeaketa desaktibatuta dago zerbitzari honetan."
+  },
+  "err_is_default": {
+    "message": "Zerbitzariaren eredu lehenetsia da; ezin da hemendik ezabatu."
+  },
+  "err_in_use": {
+    "message": "Martxan dagoen transkripzio bat erabiltzen ari da."
+  },
+  "err_not_found": {
+    "message": "Eredu hori ez dago jada zerbitzarian."
+  },
+  "err_server_error": {
+    "message": "Zerbitzariaren errorea."
+  },
+  "err_unreachable": {
+    "message": "Ezin da zerbitzarira konektatu."
+  },
+  "err_timeout": {
+    "message": "Zerbitzariak ez du garaiz erantzun."
+  },
+  "err_unknown": {
+    "message": "Ustekabeko errorea ({0})."
+  }
+}
