@@ -181,8 +181,8 @@ M = {
     "interface_lang": ("Interface language", "Idioma de la interfaz"),
     "lang_auto": ("Same as the browser", "El del navegador"),
     "about_text": (
-        "Free software (MIT license). The audio only goes to the server you set up here; nothing is sent anywhere else.",
-        "Software libre (licencia MIT). El audio solo va al servidor que configures aquí; no se envía nada a ningún otro sitio."),
+        "Source code available (PolyForm Noncommercial license). The audio only goes to the server you set up here; nothing is sent anywhere else.",
+        "Código fuente disponible (licencia PolyForm Noncommercial). El audio solo va al servidor que configures aquí; no se envía nada a ningún otro sitio."),
     "about_based": ("Based on WhisperLive by Collabora.", "Basado en WhisperLive, de Collabora."),
     "source_code": ("Source code", "Código fuente"),
     "subtitle_preview": ("This is how your subtitles will look.", "Así se verán tus subtítulos."),

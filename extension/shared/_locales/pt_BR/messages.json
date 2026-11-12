@@ -309,7 +309,7 @@
     "message": "O do navegador"
   },
   "about_text": {
-    "message": "Software livre (licença MIT). O áudio só vai para o servidor que você configurar aqui; nada é enviado para nenhum outro lugar."
+    "message": "Código-fonte disponível (licença PolyForm Noncommercial). O áudio só vai para o servidor que você configurar aqui; nada é enviado para nenhum outro lugar."
   },
   "about_based": {
     "message": "Baseado no WhisperLive, da Collabora."

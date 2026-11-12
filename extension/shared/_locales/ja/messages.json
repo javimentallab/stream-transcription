@@ -309,7 +309,7 @@
     "message": "ブラウザーに合わせる"
   },
   "about_text": {
-    "message": "フリーソフトウェア（MIT ライセンス）。音声はここで設定したサーバーにだけ送られ、ほかには一切送られません。"
+    "message": "ソースコード公開（PolyForm Noncommercial ライセンス）。音声はここで設定したサーバーにだけ送られ、ほかには一切送られません。"
   },
   "about_based": {
     "message": "Collabora の WhisperLive をもとにしています。"

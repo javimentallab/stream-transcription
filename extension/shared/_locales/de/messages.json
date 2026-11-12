@@ -309,7 +309,7 @@
     "message": "Wie der Browser"
   },
   "about_text": {
-    "message": "Freie Software (MIT-Lizenz). Das Audio geht nur an den Server, den du hier einrichtest; nichts wird woandershin geschickt."
+    "message": "Quellcode verfügbar (PolyForm-Noncommercial-Lizenz). Das Audio geht nur an den Server, den du hier einrichtest; nichts wird woandershin geschickt."
   },
   "about_based": {
     "message": "Basiert auf WhisperLive von Collabora."

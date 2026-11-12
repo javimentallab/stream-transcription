@@ -309,7 +309,7 @@
     "message": "跟随浏览器"
   },
   "about_text": {
-    "message": "自由软件（MIT 许可证）。音频只会发送到你在这里设置的服务器，不会发往其他任何地方。"
+    "message": "源代码公开（PolyForm Noncommercial 许可证）。音频只会发送到你在这里设置的服务器，不会发往其他任何地方。"
   },
   "about_based": {
     "message": "基于 Collabora 的 WhisperLive。"

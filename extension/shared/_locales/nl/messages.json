@@ -309,7 +309,7 @@
     "message": "Die van de browser"
   },
   "about_text": {
-    "message": "Vrije software (MIT-licentie). De audio gaat alleen naar de server die je hier instelt; er wordt niets ergens anders heen gestuurd."
+    "message": "Broncode beschikbaar (PolyForm Noncommercial-licentie). De audio gaat alleen naar de server die je hier instelt; er wordt niets ergens anders heen gestuurd."
   },
   "about_based": {
     "message": "Gebaseerd op WhisperLive van Collabora."

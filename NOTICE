@@ -1,5 +1,6 @@
 Stream Transcription
 Copyright (c) 2026 javimentallab
+Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE).
 
 The server patches and parts of the extension are based on WhisperLive
 (https://github.com/collabora/WhisperLive), distributed under the following license:

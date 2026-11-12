@@ -28,7 +28,7 @@ in yours, in real time. The audio never leaves your network: it goes only to the
   extension and for the server, and takes you to it. Only when you ask.
 - Interface in English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese,
   Japanese, Korean, Thai and Hindi; it follows the browser or can be picked in the settings.
-- No accounts, no tracking, no analytics. Open source (MIT).
+- No accounts, no tracking, no analytics. Source code available (PolyForm Noncommercial).
 
 | Popup | Settings · models |
 |---|---|
@@ -142,7 +142,7 @@ What changed in each version: [CHANGELOG](CHANGELOG.md). See [CONTRIBUTING](CONT
 
 ## Credits and license
 
-MIT ([LICENSE](LICENSE)). Built on [WhisperLive](https://github.com/collabora/WhisperLive) by Collabora (MIT, see
+[PolyForm Noncommercial 1.0.0](LICENSE): any noncommercial use is allowed; commercial use needs the author's permission. Versions up to 2.2.0 were released under the MIT licence. Built on [WhisperLive](https://github.com/collabora/WhisperLive) by Collabora (MIT, see
 [NOTICE](NOTICE)) and
 [faster-whisper](https://github.com/SYSTRAN/faster-whisper). Translation uses
 [SMALL100](https://huggingface.co/alirezamsh/small100).

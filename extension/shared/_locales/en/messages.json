@@ -309,7 +309,7 @@
     "message": "Same as the browser"
   },
   "about_text": {
-    "message": "Free software (MIT license). The audio only goes to the server you set up here; nothing is sent anywhere else."
+    "message": "Source code available (PolyForm Noncommercial license). The audio only goes to the server you set up here; nothing is sent anywhere else."
   },
   "about_based": {
     "message": "Based on WhisperLive by Collabora."

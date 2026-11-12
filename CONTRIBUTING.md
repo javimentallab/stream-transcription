@@ -23,4 +23,4 @@ python tools/build.py
 - **Dependencies:** a new one needs a permissive licence (MIT, BSD, Apache…). Check it before adding it.
 - **Private data:** no personal paths, hostnames, IP addresses or tokens in the code, the history or the screenshots.
 - **Interface text:** new text goes in every language, and has to fit on screen in all of them. Texts are in `tools/i18n-messages.py` and `tools/i18n-more.py`, which write `extension/shared/_locales`.
-- **Licence:** your contribution is released under the project's [MIT licence](LICENSE).
+- **Licence:** your contribution is released under the project's [PolyForm Noncommercial licence](LICENSE), and you allow the maintainer to license it under other terms as well, including commercial ones.

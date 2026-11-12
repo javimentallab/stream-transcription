@@ -108,7 +108,7 @@ device_cpu|Processador (CPU)
 translator_device_hint|No processador libera memória de vídeo, mas as legendas traduzidas chegam um pouco mais tarde.
 interface_lang|Idioma da interface
 lang_auto|O do navegador
-about_text|Software livre (licença MIT). O áudio só vai para o servidor que você configurar aqui; nada é enviado para nenhum outro lugar.
+about_text|Código-fonte disponível (licença PolyForm Noncommercial). O áudio só vai para o servidor que você configurar aqui; nada é enviado para nenhum outro lugar.
 about_based|Baseado no WhisperLive, da Collabora.
 source_code|Código-fonte
 subtitle_preview|É assim que suas legendas vão ficar.
@@ -253,7 +253,7 @@ device_cpu|Le processeur (CPU)
 translator_device_hint|Sur le processeur, il libère de la mémoire graphique, mais les sous-titres traduits arrivent un peu plus tard.
 interface_lang|Langue de l’interface
 lang_auto|Celle du navigateur
-about_text|Logiciel libre (licence MIT). L’audio ne va qu’au serveur que vous configurez ici ; rien n’est envoyé ailleurs.
+about_text|Code source disponible (licence PolyForm Noncommercial). L’audio ne va qu’au serveur que vous configurez ici ; rien n’est envoyé ailleurs.
 about_based|Basé sur WhisperLive, de Collabora.
 source_code|Code source
 subtitle_preview|Voici à quoi ressembleront vos sous-titres.
@@ -398,7 +398,7 @@ device_cpu|Prozessor (CPU)
 translator_device_hint|Auf dem Prozessor wird Grafikspeicher frei, aber übersetzte Untertitel kommen etwas später.
 interface_lang|Sprache der Oberfläche
 lang_auto|Wie der Browser
-about_text|Freie Software (MIT-Lizenz). Das Audio geht nur an den Server, den du hier einrichtest; nichts wird woandershin geschickt.
+about_text|Quellcode verfügbar (PolyForm-Noncommercial-Lizenz). Das Audio geht nur an den Server, den du hier einrichtest; nichts wird woandershin geschickt.
 about_based|Basiert auf WhisperLive von Collabora.
 source_code|Quellcode
 subtitle_preview|So sehen deine Untertitel aus.
@@ -543,7 +543,7 @@ device_cpu|Processore (CPU)
 translator_device_hint|Sul processore libera memoria grafica, ma i sottotitoli tradotti arrivano un po’ dopo.
 interface_lang|Lingua dell’interfaccia
 lang_auto|Quella del browser
-about_text|Software libero (licenza MIT). L’audio va solo al server che configuri qui; non viene inviato altrove.
+about_text|Codice sorgente disponibile (licenza PolyForm Noncommercial). L’audio va solo al server che configuri qui; non viene inviato altrove.
 about_based|Basato su WhisperLive di Collabora.
 source_code|Codice sorgente
 subtitle_preview|Ecco come appariranno i tuoi sottotitoli.
@@ -688,7 +688,7 @@ device_cpu|Processor (CPU)
 translator_device_hint|Op de processor komt videogeheugen vrij, maar vertaalde ondertitels komen iets later.
 interface_lang|Taal van de interface
 lang_auto|Die van de browser
-about_text|Vrije software (MIT-licentie). De audio gaat alleen naar de server die je hier instelt; er wordt niets ergens anders heen gestuurd.
+about_text|Broncode beschikbaar (PolyForm Noncommercial-licentie). De audio gaat alleen naar de server die je hier instelt; er wordt niets ergens anders heen gestuurd.
 about_based|Gebaseerd op WhisperLive van Collabora.
 source_code|Broncode
 subtitle_preview|Zo zien je ondertitels eruit.
@@ -833,7 +833,7 @@ device_cpu|Procesorze (CPU)
 translator_device_hint|Na procesorze zwalnia pamięć graficzną, ale przetłumaczone napisy przychodzą nieco później.
 interface_lang|Język interfejsu
 lang_auto|Jak w przeglądarce
-about_text|Wolne oprogramowanie (licencja MIT). Dźwięk trafia tylko do serwera, który tu skonfigurujesz; nic nie jest wysyłane nigdzie indziej.
+about_text|Kod źródłowy dostępny (licencja PolyForm Noncommercial). Dźwięk trafia tylko do serwera, który tu skonfigurujesz; nic nie jest wysyłane nigdzie indziej.
 about_based|Oparte na WhisperLive od Collabora.
 source_code|Kod źródłowy
 subtitle_preview|Tak będą wyglądać twoje napisy.
@@ -978,7 +978,7 @@ device_cpu|Процессоре (CPU)
 translator_device_hint|На процессоре освобождается видеопамять, но переведённые субтитры приходят чуть позже.
 interface_lang|Язык интерфейса
 lang_auto|Как в браузере
-about_text|Свободное ПО (лицензия MIT). Звук идёт только на сервер, который вы здесь укажете; больше никуда ничего не отправляется.
+about_text|Исходный код доступен (лицензия PolyForm Noncommercial). Звук идёт только на сервер, который вы здесь укажете; больше никуда ничего не отправляется.
 about_based|Основано на WhisperLive от Collabora.
 source_code|Исходный код
 subtitle_preview|Так будут выглядеть ваши субтитры.
@@ -1123,7 +1123,7 @@ device_cpu|Процесорі (CPU)
 translator_device_hint|На процесорі звільняється відеопам’ять, але перекладені субтитри надходять трохи пізніше.
 interface_lang|Мова інтерфейсу
 lang_auto|Як у браузері
-about_text|Вільне ПЗ (ліцензія MIT). Звук іде лише на сервер, який ви тут укажете; більше нікуди нічого не надсилається.
+about_text|Вихідний код доступний (ліцензія PolyForm Noncommercial). Звук іде лише на сервер, який ви тут укажете; більше нікуди нічого не надсилається.
 about_based|На основі WhisperLive від Collabora.
 source_code|Вихідний код
 subtitle_preview|Так виглядатимуть ваші субтитри.
@@ -1268,7 +1268,7 @@ device_cpu|处理器 (CPU)
 translator_device_hint|放在处理器上可以释放显存，但翻译后的字幕会稍晚一些。
 interface_lang|界面语言
 lang_auto|跟随浏览器
-about_text|自由软件（MIT 许可证）。音频只会发送到你在这里设置的服务器，不会发往其他任何地方。
+about_text|源代码公开（PolyForm Noncommercial 许可证）。音频只会发送到你在这里设置的服务器，不会发往其他任何地方。
 about_based|基于 Collabora 的 WhisperLive。
 source_code|源代码
 subtitle_preview|你的字幕会是这个样子。
@@ -1413,7 +1413,7 @@ device_cpu|CPU
 translator_device_hint|CPU で動かすとビデオメモリが空きますが、翻訳字幕は少し遅れて届きます。
 interface_lang|表示言語
 lang_auto|ブラウザーに合わせる
-about_text|フリーソフトウェア（MIT ライセンス）。音声はここで設定したサーバーにだけ送られ、ほかには一切送られません。
+about_text|ソースコード公開（PolyForm Noncommercial ライセンス）。音声はここで設定したサーバーにだけ送られ、ほかには一切送られません。
 about_based|Collabora の WhisperLive をもとにしています。
 source_code|ソースコード
 subtitle_preview|字幕はこのように表示されます。
@@ -1558,7 +1558,7 @@ device_cpu|프로세서(CPU)
 translator_device_hint|프로세서에서 돌리면 그래픽 메모리가 확보되지만 번역 자막이 조금 늦게 옵니다.
 interface_lang|인터페이스 언어
 lang_auto|브라우저와 같게
-about_text|자유 소프트웨어(MIT 라이선스). 오디오는 여기서 설정한 서버로만 가며, 다른 곳으로는 아무것도 보내지 않습니다.
+about_text|소스 코드 공개(PolyForm Noncommercial 라이선스). 오디오는 여기서 설정한 서버로만 가며, 다른 곳으로는 아무것도 보내지 않습니다.
 about_based|Collabora의 WhisperLive를 바탕으로 합니다.
 source_code|소스 코드
 subtitle_preview|자막은 이렇게 보입니다.
@@ -1703,7 +1703,7 @@ device_cpu|ซีพียู (CPU)
 translator_device_hint|บนซีพียูจะคืนหน่วยความจำกราฟิก แต่คำบรรยายที่แปลแล้วจะมาช้าขึ้นเล็กน้อย
 interface_lang|ภาษาของหน้าตาโปรแกรม
 lang_auto|ตามเบราว์เซอร์
-about_text|ซอฟต์แวร์เสรี (สัญญาอนุญาต MIT) เสียงจะส่งไปยังเซิร์ฟเวอร์ที่คุณตั้งไว้ที่นี่เท่านั้น ไม่มีการส่งไปที่อื่น
+about_text|เปิดเผยซอร์สโค้ด (สัญญาอนุญาต PolyForm Noncommercial) เสียงจะส่งไปยังเซิร์ฟเวอร์ที่คุณตั้งไว้ที่นี่เท่านั้น ไม่มีการส่งไปที่อื่น
 about_based|พัฒนาจาก WhisperLive ของ Collabora
 source_code|ซอร์สโค้ด
 subtitle_preview|คำบรรยายของคุณจะมีหน้าตาแบบนี้
@@ -1848,7 +1848,7 @@ device_cpu|प्रोसेसर (CPU)
 translator_device_hint|प्रोसेसर पर चलाने से ग्राफ़िक्स मेमोरी खाली होती है, पर अनुवादित सबटाइटल थोड़ा देर से आते हैं।
 interface_lang|इंटरफ़ेस की भाषा
 lang_auto|ब्राउज़र जैसी
-about_text|मुक्त सॉफ़्टवेयर (MIT लाइसेंस)। ऑडियो सिर्फ़ उसी सर्वर पर जाता है जो आप यहाँ सेट करते हैं; और कहीं कुछ नहीं भेजा जाता।
+about_text|सोर्स कोड उपलब्ध (PolyForm Noncommercial लाइसेंस)। ऑडियो सिर्फ़ उसी सर्वर पर जाता है जो आप यहाँ सेट करते हैं; और कहीं कुछ नहीं भेजा जाता।
 about_based|Collabora के WhisperLive पर आधारित।
 source_code|सोर्स कोड
 subtitle_preview|आपके सबटाइटल ऐसे दिखेंगे।

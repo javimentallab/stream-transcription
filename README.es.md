@@ -28,7 +28,7 @@ léelo en el tuyo, en tiempo real. El audio no sale de tu red: solo va al servid
   extensión y del servidor, y te lleva a ella. Solo cuando lo pides.
 - Interfaz en castellano, inglés, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano,
   chino, japonés, coreano, tailandés e hindi; sigue al navegador o se elige en los ajustes.
-- Sin cuentas, sin rastreo, sin estadísticas. Código abierto (MIT).
+- Sin cuentas, sin rastreo, sin estadísticas. Código fuente disponible (PolyForm Noncommercial).
 
 | Ventana de la extensión | Ajustes · modelos |
 |---|---|
@@ -143,7 +143,7 @@ Qué cambia en cada versión: [CHANGELOG](CHANGELOG.md), en inglés. Consulta [C
 
 ## Créditos y licencia
 
-MIT ([LICENSE](LICENSE)). Hecho sobre [WhisperLive](https://github.com/collabora/WhisperLive), de Collabora (MIT, ver
+[PolyForm Noncommercial 1.0.0](LICENSE): se permite cualquier uso no comercial; el uso comercial necesita permiso del autor. Las versiones hasta la 2.2.0 se publicaron con licencia MIT. Hecho sobre [WhisperLive](https://github.com/collabora/WhisperLive), de Collabora (MIT, ver
 [NOTICE](NOTICE)), y
 [faster-whisper](https://github.com/SYSTRAN/faster-whisper). La traducción usa
 [SMALL100](https://huggingface.co/alirezamsh/small100).
